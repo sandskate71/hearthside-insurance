@@ -1,0 +1,88 @@
+---
+interface Props {
+  title: string;
+  description: string;
+  canonical?: string;
+  ogImage?: string;
+  noindex?: boolean;
+}
+
+const {
+  title,
+  description,
+  canonical,
+  ogImage = '/og-default.jpg',
+  noindex = false,
+} = Astro.props;
+
+const siteUrl = 'https://nashvilleinsuranceadvisors.com';
+const canonicalUrl = canonical ?? new URL(Astro.url.pathname, siteUrl).href;
+const ogImageUrl = ogImage.startsWith('http') ? ogImage : `${siteUrl}${ogImage}`;
+
+const localBusinessSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'ProfessionalService',
+  '@id': siteUrl,
+  name: 'Nashville Insurance Advisors, LLC',
+  description: 'Independent insurance advisor serving the Nashville metro area — home, auto, life, Medicare, and long-term care.',
+  url: siteUrl,
+  telephone: '+16153269899',
+  email: 'team@nashvilleia.com',
+  founder: {
+    '@type': 'Person',
+    name: 'Enrique Gandara',
+  },
+  address: {
+    '@type': 'PostalAddress',
+    addressLocality: 'Nashville',
+    addressRegion: 'TN',
+    addressCountry: 'US',
+  },
+  areaServed: {
+    '@type': 'GeoCircle',
+    geoMidpoint: {
+      '@type': 'GeoCoordinates',
+      latitude: 36.1627,
+      longitude: -86.7816,
+    },
+    geoRadius: '80000',
+  },
+  serviceType: [
+    'Property & Casualty Insurance',
+    'Life Insurance',
+    'Annuities',
+    'Long-Term Care Insurance',
+    'Medicare Planning',
+    'Small Business Insurance',
+  ],
+  openingHoursSpecification: {
+    '@type': 'OpeningHoursSpecification',
+    description: 'By appointment only',
+  },
+  sameAs: ['https://nashvilleia.com'],
+};
+---
+
+<!-- Primary Meta -->
+<title>{title}</title>
+<meta name="description" content={description} />
+<link rel="canonical" href={canonicalUrl} />
+{noindex && <meta name="robots" content="noindex, nofollow" />}
+
+<!-- Open Graph -->
+<meta property="og:type" content="website" />
+<meta property="og:url" content={canonicalUrl} />
+<meta property="og:title" content={title} />
+<meta property="og:description" content={description} />
+<meta property="og:image" content={ogImageUrl} />
+<meta property="og:site_name" content="Nashville Insurance Advisors" />
+<meta property="og:locale" content="en_US" />
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content={title} />
+<meta name="twitter:description" content={description} />
+<meta name="twitter:image" content={ogImageUrl} />
+
+<!-- Schema.org LocalBusiness -->
+<script type="application/ld+json" set:html={JSON.stringify(localBusinessSchema)} />

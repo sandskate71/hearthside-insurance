@@ -1,0 +1,335 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+---
+
+<BaseLayout
+  title="Nashville Insurance Advisors | Independent Insurance Review — Nashville, TN"
+  description="Nashville Insurance Advisors provides comprehensive, independent insurance reviews for home, auto, life, Medicare, and small business — serving the Nashville metro by appointment."
+>
+
+  <!-- Hero -->
+  <section class="relative text-white py-20 md:py-28 overflow-hidden">
+    <!-- Video background -->
+    <video
+      class="absolute inset-0 w-full h-full object-cover"
+      autoplay
+      loop
+      muted
+      playsinline
+      aria-hidden="true"
+    >
+      <source src="/Home%20Screen%20Video.mp4" type="video/mp4" />
+    </video>
+    <!-- Base dark overlay (light, keeps skyline visible) -->
+    <div class="absolute inset-0 bg-navy-900" style="opacity: 0.32;"></div>
+    <!-- Left gradient overlay (darkens the text area only) -->
+    <div class="absolute inset-0" style="background: linear-gradient(to right, rgba(15,32,68,0.75) 0%, rgba(15,32,68,0.4) 50%, transparent 100%);"></div>
+    <!-- Content -->
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl">
+        <p class="text-gold-400 text-sm font-semibold uppercase tracking-widest mb-4">Independent Insurance Advisory · Nashville, TN</p>
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-serif font-bold leading-tight mb-6" style="text-shadow: 0 2px 8px rgba(0,0,0,0.8);">
+          We don't shop rates.<br />We review lives.
+        </h1>
+        <p class="text-lg md:text-xl text-navy-200 leading-relaxed mb-10 max-w-2xl" style="text-shadow: 0 2px 8px rgba(0,0,0,0.8);">
+          Nashville Insurance Advisors walks you through a deliberate process so you understand exactly what you have, where you're exposed, and what needs to be in place — across home, auto, life, retirement, and Medicare.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4">
+          <a
+            href="/contact"
+            class="inline-flex items-center justify-center px-8 py-4 bg-gold-500 hover:bg-gold-600 text-navy-900 font-semibold text-lg rounded-lg transition-colors"
+          >
+            Schedule Your Coverage Review
+          </a>
+          <a
+            href="/process"
+            class="inline-flex items-center justify-center px-8 py-4 bg-white hover:bg-gray-100 text-navy-900 font-medium text-lg rounded-lg transition-colors"
+          >
+            How It Works
+          </a>
+        </div>
+        <p class="text-navy-400 text-sm mt-6" style="text-shadow: 0 2px 8px rgba(0,0,0,0.8);">Nashville metro · By appointment only · No walk-ins</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust Bar -->
+  <section class="bg-navy-800 text-white py-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-wrap justify-center gap-8 text-sm text-navy-200">
+        <span class="flex items-center gap-2">
+          <span class="w-2 h-2 rounded-full bg-gold-500 inline-block"></span>
+          Licensed in Tennessee
+        </span>
+        <span class="flex items-center gap-2">
+          <span class="w-2 h-2 rounded-full bg-gold-500 inline-block"></span>
+          Life · Health · Property &amp; Casualty
+        </span>
+        <span class="flex items-center gap-2">
+          <span class="w-2 h-2 rounded-full bg-gold-500 inline-block"></span>
+          Independent — Not Captive
+        </span>
+        <span class="flex items-center gap-2">
+          <span class="w-2 h-2 rounded-full bg-gold-500 inline-block"></span>
+          Nashville Metro, By Appointment
+        </span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Independent Matters -->
+  <section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-2xl mx-auto text-center mb-14">
+        <h2 class="text-3xl md:text-4xl font-serif font-bold text-navy-900 mb-4">
+          Why Independent Matters
+        </h2>
+        <p class="text-gray-600 text-lg leading-relaxed">
+          Most agents work for one company and have a quota to hit. We work for you. That changes everything about the conversation.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="p-8 rounded-2xl border border-gray-100 bg-gray-50">
+          <div class="w-12 h-12 rounded-xl bg-navy-100 mb-5 flex items-center justify-center">
+            <span class="text-navy-900 font-serif font-bold text-lg">✓</span>
+          </div>
+          <h3 class="text-lg font-serif font-semibold text-navy-900 mb-3">We Listen Before We Recommend</h3>
+          <p class="text-gray-600 text-sm leading-relaxed">A good doctor listens, runs the tests, and figures out what's actually wrong before they prescribe anything. Most insurance agents skip that part — they're trying to hit a number or move a product. We don't have a product to push. We have a process: understand your situation first, recommend coverage second.</p>
+        </div>
+
+        <div class="p-8 rounded-2xl border border-gray-100 bg-gray-50">
+          <div class="w-12 h-12 rounded-xl bg-navy-100 mb-5 flex items-center justify-center">
+            <span class="text-navy-900 font-serif font-bold text-lg">✓</span>
+          </div>
+          <h3 class="text-lg font-serif font-semibold text-navy-900 mb-3">Cheap Quotes Don't Mean Much</h3>
+          <p class="text-gray-600 text-sm leading-relaxed">Anyone can shop you a low rate. But what good is a low quote if you don't actually know what you're buying? We've seen too many people with cheap policies that didn't cover the thing they thought it did — like a dishwasher leak that gets denied because of a seepage clause they never knew existed. Independent means we explain it. Not just sell it.</p>
+        </div>
+
+        <div class="p-8 rounded-2xl border border-gray-100 bg-gray-50">
+          <div class="w-12 h-12 rounded-xl bg-navy-100 mb-5 flex items-center justify-center">
+            <span class="text-navy-900 font-serif font-bold text-lg">✓</span>
+          </div>
+          <h3 class="text-lg font-serif font-semibold text-navy-900 mb-3">Your Coverage Should Grow With You</h3>
+          <p class="text-gray-600 text-sm leading-relaxed">New home. New business. Kids, friends' kids on your trampoline, a pool in the backyard, a teenager driving the family car. Your life keeps changing, and your insurance needs to keep up. We stay in the loop — adjusting your carriers and policies as your life evolves — instead of binding a policy and disappearing until renewal.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Overview -->
+  <section class="py-20" style="background-color: #f0f4fa;">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl mx-auto text-center mb-14">
+        <h2 class="text-3xl md:text-4xl font-serif font-bold text-navy-900 mb-4">Coverage We Review</h2>
+        <p class="text-gray-600 text-lg leading-relaxed">
+          Most people have insurance. Most people don't actually understand what it does. We review every line — together — so you know exactly what's covered, where the gaps are, and what needs to change.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <!-- Home & Auto -->
+        <a href="/services/home-auto" class="group p-8 bg-white rounded-2xl border border-gray-100 hover:border-gold-300 hover:shadow-lg transition-all duration-200">
+          <div class="w-11 h-11 rounded-xl bg-navy-50 flex items-center justify-center mb-5" style="background-color: #e8edf5;">
+            <svg class="w-5 h-5 text-navy-900" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+              <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+              <path d="M9 22V12h6v10"/>
+            </svg>
+          </div>
+          <h3 class="text-xl font-serif font-semibold text-navy-900 mb-3 group-hover:text-gold-700 transition-colors">Home &amp; Auto</h3>
+          <p class="text-gray-600 text-sm leading-relaxed mb-5">Your house, your cars, your stuff. Most homeowner policies have exclusions buried in them — water damage, jewelry, home offices, rental situations — that people don't find out about until they file a claim. We walk through your actual policy and show you what it covers and, more importantly, what it doesn't.</p>
+          <span class="text-gold-600 text-sm font-semibold inline-flex items-center gap-1">
+            Learn more
+            <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>
+            </svg>
+          </span>
+        </a>
+
+        <!-- Small Business -->
+        <a href="/services/small-business" class="group p-8 bg-white rounded-2xl border border-gray-100 hover:border-gold-300 hover:shadow-lg transition-all duration-200">
+          <div class="w-11 h-11 rounded-xl bg-navy-50 flex items-center justify-center mb-5" style="background-color: #e8edf5;">
+            <svg class="w-5 h-5 text-navy-900" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+              <rect width="20" height="14" x="2" y="7" rx="2" ry="2"/>
+              <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+            </svg>
+          </div>
+          <h3 class="text-xl font-serif font-semibold text-navy-900 mb-3 group-hover:text-gold-700 transition-colors">Small Business</h3>
+          <p class="text-gray-600 text-sm leading-relaxed mb-5">If you own a business, your personal policies probably don't protect it. General liability, workers' comp, commercial property, professional liability — we review what your business actually needs based on what you do, who works for you, and what could go wrong.</p>
+          <span class="text-gold-600 text-sm font-semibold inline-flex items-center gap-1">
+            Learn more
+            <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>
+            </svg>
+          </span>
+        </a>
+
+        <!-- Life & Annuities -->
+        <a href="/services/life-annuities" class="group p-8 bg-white rounded-2xl border border-gray-100 hover:border-gold-300 hover:shadow-lg transition-all duration-200">
+          <div class="w-11 h-11 rounded-xl bg-navy-50 flex items-center justify-center mb-5" style="background-color: #e8edf5;">
+            <svg class="w-5 h-5 text-navy-900" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10z"/>
+              <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/>
+            </svg>
+          </div>
+          <h3 class="text-xl font-serif font-semibold text-navy-900 mb-3 group-hover:text-gold-700 transition-colors">Life &amp; Annuities</h3>
+          <p class="text-gray-600 text-sm leading-relaxed mb-5">Life insurance isn't about you — it's about who you'd leave behind. Annuities aren't about getting rich — they're about not running out. We help you figure out how much, what kind, and how it fits into your bigger retirement picture. No pushy sales, no commission-driven products.</p>
+          <span class="text-gold-600 text-sm font-semibold inline-flex items-center gap-1">
+            Learn more
+            <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>
+            </svg>
+          </span>
+        </a>
+
+        <!-- Long-Term Care -->
+        <a href="/services/long-term-care" class="group p-8 bg-white rounded-2xl border border-gray-100 hover:border-gold-300 hover:shadow-lg transition-all duration-200">
+          <div class="w-11 h-11 rounded-xl bg-navy-50 flex items-center justify-center mb-5" style="background-color: #e8edf5;">
+            <svg class="w-5 h-5 text-navy-900" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              <path d="m9 12 2 2 4-4"/>
+            </svg>
+          </div>
+          <h3 class="text-xl font-serif font-semibold text-navy-900 mb-3 group-hover:text-gold-700 transition-colors">Long-Term Care</h3>
+          <p class="text-gray-600 text-sm leading-relaxed mb-5">70% of people over 65 will need long-term care. Medicare doesn't cover most of it. The cost can wipe out a retirement in a few years if you're not prepared. We plan for this before it becomes a crisis — when there are still good options on the table.</p>
+          <span class="text-gold-600 text-sm font-semibold inline-flex items-center gap-1">
+            Learn more
+            <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>
+            </svg>
+          </span>
+        </a>
+
+        <!-- Medicare -->
+        <a href="/services/medicare" class="group p-8 bg-white rounded-2xl border border-gray-100 hover:border-gold-300 hover:shadow-lg transition-all duration-200">
+          <div class="w-11 h-11 rounded-xl bg-navy-50 flex items-center justify-center mb-5" style="background-color: #e8edf5;">
+            <svg class="w-5 h-5 text-navy-900" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+            </svg>
+          </div>
+          <h3 class="text-xl font-serif font-semibold text-navy-900 mb-3 group-hover:text-gold-700 transition-colors">Medicare</h3>
+          <p class="text-gray-600 text-sm leading-relaxed mb-5">Turning 65 in Nashville? Already on Medicare and not sure you picked the right plan? Medicare has more moving parts than most people realize — Parts A, B, C, D, supplements, drug coverage, networks. We review your situation every year because the right plan in 2026 might not be right in 2027.</p>
+          <span class="text-gold-600 text-sm font-semibold inline-flex items-center gap-1">
+            Learn more
+            <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>
+            </svg>
+          </span>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Process Teaser -->
+  <section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
+        <div>
+          <p class="text-gold-600 text-sm font-semibold uppercase tracking-widest mb-3">How It Works</p>
+          <h2 class="text-3xl md:text-4xl font-serif font-bold text-navy-900 mb-5">
+            A Process, Not a Pitch
+          </h2>
+          <p class="text-gray-600 leading-relaxed mb-8">
+            Every client goes through the same deliberate sequence. We discover the gaps before we ever talk about products. By the time you decide to work with us, you'll know exactly where you stand and what needs to change.
+          </p>
+          <a
+            href="/process"
+            class="inline-flex items-center gap-2 text-navy-900 font-semibold hover:text-gold-600 transition-colors"
+          >
+            See the full process
+            <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            </svg>
+          </a>
+        </div>
+        <div class="space-y-4">
+          <div class="flex items-start gap-4 p-5 rounded-xl border border-gray-100 bg-gray-50">
+            <span class="flex-shrink-0 w-8 h-8 rounded-full bg-navy-900 text-white text-sm font-bold flex items-center justify-center">1</span>
+            <div>
+              <h4 class="font-serif font-semibold text-navy-900">The Coverage Review</h4>
+              <p class="text-sm text-gray-500 mt-1">We sit down, look at everything you currently have, and discover the gaps. No products discussed yet. Just an honest picture of where you're exposed.</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-4 p-5 rounded-xl border border-gray-100 bg-gray-50">
+            <span class="flex-shrink-0 w-8 h-8 rounded-full bg-navy-900 text-white text-sm font-bold flex items-center justify-center">2</span>
+            <div>
+              <h4 class="font-serif font-semibold text-navy-900">The Recommendation</h4>
+              <p class="text-sm text-gray-500 mt-1">We come back with the prescription. Here's what we discovered, here's what we recommend, here's why. We fill the gaps together — and you decide what you want to move forward with.</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-4 p-5 rounded-xl border border-gray-100 bg-gray-50">
+            <span class="flex-shrink-0 w-8 h-8 rounded-full bg-navy-900 text-white text-sm font-bold flex items-center justify-center">3</span>
+            <div>
+              <h4 class="font-serif font-semibold text-navy-900">Ongoing Maintenance</h4>
+              <p class="text-sm text-gray-500 mt-1">You're covered, you understand what you have, and we stay in your corner. Annual reviews, life changes, renewals — we make sure your coverage keeps up with your life.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Teaser -->
+  <section class="py-20 bg-navy-900 text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl mx-auto">
+        <div class="flex flex-col items-center text-center">
+          <img
+            src="/enrique-gandara.jpg"
+            alt="Enrique Gandara, Nashville Insurance Advisor"
+            class="w-48 h-48 rounded-full object-cover border-4 mb-6"
+            style="border-color: #c9a84c; object-position: 50% 5%;"
+            loading="lazy"
+          />
+          <p class="text-gold-400 text-sm font-semibold uppercase tracking-widest mb-2">Your Advisor</p>
+          <h2 class="text-3xl md:text-4xl font-serif font-bold mb-6">Enrique Gandara</h2>
+          <p class="text-navy-200 text-lg leading-relaxed mb-4">
+            Enrique started in financial planning over a decade ago — sitting across from Nashville families, walking them through their full picture until things actually made sense. He's spent years learning that most people don't have a coverage problem, they have a clarity problem. Nobody's ever shown them how the pieces fit together.
+          </p>
+          <p class="text-navy-200 text-lg leading-relaxed mb-8">
+            That's the whole point of Nashville Insurance Advisors. Not the cheapest quote. Not the fastest close. Just an honest look at where you are, where the gaps are, and what needs to be in place — so you can stop guessing and start feeling protected.
+          </p>
+          <a
+            href="/about"
+            class="inline-flex items-center gap-2 text-gold-400 hover:text-gold-300 font-semibold transition-colors"
+          >
+            About Enrique
+            <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-20" style="background-color: #fdf8ee;">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-3xl md:text-4xl font-serif font-bold text-navy-900 mb-4">
+        Ready to understand your coverage?
+      </h2>
+      <p class="text-gray-600 text-lg mb-8 max-w-xl mx-auto">
+        Schedule a coverage review. It starts with a conversation, not a sales pitch.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a
+          href="/contact"
+          class="inline-flex items-center justify-center px-8 py-4 bg-navy-900 hover:bg-navy-800 text-white font-semibold text-lg rounded-lg transition-colors"
+        >
+          Schedule Your Coverage Review
+        </a>
+        <a
+          href="tel:+16153269899"
+          class="inline-flex items-center justify-center px-8 py-4 border border-navy-300 hover:border-navy-500 text-navy-900 font-medium text-lg rounded-lg transition-colors"
+        >
+          Call (615) 326-9899
+        </a>
+      </div>
+    </div>
+  </section>
+
+</BaseLayout>

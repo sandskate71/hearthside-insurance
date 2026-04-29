@@ -1,0 +1,122 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="Medicare Advisor Nashville TN | Nashville Insurance Advisors"
+  description="Independent Medicare planning for Nashville seniors — Medicare Supplement, Medicare Advantage, and Part D plan review by Enrique Gandara at Nashville Insurance Advisors."
+>
+
+  <!-- Page Hero -->
+  <section class="bg-navy-900 text-white py-16 md:py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <nav class="flex items-center gap-2 text-sm text-navy-300 mb-6" aria-label="Breadcrumb">
+        <a href="/" class="hover:text-white transition-colors">Home</a>
+        <span>/</span>
+        <a href="/services" class="hover:text-white transition-colors">Services</a>
+        <span>/</span>
+        <span class="text-gold-400">Medicare</span>
+      </nav>
+      <span class="text-4xl block mb-4">⚕️</span>
+      <h1 class="text-4xl md:text-5xl font-serif font-bold mb-4">Medicare Planning</h1>
+      <p class="text-navy-200 text-lg max-w-2xl">
+        [Placeholder tagline — one sentence about independent Medicare plan selection for Nashville-area residents turning 65 or reviewing existing coverage.]
+      </p>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+
+        <!-- Primary Content -->
+        <div class="lg:col-span-2">
+          <h2 class="text-2xl md:text-3xl font-serif font-bold text-navy-900 mb-6">
+            [Placeholder: Medicare Planning for Nashville Residents]
+          </h2>
+          <div class="space-y-5 text-gray-600 leading-relaxed">
+            <p>[Paragraph 1 placeholder — why Medicare is more complicated than most people expect, and what happens when people make uninformed choices at 65.]</p>
+            <p>[Paragraph 2 placeholder — the difference between Medicare Supplement (Medigap) and Medicare Advantage, and how to think through the decision.]</p>
+            <p>[Paragraph 3 placeholder — the value of working with an independent Medicare advisor vs. calling the 800 number or going through a captive agent.]</p>
+          </div>
+
+          <!-- Medicare Parts Explainer -->
+          <div class="mt-12">
+            <h3 class="text-xl font-serif font-bold text-navy-900 mb-6">Medicare Coverage We Help You Navigate</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              {[
+                { part: 'Medicare Part A', desc: 'Hospital coverage — placeholder description.' },
+                { part: 'Medicare Part B', desc: 'Medical coverage — placeholder description.' },
+                { part: 'Medicare Supplement (Medigap)', desc: 'Fills gaps in Original Medicare — placeholder.' },
+                { part: 'Medicare Advantage (Part C)', desc: 'All-in-one plan alternative — placeholder.' },
+                { part: 'Medicare Part D', desc: 'Prescription drug coverage — placeholder.' },
+                { part: 'Annual Plan Review', desc: 'Ongoing plan comparison during open enrollment — placeholder.' },
+              ].map((item) => (
+                <div class="p-5 rounded-xl border border-gray-200 bg-gray-50">
+                  <p class="font-serif font-semibold text-navy-900 text-sm mb-1">{item.part}</p>
+                  <p class="text-xs text-gray-600">{item.desc}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <!-- When to Contact -->
+          <div class="mt-12">
+            <h3 class="text-xl font-serif font-bold text-navy-900 mb-6">[Placeholder: When to Start Medicare Planning]</h3>
+            <div class="space-y-3">
+              {[
+                'Turning 65 in the next 12 months',
+                'Retiring and losing employer health coverage',
+                'Reviewing your current Medicare plan during open enrollment',
+                'Moving to Tennessee from another state',
+                'Experiencing a major health change',
+              ].map((scenario) => (
+                <div class="flex items-center gap-3 p-4 rounded-lg border border-gray-100 bg-gray-50">
+                  <svg class="w-5 h-5 text-gold-500 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span class="text-sm text-navy-900">{scenario}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        <!-- Sidebar -->
+        <div class="lg:col-span-1">
+          <div class="sticky top-24 space-y-6">
+            <div class="p-6 rounded-2xl bg-navy-900 text-white">
+              <h3 class="font-serif font-semibold text-lg mb-3">Medicare Help in Nashville</h3>
+              <p class="text-navy-200 text-sm mb-5">
+                We'll compare your options across all available plans — no sales pressure, just clear advice.
+              </p>
+              <a
+                href="/contact"
+                class="block w-full text-center px-4 py-3 bg-gold-500 hover:bg-gold-600 text-navy-900 font-semibold rounded-lg transition-colors text-sm"
+              >
+                Schedule Your Medicare Review
+              </a>
+              <a
+                href="tel:+16153269899"
+                class="block w-full text-center px-4 py-3 mt-3 border border-navy-600 hover:border-navy-400 text-white font-medium rounded-lg transition-colors text-sm"
+              >
+                Call (615) 326-9899
+              </a>
+            </div>
+
+            <div class="p-6 rounded-xl border border-gray-200 bg-gray-50">
+              <h4 class="font-serif font-semibold text-navy-900 mb-3">Related Services</h4>
+              <ul class="space-y-2">
+                <li><a href="/services/long-term-care" class="text-sm text-gold-600 hover:text-gold-700 transition-colors">Long-Term Care Planning →</a></li>
+                <li><a href="/services/life-annuities" class="text-sm text-gold-600 hover:text-gold-700 transition-colors">Life Insurance & Annuities →</a></li>
+                <li><a href="/services/home-auto" class="text-sm text-gold-600 hover:text-gold-700 transition-colors">Home & Auto Insurance →</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</BaseLayout>

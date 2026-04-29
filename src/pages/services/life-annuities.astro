@@ -1,0 +1,111 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="Life Insurance & Annuities Nashville | Nashville Insurance Advisors"
+  description="Independent life insurance and annuity review for Nashville residents — income protection, wealth transfer, and retirement income strategies from an advisor who works for you."
+>
+
+  <!-- Page Hero -->
+  <section class="bg-navy-900 text-white py-16 md:py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <nav class="flex items-center gap-2 text-sm text-navy-300 mb-6" aria-label="Breadcrumb">
+        <a href="/" class="hover:text-white transition-colors">Home</a>
+        <span>/</span>
+        <a href="/services" class="hover:text-white transition-colors">Services</a>
+        <span>/</span>
+        <span class="text-gold-400">Life & Annuities</span>
+      </nav>
+      <span class="text-4xl block mb-4">🌱</span>
+      <h1 class="text-4xl md:text-5xl font-serif font-bold mb-4">Life Insurance &amp; Annuities</h1>
+      <p class="text-navy-200 text-lg max-w-2xl">
+        [Placeholder tagline — one sentence about income protection and retirement income planning for Nashville families.]
+      </p>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+
+        <!-- Primary Content -->
+        <div class="lg:col-span-2">
+          <h2 class="text-2xl md:text-3xl font-serif font-bold text-navy-900 mb-6">
+            [Placeholder: Life Insurance & Annuity Review for Nashville Families]
+          </h2>
+          <div class="space-y-5 text-gray-600 leading-relaxed">
+            <p>[Paragraph 1 placeholder — why life insurance needs change over time and why periodic review is critical.]</p>
+            <p>[Paragraph 2 placeholder — how annuities work as a retirement income tool and who they're appropriate for.]</p>
+            <p>[Paragraph 3 placeholder — the difference between what an independent advisor can offer vs. a captive agent when it comes to life and annuity products.]</p>
+          </div>
+
+          <!-- Coverage Types -->
+          <div class="mt-12">
+            <h3 class="text-xl font-serif font-bold text-navy-900 mb-6">Products We Review & Place</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              {[
+                { name: 'Term Life Insurance', desc: 'Placeholder — clean income replacement for a defined period.' },
+                { name: 'Whole Life Insurance', desc: 'Placeholder — permanent coverage with cash value growth.' },
+                { name: 'Universal Life Insurance', desc: 'Placeholder — flexible permanent coverage options.' },
+                { name: 'Fixed Annuities', desc: 'Placeholder — guaranteed income stream for retirement.' },
+                { name: 'Indexed Annuities', desc: 'Placeholder — market-linked growth with downside protection.' },
+                { name: 'Survivorship Life', desc: 'Placeholder — joint coverage for wealth transfer strategies.' },
+              ].map((product) => (
+                <div class="p-5 rounded-xl border border-gray-200 bg-gray-50">
+                  <h4 class="font-serif font-semibold text-navy-900 mb-1">{product.name}</h4>
+                  <p class="text-sm text-gray-600">{product.desc}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <!-- Retirement Income Section -->
+          <div class="mt-12 p-8 rounded-2xl bg-navy-900 text-white">
+            <h3 class="text-xl font-serif font-bold mb-4">
+              [Placeholder: Retirement Income Planning Nashville]
+            </h3>
+            <p class="text-navy-200 text-sm leading-relaxed">
+              Placeholder — section on how life insurance and annuities fit into a broader retirement income strategy for Nashville residents. Will target the "retirement income planning Nashville" keyword cluster.
+            </p>
+          </div>
+        </div>
+
+        <!-- Sidebar -->
+        <div class="lg:col-span-1">
+          <div class="sticky top-24 space-y-6">
+            <div class="p-6 rounded-2xl bg-navy-900 text-white">
+              <h3 class="font-serif font-semibold text-lg mb-3">Review Your Life Coverage</h3>
+              <p class="text-navy-200 text-sm mb-5">
+                Is your current life insurance still the right fit? Let's find out together.
+              </p>
+              <a
+                href="/contact"
+                class="block w-full text-center px-4 py-3 bg-gold-500 hover:bg-gold-600 text-navy-900 font-semibold rounded-lg transition-colors text-sm"
+              >
+                Schedule Your Coverage Review
+              </a>
+              <a
+                href="tel:+16153269899"
+                class="block w-full text-center px-4 py-3 mt-3 border border-navy-600 hover:border-navy-400 text-white font-medium rounded-lg transition-colors text-sm"
+              >
+                Call (615) 326-9899
+              </a>
+            </div>
+
+            <div class="p-6 rounded-xl border border-gray-200 bg-gray-50">
+              <h4 class="font-serif font-semibold text-navy-900 mb-3">Related Services</h4>
+              <ul class="space-y-2">
+                <li><a href="/services/long-term-care" class="text-sm text-gold-600 hover:text-gold-700 transition-colors">Long-Term Care →</a></li>
+                <li><a href="/services/medicare" class="text-sm text-gold-600 hover:text-gold-700 transition-colors">Medicare Planning →</a></li>
+                <li><a href="/services/home-auto" class="text-sm text-gold-600 hover:text-gold-700 transition-colors">Home & Auto Insurance →</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</BaseLayout>

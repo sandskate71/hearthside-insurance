@@ -1,0 +1,124 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="Small Business Insurance Nashville | Nashville Insurance Advisors"
+  description="Independent commercial insurance review for Nashville small business owners — property, liability, and specialty coverage analyzed by an independent advisor."
+>
+
+  <!-- Page Hero -->
+  <section class="bg-navy-900 text-white py-16 md:py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <nav class="flex items-center gap-2 text-sm text-navy-300 mb-6" aria-label="Breadcrumb">
+        <a href="/" class="hover:text-white transition-colors">Home</a>
+        <span>/</span>
+        <a href="/services" class="hover:text-white transition-colors">Services</a>
+        <span>/</span>
+        <span class="text-gold-400">Small Business</span>
+      </nav>
+      <span class="text-4xl block mb-4">🏢</span>
+      <h1 class="text-4xl md:text-5xl font-serif font-bold mb-4">Small Business Insurance</h1>
+      <p class="text-navy-200 text-lg max-w-2xl">
+        [Placeholder tagline — one strong sentence about independent commercial insurance review for Nashville small businesses.]
+      </p>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+
+        <!-- Primary Content -->
+        <div class="lg:col-span-2">
+          <h2 class="text-2xl md:text-3xl font-serif font-bold text-navy-900 mb-6">
+            [Placeholder: What We Review for Nashville Small Businesses]
+          </h2>
+          <div class="space-y-5 text-gray-600 leading-relaxed">
+            <p>[Paragraph 1 placeholder — what small business owners in Nashville typically get wrong about commercial coverage.]</p>
+            <p>[Paragraph 2 placeholder — the difference between a BOP and separate policies, and when each makes sense.]</p>
+            <p>[Paragraph 3 placeholder — professional liability, cyber liability, and why they matter for service businesses.]</p>
+          </div>
+
+          <!-- Coverage Areas -->
+          <div class="mt-12">
+            <h3 class="text-xl font-serif font-bold text-navy-900 mb-6">Commercial Coverage We Review</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              {[
+                'Business Owners Policy (BOP)',
+                'General Liability',
+                'Commercial Property',
+                'Professional Liability / E&O',
+                'Workers Compensation',
+                'Commercial Auto',
+                'Cyber Liability',
+                'Business Interruption',
+              ].map((item) => (
+                <div class="flex items-center gap-3 p-4 rounded-lg border border-gray-100 bg-gray-50">
+                  <svg class="w-5 h-5 text-gold-500 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span class="text-sm font-medium text-navy-900">{item}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <!-- Who We Work With Placeholder -->
+          <div class="mt-12">
+            <h3 class="text-xl font-serif font-bold text-navy-900 mb-6">[Placeholder: Who We Work With]</h3>
+            <div class="grid grid-cols-2 sm:grid-cols-3 gap-3">
+              {[
+                'Contractors',
+                'Consultants',
+                'Retail Shops',
+                'Restaurants',
+                'Service Professionals',
+                'Healthcare Practices',
+              ].map((type) => (
+                <div class="p-4 rounded-xl bg-gray-50 border border-gray-100 text-center">
+                  <p class="text-sm font-medium text-navy-900">{type}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        <!-- Sidebar -->
+        <div class="lg:col-span-1">
+          <div class="sticky top-24 space-y-6">
+            <div class="p-6 rounded-2xl bg-navy-900 text-white">
+              <h3 class="font-serif font-semibold text-lg mb-3">Review Your Business Coverage</h3>
+              <p class="text-navy-200 text-sm mb-5">
+                One conversation can reveal gaps that leave your business exposed. Schedule a review.
+              </p>
+              <a
+                href="/contact"
+                class="block w-full text-center px-4 py-3 bg-gold-500 hover:bg-gold-600 text-navy-900 font-semibold rounded-lg transition-colors text-sm"
+              >
+                Schedule Your Coverage Review
+              </a>
+              <a
+                href="tel:+16153269899"
+                class="block w-full text-center px-4 py-3 mt-3 border border-navy-600 hover:border-navy-400 text-white font-medium rounded-lg transition-colors text-sm"
+              >
+                Call (615) 326-9899
+              </a>
+            </div>
+
+            <div class="p-6 rounded-xl border border-gray-200 bg-gray-50">
+              <h4 class="font-serif font-semibold text-navy-900 mb-3">Related Services</h4>
+              <ul class="space-y-2">
+                <li><a href="/services/home-auto" class="text-sm text-gold-600 hover:text-gold-700 transition-colors">Home & Auto Insurance →</a></li>
+                <li><a href="/services/life-annuities" class="text-sm text-gold-600 hover:text-gold-700 transition-colors">Life Insurance & Annuities →</a></li>
+                <li><a href="/services/long-term-care" class="text-sm text-gold-600 hover:text-gold-700 transition-colors">Long-Term Care →</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</BaseLayout>

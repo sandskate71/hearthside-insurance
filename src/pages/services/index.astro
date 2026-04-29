@@ -1,0 +1,115 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const services = [
+  {
+    title: 'Home & Auto Insurance',
+    slug: 'home-auto',
+    icon: '🏠',
+    tagline: 'Personal lines coverage review',
+    description: 'Placeholder — comprehensive review of your home, auto, and umbrella policies to identify gaps and ensure you have the right coverage in place.',
+    keywords: ['homeowners insurance Nashville', 'auto insurance Nashville', 'personal umbrella policy'],
+  },
+  {
+    title: 'Small Business Insurance',
+    slug: 'small-business',
+    icon: '🏢',
+    tagline: 'Commercial coverage for Nashville businesses',
+    description: 'Placeholder — review of your business property, liability, and specialty coverage needs as a Nashville small business owner.',
+    keywords: ['small business insurance Nashville', 'commercial insurance Nashville', 'business liability'],
+  },
+  {
+    title: 'Life Insurance & Annuities',
+    slug: 'life-annuities',
+    icon: '🌱',
+    tagline: 'Income protection and retirement income',
+    description: 'Placeholder — life insurance and annuity review to ensure your family is protected and your retirement income strategy is sound.',
+    keywords: ['life insurance Nashville', 'annuities Nashville', 'retirement income planning'],
+  },
+  {
+    title: 'Long-Term Care',
+    slug: 'long-term-care',
+    icon: '🤝',
+    tagline: 'Plan before you need it',
+    description: 'Placeholder — long-term care planning to protect your assets and your family from the costs of extended care.',
+    keywords: ['long-term care insurance Nashville', 'LTC planning Tennessee'],
+  },
+  {
+    title: 'Medicare Planning',
+    slug: 'medicare',
+    icon: '⚕️',
+    tagline: 'Medicare plan selection and annual review',
+    description: 'Placeholder — independent Medicare plan analysis for Nashville-area residents approaching 65 or navigating a plan change.',
+    keywords: ['Medicare advisor Nashville', 'Medicare supplement Nashville', 'Medicare Advantage Nashville'],
+  },
+];
+---
+
+<BaseLayout
+  title="Insurance Services | Nashville Insurance Advisors"
+  description="Independent insurance reviews across home, auto, small business, life, long-term care, and Medicare — Nashville Insurance Advisors serves the Nashville metro by appointment."
+>
+
+  <!-- Page Hero -->
+  <section class="bg-navy-900 text-white py-16 md:py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <nav class="flex items-center gap-2 text-sm text-navy-300 mb-6" aria-label="Breadcrumb">
+        <a href="/" class="hover:text-white transition-colors">Home</a>
+        <span>/</span>
+        <span class="text-gold-400">Services</span>
+      </nav>
+      <h1 class="text-4xl md:text-5xl font-serif font-bold mb-4">Coverage We Review</h1>
+      <p class="text-navy-200 text-lg max-w-2xl">
+        [Placeholder — intro paragraph explaining the range of coverage Nashville Insurance Advisors can review and why working with an independent advisor matters across all of these lines.]
+      </p>
+    </div>
+  </section>
+
+  <!-- Services Grid -->
+  <section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        {services.map((service) => (
+          <a
+            href={`/services/${service.slug}`}
+            class="group p-8 rounded-2xl border border-gray-100 hover:border-gold-300 hover:shadow-lg transition-all duration-200 bg-white"
+          >
+            <div class="flex items-start gap-5">
+              <span class="text-4xl flex-shrink-0">{service.icon}</span>
+              <div class="flex-1">
+                <p class="text-gold-600 text-xs font-semibold uppercase tracking-wider mb-1">{service.tagline}</p>
+                <h2 class="text-xl font-serif font-bold text-navy-900 mb-3 group-hover:text-gold-700 transition-colors">
+                  {service.title}
+                </h2>
+                <p class="text-gray-600 text-sm leading-relaxed mb-4">{service.description}</p>
+                <span class="text-gold-600 text-sm font-semibold inline-flex items-center gap-1">
+                  Learn more
+                  <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                  </svg>
+                </span>
+              </div>
+            </div>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Bottom CTA -->
+  <section class="py-20 bg-navy-900 text-white text-center">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-serif font-bold mb-4">Not sure where to start?</h2>
+      <p class="text-navy-200 text-lg mb-8 max-w-xl mx-auto">
+        A comprehensive coverage review looks at everything together — not just one line at a time.
+      </p>
+      <a
+        href="/contact"
+        class="inline-flex items-center justify-center px-8 py-4 bg-gold-500 hover:bg-gold-600 text-navy-900 font-semibold text-lg rounded-lg transition-colors"
+      >
+        Schedule Your Coverage Review
+      </a>
+    </div>
+  </section>
+
+</BaseLayout>

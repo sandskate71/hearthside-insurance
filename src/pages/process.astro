@@ -1,0 +1,156 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const steps = [
+  {
+    number: '01',
+    title: '[Step 1 Placeholder]',
+    description: 'Placeholder — description of the first step in the coverage review process.',
+    detail: 'Placeholder longer explanation of what happens in this step, what the client can expect, and what Enrique needs from them.',
+  },
+  {
+    number: '02',
+    title: '[Step 2 Placeholder]',
+    description: 'Placeholder — description of the second step.',
+    detail: 'Placeholder longer explanation of step two.',
+  },
+  {
+    number: '03',
+    title: '[Step 3 Placeholder]',
+    description: 'Placeholder — description of the third step.',
+    detail: 'Placeholder longer explanation of step three.',
+  },
+  {
+    number: '04',
+    title: '[Step 4 Placeholder]',
+    description: 'Placeholder — description of the fourth and final step.',
+    detail: 'Placeholder longer explanation of step four, and what happens after the review is complete.',
+  },
+];
+---
+
+<BaseLayout
+  title="Our Coverage Review Process | Nashville Insurance Advisors"
+  description="Learn how Nashville Insurance Advisors conducts a comprehensive insurance review — a deliberate process to understand your exposures and what coverage you need."
+>
+
+  <!-- Page Hero -->
+  <section class="bg-navy-900 text-white py-16 md:py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <nav class="flex items-center gap-2 text-sm text-navy-300 mb-6" aria-label="Breadcrumb">
+        <a href="/" class="hover:text-white transition-colors">Home</a>
+        <span>/</span>
+        <span class="text-gold-400">Our Process</span>
+      </nav>
+      <h1 class="text-4xl md:text-5xl font-serif font-bold mb-4">Our Coverage Review Process</h1>
+      <p class="text-navy-200 text-lg max-w-2xl">
+        [Placeholder tagline — one sentence that describes the process philosophy.]
+      </p>
+    </div>
+  </section>
+
+  <!-- Process Intro -->
+  <section class="py-16 bg-white">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-2xl md:text-3xl font-serif font-bold text-navy-900 mb-5">
+        [Placeholder: Why We Do It This Way]
+      </h2>
+      <p class="text-gray-600 text-lg leading-relaxed">
+        Placeholder — 2-3 sentences explaining why a deliberate, process-driven approach to insurance review leads to better outcomes than a transactional quote-and-sell model.
+      </p>
+    </div>
+  </section>
+
+  <!-- Steps -->
+  <section class="py-16 pb-24" style="background-color: #f0f4fa;">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="space-y-8">
+        {steps.map((step, i) => (
+          <div class="flex gap-6 md:gap-10 items-start">
+            <div class="flex-shrink-0 flex flex-col items-center">
+              <div class="w-14 h-14 rounded-full bg-navy-900 text-white flex items-center justify-center font-serif font-bold text-lg">
+                {step.number}
+              </div>
+              {i < steps.length - 1 && (
+                <div class="w-px h-12 bg-navy-200 mt-3"></div>
+              )}
+            </div>
+
+            <div class="flex-1 pb-2">
+              <div class="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm">
+                <h3 class="text-xl md:text-2xl font-serif font-bold text-navy-900 mb-3">{step.title}</h3>
+                <p class="text-gray-700 font-medium mb-4">{step.description}</p>
+                <p class="text-gray-500 text-sm leading-relaxed">{step.detail}</p>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- What You Leave With -->
+  <section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-2xl mx-auto text-center mb-12">
+        <h2 class="text-3xl font-serif font-bold text-navy-900 mb-4">[Placeholder: What You Leave With]</h2>
+        <p class="text-gray-600 text-lg">
+          Placeholder — describe the tangible outputs and clarity a client has after completing the review process.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        {['[Outcome 1]', '[Outcome 2]', '[Outcome 3]', '[Outcome 4]'].map((outcome) => (
+          <div class="p-6 rounded-xl bg-navy-900 text-white text-center">
+            <div class="w-10 h-10 rounded-full bg-gold-500 flex items-center justify-center mx-auto mb-4">
+              <svg class="w-5 h-5 text-navy-900" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7" />
+              </svg>
+            </div>
+            <h4 class="font-serif font-semibold mb-2">{outcome}</h4>
+            <p class="text-navy-300 text-sm">Placeholder description of this outcome.</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Placeholder -->
+  <section class="py-20" style="background-color: #f0f4fa;">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-serif font-bold text-navy-900 mb-10 text-center">Common Questions</h2>
+      <div class="space-y-4">
+        {[
+          'How long does a coverage review take?',
+          'Is there any cost for the initial review?',
+          'Do I need to bring anything to our first meeting?',
+          "What if I'm happy with my current coverage?",
+        ].map((q) => (
+          <div class="bg-white rounded-xl p-6 border border-gray-100">
+            <h3 class="font-serif font-semibold text-navy-900 mb-2">{q}</h3>
+            <p class="text-gray-600 text-sm leading-relaxed">
+              [Placeholder answer — will be written in the content session.]
+            </p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-20 bg-navy-900 text-white text-center">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-serif font-bold mb-4">Ready to start your review?</h2>
+      <p class="text-navy-200 text-lg mb-8 max-w-xl mx-auto">
+        Schedule a time that works for you. By appointment only in the Nashville metro area.
+      </p>
+      <a
+        href="/contact"
+        class="inline-flex items-center justify-center px-8 py-4 bg-gold-500 hover:bg-gold-600 text-navy-900 font-semibold text-lg rounded-lg transition-colors"
+      >
+        Schedule Your Coverage Review
+      </a>
+    </div>
+  </section>
+
+</BaseLayout>

@@ -1,0 +1,135 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="About Enrique Gandara | Nashville Insurance Advisors"
+  description="Meet Enrique Gandara, independent insurance advisor serving Nashville, TN — licensed in Life, Health, Property & Casualty. Learn his approach to comprehensive coverage reviews."
+>
+
+  <!-- Page Hero -->
+  <section class="bg-navy-900 text-white py-16 md:py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <nav class="flex items-center gap-2 text-sm text-navy-300 mb-6" aria-label="Breadcrumb">
+        <a href="/" class="hover:text-white transition-colors">Home</a>
+        <span>/</span>
+        <span class="text-gold-400">About</span>
+      </nav>
+      <h1 class="text-4xl md:text-5xl font-serif font-bold mb-4">About Enrique Gandara</h1>
+      <p class="text-navy-200 text-lg max-w-2xl">
+        Independent insurance advisor · Nashville, TN · Licensed in Life, Health, Property &amp; Casualty
+      </p>
+    </div>
+  </section>
+
+  <!-- Bio Section -->
+  <section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-14 items-start">
+
+        <!-- Photo -->
+        <div>
+          <img
+            src="/enrique-gandara.jpg"
+            alt="Enrique Gandara, Nashville Insurance Advisor"
+            class="w-full aspect-[4/5] rounded-2xl object-cover"
+            style="object-position: center 15%;"
+            loading="eager"
+          />
+        </div>
+
+        <!-- Bio Copy -->
+        <div>
+          <p class="text-gold-600 text-sm font-semibold uppercase tracking-widest mb-3">Your Advisor</p>
+          <h2 class="text-3xl font-serif font-bold text-navy-900 mb-6">
+            Most People Don't Have a Coverage Problem. They Have a Clarity Problem.
+          </h2>
+
+          <div class="space-y-5 text-gray-600 leading-relaxed">
+            <p>
+              I started in financial planning over a decade ago — sitting across from Nashville families, helping them make sense of their full financial picture. What I kept finding wasn't that people had bad coverage. It was that nobody had ever actually walked them through what they had. They were paying for policies they didn't understand, exposed in ways they didn't know, and making decisions based on price because price was the only thing anyone had ever explained to them.
+            </p>
+            <p>
+              That's what brought me to insurance advisory. Not to sell policies — to fix that problem. Every client I work with goes through the same deliberate process: we look at everything together, find the gaps, talk through what matters and what doesn't, and then — only then — talk about what needs to change. No pressure. No quota. No product I'm trying to move. Just a clear picture of where you stand and a plan that actually makes sense for your life.
+            </p>
+            <p>
+              I'm based in Nashville and serve the metro area by appointment only. That's intentional. This kind of work takes time and focus — a 15-minute quote call doesn't cut it. When you sit down with me, I've done my homework. You'll leave knowing exactly what you have, where you're exposed, and what your next steps are. That's the whole point.
+            </p>
+          </div>
+
+          <div class="mt-10 p-6 rounded-xl border-l-4 border-gold-500" style="background-color: #f0f4fa;">
+            <p class="text-navy-900 font-serif text-lg italic leading-relaxed">
+              "Most people don't have a coverage problem — they have a clarity problem. Nobody's ever shown them how the pieces fit together."
+            </p>
+            <p class="text-gold-600 text-sm font-semibold mt-3">— Enrique Gandara, Nashville Insurance Advisors</p>
+          </div>
+
+          <div class="mt-10 flex flex-col sm:flex-row gap-4">
+            <a
+              href="/contact"
+              class="inline-flex items-center justify-center px-6 py-3 bg-navy-900 hover:bg-navy-800 text-white font-semibold rounded-lg transition-colors"
+            >
+              Schedule a Review
+            </a>
+            <a
+              href="tel:+16153269899"
+              class="inline-flex items-center justify-center px-6 py-3 border border-gray-300 hover:border-navy-400 text-navy-900 font-medium rounded-lg transition-colors"
+            >
+              Call (615) 326-9899
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Values / Approach — placeholder for next content session -->
+  <section class="py-20" style="background-color: #f0f4fa;">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-2xl mx-auto text-center mb-14">
+        <h2 class="text-3xl font-serif font-bold text-navy-900 mb-4">[Placeholder: Advisory Philosophy]</h2>
+        <p class="text-gray-600 text-lg">
+          Placeholder — what principles guide every client engagement.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        {['[Value 1]', '[Value 2]', '[Value 3]'].map((val) => (
+          <div class="p-8 bg-white rounded-2xl border border-gray-100">
+            <div class="w-10 h-10 rounded-full bg-gold-100 flex items-center justify-center mb-5">
+              <span class="text-gold-600 text-lg">◆</span>
+            </div>
+            <h3 class="font-serif font-semibold text-navy-900 text-lg mb-3">{val}</h3>
+            <p class="text-gray-600 text-sm leading-relaxed">Placeholder value description.</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Credentials -->
+  <section class="py-20 bg-white">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-serif font-bold text-navy-900 mb-10 text-center">Licenses &amp; Credentials</h2>
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+        <div class="p-6 rounded-xl border border-gray-200 text-center">
+          <p class="font-serif font-semibold text-navy-900 mb-1 text-sm">Licensed In</p>
+          <p class="text-gold-600 text-sm font-medium">Tennessee</p>
+        </div>
+        <div class="p-6 rounded-xl border border-gray-200 text-center">
+          <p class="font-serif font-semibold text-navy-900 mb-1 text-sm">License Types</p>
+          <p class="text-gold-600 text-sm font-medium">Life · Health · P&amp;C</p>
+        </div>
+        <div class="p-6 rounded-xl border border-gray-200 text-center">
+          <p class="font-serif font-semibold text-navy-900 mb-1 text-sm">Specialty</p>
+          <p class="text-gold-600 text-sm font-medium">Independent Advisory</p>
+        </div>
+        <div class="p-6 rounded-xl border border-gray-200 text-center">
+          <p class="font-serif font-semibold text-navy-900 mb-1 text-sm">Serves</p>
+          <p class="text-gold-600 text-sm font-medium">Nashville Metro</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</BaseLayout>

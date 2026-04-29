@@ -1,0 +1,118 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="Home & Auto Insurance Review Nashville | Nashville Insurance Advisors"
+  description="Independent home and auto insurance review for Nashville residents. We analyze your current coverage, identify gaps, and help you understand your real exposure — not just your premium."
+>
+
+  <!-- Page Hero -->
+  <section class="bg-navy-900 text-white py-16 md:py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <nav class="flex items-center gap-2 text-sm text-navy-300 mb-6" aria-label="Breadcrumb">
+        <a href="/" class="hover:text-white transition-colors">Home</a>
+        <span>/</span>
+        <a href="/services" class="hover:text-white transition-colors">Services</a>
+        <span>/</span>
+        <span class="text-gold-400">Home & Auto</span>
+      </nav>
+      <span class="text-4xl block mb-4">🏠</span>
+      <h1 class="text-4xl md:text-5xl font-serif font-bold mb-4">Home &amp; Auto Insurance</h1>
+      <p class="text-navy-200 text-lg max-w-2xl">
+        [Placeholder tagline — one strong sentence about personal lines coverage review for Nashville homeowners and drivers.]
+      </p>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+
+        <!-- Primary Content -->
+        <div class="lg:col-span-2">
+          <h2 class="text-2xl md:text-3xl font-serif font-bold text-navy-900 mb-6">
+            [Placeholder: What We Review in Your Home & Auto Coverage]
+          </h2>
+          <div class="space-y-5 text-gray-600 leading-relaxed">
+            <p>[Paragraph 1 placeholder — what most homeowners get wrong about their homeowners coverage.]</p>
+            <p>[Paragraph 2 placeholder — common auto coverage gaps Nashville drivers don't know they have.]</p>
+            <p>[Paragraph 3 placeholder — why umbrella coverage matters and when it applies.]</p>
+          </div>
+
+          <!-- Coverage Areas -->
+          <div class="mt-12">
+            <h3 class="text-xl font-serif font-bold text-navy-900 mb-6">Coverage Areas We Review</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              {[
+                'Homeowners / Dwelling',
+                'Auto (Personal)',
+                'Personal Umbrella',
+                'Renters Insurance',
+                'Scheduled Personal Property',
+                'Flood & Earthquake',
+              ].map((item) => (
+                <div class="flex items-center gap-3 p-4 rounded-lg border border-gray-100 bg-gray-50">
+                  <svg class="w-5 h-5 text-gold-500 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span class="text-sm font-medium text-navy-900">{item}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <!-- Common Issues Placeholder -->
+          <div class="mt-12">
+            <h3 class="text-xl font-serif font-bold text-navy-900 mb-6">
+              [Placeholder: Common Coverage Gaps We Find]
+            </h3>
+            <div class="space-y-4">
+              {['Gap 1 placeholder', 'Gap 2 placeholder', 'Gap 3 placeholder'].map((gap) => (
+                <div class="p-5 rounded-xl border-l-4 border-gold-500 bg-gold-50" style="background-color: #fdf8ee;">
+                  <p class="font-medium text-navy-900 mb-1">{gap}</p>
+                  <p class="text-sm text-gray-600">Placeholder explanation of why this gap exists and what it costs clients who don't catch it.</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        <!-- Sidebar -->
+        <div class="lg:col-span-1">
+          <div class="sticky top-24 space-y-6">
+            <div class="p-6 rounded-2xl bg-navy-900 text-white">
+              <h3 class="font-serif font-semibold text-lg mb-3">Schedule a Review</h3>
+              <p class="text-navy-200 text-sm mb-5">
+                We'll review your current home and auto policies, identify gaps, and explain your options clearly.
+              </p>
+              <a
+                href="/contact"
+                class="block w-full text-center px-4 py-3 bg-gold-500 hover:bg-gold-600 text-navy-900 font-semibold rounded-lg transition-colors text-sm"
+              >
+                Schedule Your Coverage Review
+              </a>
+              <a
+                href="tel:+16153269899"
+                class="block w-full text-center px-4 py-3 mt-3 border border-navy-600 hover:border-navy-400 text-white font-medium rounded-lg transition-colors text-sm"
+              >
+                Call (615) 326-9899
+              </a>
+            </div>
+
+            <div class="p-6 rounded-xl border border-gray-200 bg-gray-50">
+              <h4 class="font-serif font-semibold text-navy-900 mb-3">Related Services</h4>
+              <ul class="space-y-2">
+                <li><a href="/services/small-business" class="text-sm text-gold-600 hover:text-gold-700 transition-colors">Small Business Insurance →</a></li>
+                <li><a href="/services/life-annuities" class="text-sm text-gold-600 hover:text-gold-700 transition-colors">Life Insurance & Annuities →</a></li>
+                <li><a href="/services/long-term-care" class="text-sm text-gold-600 hover:text-gold-700 transition-colors">Long-Term Care →</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</BaseLayout>
