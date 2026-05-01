@@ -4,27 +4,65 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 const steps = [
   {
     number: '01',
-    title: '[Step 1 Placeholder]',
-    description: 'Placeholder — description of the first step in the coverage review process.',
-    detail: 'Placeholder longer explanation of what happens in this step, what the client can expect, and what your advisor needs from them.',
+    title: 'The Fit Call',
+    description: 'A one-hour conversation about your situation, your concerns, and what you\'re trying to protect. No documents, no products, no pressure. We figure out if we\'re a good fit for each other — and we\'re honest if we\'re not.',
+    detail: 'This is a mutual qualification. You\'re deciding if you want to work with us. We\'re deciding if we can genuinely help you. We talk through where you are, what\'s on your mind, and what a full review would look like. Nothing is sold in this meeting. Nothing is even quoted.',
   },
   {
     number: '02',
-    title: '[Step 2 Placeholder]',
-    description: 'Placeholder — description of the second step.',
-    detail: 'Placeholder longer explanation of step two.',
+    title: 'The Coverage Review',
+    description: 'We do the homework. Before we meet again we pull together everything you have — home, auto, life, health, Medicare, business if applicable — and map it against your actual exposure. We show you exactly where the gaps are and what they could cost you.',
+    detail: 'This is the core of what we do. We review your existing policies line by line, identify what\'s missing or misaligned, and put together a clear picture of where you stand. Most clients are surprised by what they find. Some gaps are small. Some are significant. Either way, you\'ll know exactly where you are.',
   },
   {
     number: '03',
-    title: '[Step 3 Placeholder]',
-    description: 'Placeholder — description of the third step.',
-    detail: 'Placeholder longer explanation of step three.',
+    title: 'The Recommendation',
+    description: 'We come back with the prescription. Here\'s what we found, here\'s what we recommend, and here\'s exactly why. Every recommendation comes with a plain-English explanation — no jargon, no pressure, no obligation.',
+    detail: 'If there are gaps worth addressing, we\'ll show you the options — what they cost, what they cover, and how they fit your situation. If your coverage is solid, we\'ll tell you that too. We don\'t manufacture problems that don\'t exist. You decide if and how you want to move forward.',
   },
   {
     number: '04',
-    title: '[Step 4 Placeholder]',
-    description: 'Placeholder — description of the fourth and final step.',
-    detail: 'Placeholder longer explanation of step four, and what happens after the review is complete.',
+    title: 'Ongoing Review',
+    description: 'Life changes — new home, new business, kids, retirement, Medicare eligibility. We check in annually to make sure your coverage still fits the life you\'re actually living. Same advisor, every time.',
+    detail: 'Once you\'re a client, we stay in your corner. We reach out before open enrollment season, when major life events happen, and when carrier changes affect your policies. You don\'t have to remember to call us — we\'ll reach out when it matters.',
+  },
+];
+
+const outcomes = [
+  {
+    title: 'A clear picture of your current coverage',
+    desc: 'Not a stack of policy documents — an actual explanation of what you have, what it does, and what it doesn\'t cover.',
+  },
+  {
+    title: 'A gap analysis',
+    desc: 'A plain-English summary of where you\'re exposed and what it would cost if something went wrong today.',
+  },
+  {
+    title: 'Honest recommendations',
+    desc: 'Specific suggestions for what to change, add, or leave alone — with the reasoning behind each one.',
+  },
+  {
+    title: 'A plan you understand',
+    desc: 'Not a binder full of paperwork. A clear next step and the confidence that your coverage actually matches your life.',
+  },
+];
+
+const faqs = [
+  {
+    q: 'How long does a coverage review take?',
+    a: 'The initial fit call is about an hour. The full coverage review meeting — where we go through everything together — typically runs 60 to 90 minutes. After that, follow-up meetings are shorter and more focused.',
+  },
+  {
+    q: 'Is there any cost for the initial review?',
+    a: 'No. The fit call and coverage review are complimentary. We\'re compensated by the carriers when coverage is placed — only if you decide to move forward, and only on what you choose to change.',
+  },
+  {
+    q: 'Do I need to bring anything to our first meeting?',
+    a: 'Nothing for the fit call — just show up. For the coverage review meeting, it helps to have your current policy documents or declarations pages if you have them. If you don\'t, we can work with what you have.',
+  },
+  {
+    q: "What if I'm happy with my current coverage?",
+    a: "That's a legitimate outcome. If we review everything and your coverage is solid, we'll tell you. Not every review results in changes. The goal is clarity — not a transaction.",
   },
 ];
 ---
@@ -44,7 +82,7 @@ const steps = [
       </nav>
       <h1 class="text-4xl md:text-5xl font-serif font-bold mb-4">Our Coverage Review Process</h1>
       <p class="text-navy-200 text-lg max-w-2xl">
-        [Placeholder tagline — one sentence that describes the process philosophy.]
+        A deliberate process that gives you clarity — not a sales pitch.
       </p>
     </div>
   </section>
@@ -53,10 +91,10 @@ const steps = [
   <section class="py-16 bg-white">
     <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
       <h2 class="text-2xl md:text-3xl font-serif font-bold text-navy-900 mb-5">
-        [Placeholder: Why We Do It This Way]
+        Why We Do It This Way
       </h2>
       <p class="text-gray-600 text-lg leading-relaxed">
-        Placeholder — 2-3 sentences explaining why a deliberate, process-driven approach to insurance review leads to better outcomes than a transactional quote-and-sell model.
+        Most insurance conversations start with a quote. Ours start with questions. We believe the right coverage comes from understanding your full picture first — your assets, your exposure, your family situation, your goals. That takes a real conversation, not a 15-minute rate comparison. Every client goes through the same process, in the same order, no shortcuts.
       </p>
     </div>
   </section>
@@ -93,44 +131,34 @@ const steps = [
   <section class="py-20 bg-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="max-w-2xl mx-auto text-center mb-12">
-        <h2 class="text-3xl font-serif font-bold text-navy-900 mb-4">[Placeholder: What You Leave With]</h2>
-        <p class="text-gray-600 text-lg">
-          Placeholder — describe the tangible outputs and clarity a client has after completing the review process.
-        </p>
+        <h2 class="text-3xl font-serif font-bold text-navy-900 mb-4">What You Leave With</h2>
       </div>
 
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-        {['[Outcome 1]', '[Outcome 2]', '[Outcome 3]', '[Outcome 4]'].map((outcome) => (
+        {outcomes.map((outcome) => (
           <div class="p-6 rounded-xl bg-navy-900 text-white text-center">
             <div class="w-10 h-10 rounded-full bg-gold-500 flex items-center justify-center mx-auto mb-4">
               <svg class="w-5 h-5 text-navy-900" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7" />
               </svg>
             </div>
-            <h4 class="font-serif font-semibold mb-2">{outcome}</h4>
-            <p class="text-navy-300 text-sm">Placeholder description of this outcome.</p>
+            <h4 class="font-serif font-semibold mb-2">{outcome.title}</h4>
+            <p class="text-navy-300 text-sm">{outcome.desc}</p>
           </div>
         ))}
       </div>
     </div>
   </section>
 
-  <!-- FAQ Placeholder -->
+  <!-- FAQ -->
   <section class="py-20" style="background-color: #f0f4fa;">
     <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
       <h2 class="text-3xl font-serif font-bold text-navy-900 mb-10 text-center">Common Questions</h2>
       <div class="space-y-4">
-        {[
-          'How long does a coverage review take?',
-          'Is there any cost for the initial review?',
-          'Do I need to bring anything to our first meeting?',
-          "What if I'm happy with my current coverage?",
-        ].map((q) => (
+        {faqs.map((faq) => (
           <div class="bg-white rounded-xl p-6 border border-gray-100">
-            <h3 class="font-serif font-semibold text-navy-900 mb-2">{q}</h3>
-            <p class="text-gray-600 text-sm leading-relaxed">
-              [Placeholder answer — will be written in the content session.]
-            </p>
+            <h3 class="font-serif font-semibold text-navy-900 mb-2">{faq.q}</h3>
+            <p class="text-gray-600 text-sm leading-relaxed">{faq.a}</p>
           </div>
         ))}
       </div>
