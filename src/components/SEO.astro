@@ -11,7 +11,7 @@ const {
   title,
   description,
   canonical,
-  ogImage = '/og-default.jpg',
+  ogImage = '/og-default.svg',
   noindex = false,
 } = Astro.props;
 
@@ -30,7 +30,8 @@ const localBusinessSchema = {
   email: 'team@nashvilleia.com',
   founder: {
     '@type': 'Person',
-    name: 'Nashville Insurance Advisors',
+    name: 'Enrique Gandara',
+    jobTitle: 'Independent Insurance Advisor',
   },
   address: {
     '@type': 'PostalAddress',

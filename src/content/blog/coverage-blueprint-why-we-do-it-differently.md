@@ -1,5 +1,5 @@
 ---
-title: "Why We Built the Coverage Blueprint — And Why Most Insurance Advice Gets It Backwards"
+title: "Why We Built the Coverage Blueprint"
 description: "Most insurance agents start with a quote. Nashville Insurance Advisors starts with questions. Here's why we built a different process — and what it means for you."
 publishDate: 2026-05-01
 category: "Insurance Basics"
