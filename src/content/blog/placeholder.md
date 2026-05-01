@@ -2,7 +2,7 @@
 title: "What a Comprehensive Insurance Review Actually Looks Like"
 description: "Most people don't know what they have until they need it. Here's what a deliberate, advisor-led coverage review covers — and what it often turns up."
 publishDate: 2026-05-01
-author: "Enrique Gandara"
+author: "Nashville Insurance Advisors"
 category: "Insurance Basics"
 featured: true
 draft: true
