@@ -1,4 +1,26 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-  <rect width="32" height="32" rx="6" fill="#0f2044"/>
-  <text x="16" y="22" font-family="Georgia, serif" font-size="18" font-weight="bold" fill="#c9a84c" text-anchor="middle">N</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 96 96">
+  <title>Nashville Insurance Advisors</title>
+  <!-- navy rounded square tile (radius = 16% of 96 = 15.36) -->
+  <rect width="96" height="96" rx="15.36" fill="#0F2044"/>
+
+  <!--
+    FinalSubmark geometry: viewBox "-30 -28 110 90"
+    Content area after 11.52px padding, bottom-aligned:
+      x: 11.52–84.48, y: 24.78–84.48
+    Scale = 72.96/110 = 0.6633
+    translate(tx, ty) where:
+      tx = 30*0.6633 + 11.52 = 31.42
+      ty = 28*0.6633 + 24.78 = 43.35
+  -->
+  <g transform="translate(31.42,43.35) scale(0.6633)" fill="#C9A84C">
+    <rect x="0" y="38" width="20" height="22"/>
+    <rect x="30" y="38" width="20" height="22"/>
+    <rect x="0" y="32" width="50" height="6"/>
+    <polygon points="0,32 50,32 25,8"/>
+    <polygon points="-2,32 2,32 0,-26"/>
+    <rect x="-0.6" y="-28" width="1.2" height="3"/>
+    <polygon points="48,32 52,32 50,-26"/>
+    <rect x="49.4" y="-28" width="1.2" height="3"/>
+    <rect x="-6" y="56" width="62" height="4"/>
+  </g>
 </svg>
