@@ -1,75 +1,69 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 
-const steps = [
+const stages = [
   {
     number: '01',
-    title: 'The Fit Call',
-    description: 'A one-hour conversation about your situation, your concerns, and what you\'re trying to protect. No documents, no products, no pressure. We figure out if we\'re a good fit for each other — and we\'re honest if we\'re not.',
-    detail: 'This is a mutual qualification. You\'re deciding if you want to work with us. We\'re deciding if we can genuinely help you. We talk through where you are, what\'s on your mind, and what a full review would look like. Nothing is sold in this meeting. Nothing is even quoted.',
+    title: 'Stage 1 — The Discovery Meeting',
+    description: 'We learn your situation. You learn how we work.',
+    detail: 'This is a conversation — no documents required, no products discussed, no pressure. We talk through where you are, what you have, what\'s on your mind, and what you\'re trying to protect. At the end of the meeting we give you a Coverage Checklist — a simple list of everything to gather before our next meeting. You upload your documents to your secure client portal and we take it from there.',
   },
   {
     number: '02',
-    title: 'The Coverage Review',
-    description: 'We do the homework. Before we meet again we pull together everything you have — home, auto, life, health, Medicare, business if applicable — and map it against your actual exposure. We show you exactly where the gaps are and what they could cost you.',
-    detail: 'This is the core of what we do. We review your existing policies line by line, identify what\'s missing or misaligned, and put together a clear picture of where you stand. Most clients are surprised by what they find. Some gaps are small. Some are significant. Either way, you\'ll know exactly where you are.',
+    title: 'Stage 2 — The Blueprint Meeting',
+    description: 'We present the full picture. You decide if you want to move forward.',
+    detail: 'Between Stage 1 and Stage 2 we do the homework. We review every document you\'ve uploaded, map your full coverage across every line, and identify every gap — what it is, what it would cost if triggered, and what needs to change. We walk you through the complete analysis in plain English. No jargon, no sales pitch. Then we present our recommendations. If you decide to become a client, we write your P&C coverage — home, auto, umbrella — right there. You leave the meeting already protected.',
   },
   {
     number: '03',
-    title: 'The Recommendation',
-    description: 'We come back with the prescription. Here\'s what we found, here\'s what we recommend, and here\'s exactly why. Every recommendation comes with a plain-English explanation — no jargon, no pressure, no obligation.',
-    detail: 'If there are gaps worth addressing, we\'ll show you the options — what they cost, what they cover, and how they fit your situation. If your coverage is solid, we\'ll tell you that too. We don\'t manufacture problems that don\'t exist. You decide if and how you want to move forward.',
-  },
-  {
-    number: '04',
-    title: 'Ongoing Review',
-    description: 'Life changes — new home, new business, kids, retirement, Medicare eligibility. We check in annually to make sure your coverage still fits the life you\'re actually living. Same advisor, every time.',
-    detail: 'Once you\'re a client, we stay in your corner. We reach out before open enrollment season, when major life events happen, and when carrier changes affect your policies. You don\'t have to remember to call us — we\'ll reach out when it matters.',
+    title: 'Stage 3 — Implementation Meetings',
+    description: 'We work through the deeper lines at a pace that makes sense.',
+    detail: 'Once you\'re a client, we start working through the lines that take more time and more conversation — Medicare, long-term care, life insurance, annuities. Each line gets its own focused meeting. We don\'t rush these decisions. A life insurance recommendation or an annuity strategy deserves a dedicated conversation, not a line item on a checklist. We move at your pace, in the order that makes sense for your situation.',
   },
 ];
 
 const outcomes = [
   {
-    title: 'A clear picture of your current coverage',
-    desc: 'Not a stack of policy documents — an actual explanation of what you have, what it does, and what it doesn\'t cover.',
+    title: 'A complete coverage map',
+    desc: 'A plain-English summary of everything you have, what it covers, and what it doesn\'t. Not a stack of policy documents — an actual explanation.',
   },
   {
     title: 'A gap analysis',
-    desc: 'A plain-English summary of where you\'re exposed and what it would cost if something went wrong today.',
+    desc: 'Every gap identified, quantified, and prioritized. You\'ll know exactly where you\'re exposed and what it would cost if something went wrong today.',
   },
   {
-    title: 'Honest recommendations',
-    desc: 'Specific suggestions for what to change, add, or leave alone — with the reasoning behind each one.',
+    title: 'A clear recommendation',
+    desc: 'Specific, honest recommendations for what to change, add, or leave alone — with the reasoning behind each one. No pressure to act on any of it.',
   },
   {
     title: 'A plan you understand',
-    desc: 'Not a binder full of paperwork. A clear next step and the confidence that your coverage actually matches your life.',
+    desc: 'A clear next step and the confidence that your coverage actually matches your life. Not a binder full of paperwork — a plan you can explain to your spouse.',
   },
 ];
 
 const faqs = [
   {
-    q: 'How long does a coverage review take?',
-    a: 'The initial fit call is about an hour. The full coverage review meeting — where we go through everything together — typically runs 60 to 90 minutes. After that, follow-up meetings are shorter and more focused.',
+    q: 'How long does the Coverage Blueprint take?',
+    a: 'The Discovery Meeting runs about an hour. The Blueprint Meeting typically runs 60 to 90 minutes. Implementation meetings are shorter and more focused. Most clients complete the full three-stage process within two to four weeks.',
   },
   {
     q: 'Is there any cost for the initial review?',
-    a: 'No. The fit call and coverage review are complimentary. We\'re compensated by the carriers when coverage is placed — only if you decide to move forward, and only on what you choose to change.',
+    a: 'No. The Discovery Meeting and Blueprint Meeting are complimentary. We\'re compensated by the carriers when coverage is placed — only if you decide to move forward, and only on what you choose to change. If your coverage is solid and nothing needs to change, we\'ll tell you that.',
   },
   {
     q: 'Do I need to bring anything to our first meeting?',
-    a: 'Nothing for the fit call — just show up. For the coverage review meeting, it helps to have your current policy documents or declarations pages if you have them. If you don\'t, we can work with what you have.',
+    a: 'Nothing for the Discovery Meeting — just show up ready to talk. After that meeting we\'ll give you a Coverage Checklist with exactly what to gather. You upload everything to your secure client portal and we review it before the Blueprint Meeting.',
   },
   {
     q: "What if I'm happy with my current coverage?",
-    a: "That's a legitimate outcome. If we review everything and your coverage is solid, we'll tell you. Not every review results in changes. The goal is clarity — not a transaction.",
+    a: "That's a legitimate outcome. If we review everything and your coverage is solid, we'll tell you. Not every Coverage Blueprint results in changes. The goal is clarity — if you already have it, that's worth knowing too.",
   },
 ];
 ---
 
 <BaseLayout
-  title="Our Coverage Review Process | Nashville Insurance Advisors"
-  description="Learn how Nashville Insurance Advisors conducts a comprehensive insurance review — a deliberate process to understand your exposures and what coverage you need."
+  title="The Coverage Blueprint | Nashville Insurance Advisors"
+  description="A deliberate, three-stage process that gives you a complete picture of your coverage — and a clear plan for what needs to change."
 >
 
   <!-- Page Hero -->
@@ -80,9 +74,9 @@ const faqs = [
         <span>/</span>
         <span class="text-gold-400">Our Process</span>
       </nav>
-      <h1 class="text-4xl md:text-5xl font-serif font-bold mb-4">Our Coverage Review Process</h1>
+      <h1 class="text-4xl md:text-5xl font-serif font-bold mb-4">The Coverage Blueprint</h1>
       <p class="text-navy-200 text-lg max-w-2xl">
-        A deliberate process that gives you clarity — not a sales pitch.
+        A deliberate, three-stage process that gives you a complete picture of your coverage — and a clear plan for what needs to change.
       </p>
     </div>
   </section>
@@ -94,31 +88,31 @@ const faqs = [
         Why We Do It This Way
       </h2>
       <p class="text-gray-600 text-lg leading-relaxed">
-        Most insurance conversations start with a quote. Ours start with questions. We believe the right coverage comes from understanding your full picture first — your assets, your exposure, your family situation, your goals. That takes a real conversation, not a 15-minute rate comparison. Every client goes through the same process, in the same order, no shortcuts.
+        Most insurance conversations start with a quote. Ours start with questions. A quote tells you what something costs. It doesn't tell you whether it's right for your life. The Coverage Blueprint is our answer to that problem — a structured process that examines your full coverage picture before any recommendations are made. Every client goes through the same three stages, in the same order. No shortcuts.
       </p>
     </div>
   </section>
 
-  <!-- Steps -->
+  <!-- Stages -->
   <section class="py-16 pb-24" style="background-color: #f0f4fa;">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="space-y-8">
-        {steps.map((step, i) => (
+        {stages.map((stage, i) => (
           <div class="flex gap-6 md:gap-10 items-start">
             <div class="flex-shrink-0 flex flex-col items-center">
               <div class="w-14 h-14 rounded-full bg-navy-900 text-white flex items-center justify-center font-serif font-bold text-lg">
-                {step.number}
+                {stage.number}
               </div>
-              {i < steps.length - 1 && (
+              {i < stages.length - 1 && (
                 <div class="w-px h-12 bg-navy-200 mt-3"></div>
               )}
             </div>
 
             <div class="flex-1 pb-2">
               <div class="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm">
-                <h3 class="text-xl md:text-2xl font-serif font-bold text-navy-900 mb-3">{step.title}</h3>
-                <p class="text-gray-700 font-medium mb-4">{step.description}</p>
-                <p class="text-gray-500 text-sm leading-relaxed">{step.detail}</p>
+                <h3 class="text-xl md:text-2xl font-serif font-bold text-navy-900 mb-3">{stage.title}</h3>
+                <p class="text-gray-700 font-medium mb-4">{stage.description}</p>
+                <p class="text-gray-500 text-sm leading-relaxed">{stage.detail}</p>
               </div>
             </div>
           </div>
@@ -127,8 +121,20 @@ const faqs = [
     </div>
   </section>
 
-  <!-- What You Leave With -->
+  <!-- Annual Life Review -->
   <section class="py-20 bg-white">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-2xl md:text-3xl font-serif font-bold text-navy-900 mb-5">
+        The Annual Life Review
+      </h2>
+      <p class="text-gray-600 text-lg leading-relaxed">
+        Every October — before Medicare open enrollment and before year end — every client sits down for their Annual Life Review. We go back through your full coverage picture: what's changed in your life, what's changed with your carriers, what's changed in the market. We make adjustments where needed and confirm what's still working. Same advisor, every time. This isn't a courtesy call — it's a structured review that keeps your coverage current with your life.
+      </p>
+    </div>
+  </section>
+
+  <!-- What You Leave With -->
+  <section class="py-20" style="background-color: #f0f4fa;">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="max-w-2xl mx-auto text-center mb-12">
         <h2 class="text-3xl font-serif font-bold text-navy-900 mb-4">What You Leave With</h2>
@@ -151,12 +157,12 @@ const faqs = [
   </section>
 
   <!-- FAQ -->
-  <section class="py-20" style="background-color: #f0f4fa;">
+  <section class="py-20 bg-white">
     <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
       <h2 class="text-3xl font-serif font-bold text-navy-900 mb-10 text-center">Common Questions</h2>
       <div class="space-y-4">
         {faqs.map((faq) => (
-          <div class="bg-white rounded-xl p-6 border border-gray-100">
+          <div class="bg-gray-50 rounded-xl p-6 border border-gray-100">
             <h3 class="font-serif font-semibold text-navy-900 mb-2">{faq.q}</h3>
             <p class="text-gray-600 text-sm leading-relaxed">{faq.a}</p>
           </div>
@@ -168,7 +174,7 @@ const faqs = [
   <!-- CTA -->
   <section class="py-20 bg-navy-900 text-white text-center">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h2 class="text-3xl font-serif font-bold mb-4">Ready to start your review?</h2>
+      <h2 class="text-3xl font-serif font-bold mb-4">Ready to start your Coverage Blueprint?</h2>
       <p class="text-navy-200 text-lg mb-8 max-w-xl mx-auto">
         Schedule a time that works for you. By appointment only in the Nashville metro area.
       </p>
@@ -176,7 +182,7 @@ const faqs = [
         href="/contact"
         class="inline-flex items-center justify-center px-8 py-4 bg-gold-500 hover:bg-gold-600 text-navy-900 font-semibold text-lg rounded-lg transition-colors"
       >
-        Schedule Your Coverage Review
+        Schedule Your Discovery Meeting
       </a>
     </div>
   </section>
