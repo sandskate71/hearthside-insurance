@@ -17,10 +17,9 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
         <span>/</span>
         <span class="text-gold-400">Medicare</span>
       </nav>
-      <span class="text-4xl block mb-4">⚕️</span>
       <h1 class="text-4xl md:text-5xl font-serif font-bold mb-4">Medicare Planning</h1>
       <p class="text-navy-200 text-lg max-w-2xl">
-        [Placeholder tagline — one sentence about independent Medicare plan selection for Nashville-area residents turning 65 or reviewing existing coverage.]
+        Medicare has more moving parts than most people realize. The decisions you make at 65 follow you for years. We help Nashville residents understand their options clearly before they choose — not after.
       </p>
     </div>
   </section>
@@ -33,12 +32,12 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
         <!-- Primary Content -->
         <div class="lg:col-span-2">
           <h2 class="text-2xl md:text-3xl font-serif font-bold text-navy-900 mb-6">
-            [Placeholder: Medicare Planning for Nashville Residents]
+            Medicare Planning for Nashville Residents
           </h2>
           <div class="space-y-5 text-gray-600 leading-relaxed">
-            <p>[Paragraph 1 placeholder — why Medicare is more complicated than most people expect, and what happens when people make uninformed choices at 65.]</p>
-            <p>[Paragraph 2 placeholder — the difference between Medicare Supplement (Medigap) and Medicare Advantage, and how to think through the decision.]</p>
-            <p>[Paragraph 3 placeholder — the value of working with an independent Medicare advisor vs. calling the 800 number or going through a captive agent.]</p>
+            <p>Most people assume Medicare is straightforward — you turn 65, you sign up, you're covered. Then they get their first bill and realize Original Medicare covers about 80% of most medical costs, leaving the other 20% uncapped. There's no out-of-pocket maximum. A serious illness or hospital stay can cost tens of thousands out of pocket if you don't have the right supplemental coverage in place. The decisions you make during your initial enrollment window are some of the most consequential financial decisions you'll make in retirement.</p>
+            <p>The biggest choice most people face is between Medicare Supplement (Medigap) and Medicare Advantage. They're fundamentally different structures with different tradeoffs — network restrictions, premiums, out-of-pocket exposure, drug coverage, and how they interact with travel or out-of-state care. Neither is universally better. The right answer depends on your health, your finances, your doctors, and your lifestyle. We walk through that decision with you in plain English so you actually understand what you're choosing.</p>
+            <p>Most people making Medicare decisions for the first time call the 1-800 number, go to a seminar, or work with a captive agent who can only offer one company's plans. As an independent advisor we compare plans across all available carriers in the Nashville market — Medigap plans, Medicare Advantage plans, Part D drug plans — and we don't have a quota with any of them. We come back every year during open enrollment to make sure your plan still fits, because the right plan in 2025 might not be the right plan in 2026.</p>
           </div>
 
           <!-- Medicare Parts Explainer -->
@@ -46,12 +45,12 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
             <h3 class="text-xl font-serif font-bold text-navy-900 mb-6">Medicare Coverage We Help You Navigate</h3>
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {[
-                { part: 'Medicare Part A', desc: 'Hospital coverage — placeholder description.' },
-                { part: 'Medicare Part B', desc: 'Medical coverage — placeholder description.' },
-                { part: 'Medicare Supplement (Medigap)', desc: 'Fills gaps in Original Medicare — placeholder.' },
-                { part: 'Medicare Advantage (Part C)', desc: 'All-in-one plan alternative — placeholder.' },
-                { part: 'Medicare Part D', desc: 'Prescription drug coverage — placeholder.' },
-                { part: 'Annual Plan Review', desc: 'Ongoing plan comparison during open enrollment — placeholder.' },
+                { part: 'Medicare Part A', desc: 'Hospital insurance — covers inpatient hospital stays, skilled nursing facility care, hospice, and some home health care. Most people don\'t pay a premium for Part A if they\'ve worked and paid Medicare taxes for at least 10 years.' },
+                { part: 'Medicare Part B', desc: 'Medical insurance — covers doctor visits, outpatient care, preventive services, and medically necessary services. Part B has a monthly premium and covers 80% of approved costs after your deductible.' },
+                { part: 'Medicare Supplement (Medigap)', desc: 'Fills the gaps Original Medicare leaves behind — the 20% coinsurance, deductibles, and in some plans, foreign travel emergencies. Standardized plans (Plan G is the most popular) work with any provider that accepts Medicare nationwide.' },
+                { part: 'Medicare Advantage (Part C)', desc: 'An all-in-one alternative to Original Medicare offered by private insurers. Often includes dental, vision, and drug coverage. Lower premiums but network restrictions and different out-of-pocket structures. Not right for everyone — we help you evaluate honestly.' },
+                { part: 'Medicare Part D', desc: 'Standalone prescription drug coverage that pairs with Original Medicare and a Medigap plan. Plans vary significantly by premium, formulary, and pharmacy network. We compare options based on your specific medications.' },
+                { part: 'Annual Plan Review', desc: 'Medicare plans change every year — premiums, formularies, networks. During open enrollment (October 15 – December 7) we review your current plan against all available options to make sure you\'re still in the right place.' },
               ].map((item) => (
                 <div class="p-5 rounded-xl border border-gray-200 bg-gray-50">
                   <p class="font-serif font-semibold text-navy-900 text-sm mb-1">{item.part}</p>
@@ -63,7 +62,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 
           <!-- When to Contact -->
           <div class="mt-12">
-            <h3 class="text-xl font-serif font-bold text-navy-900 mb-6">[Placeholder: When to Start Medicare Planning]</h3>
+            <h3 class="text-xl font-serif font-bold text-navy-900 mb-6">When to Schedule a Medicare Review</h3>
             <div class="space-y-3">
               {[
                 'Turning 65 in the next 12 months',
