@@ -25,12 +25,21 @@ const formattedDate = publishDate.toLocaleDateString('en-US', {
   day: 'numeric',
 });
 
+const siteUrl = 'https://nashvilleinsuranceadvisors.com';
+const postCanonicalUrl = new URL(Astro.url.pathname, siteUrl).href;
+const articleImageUrl = ogImage
+  ? (ogImage.startsWith('http') ? ogImage : `${siteUrl}${ogImage}`)
+  : `${siteUrl}/og-default.png`;
+
 const articleSchema = {
   '@context': 'https://schema.org',
   '@type': 'Article',
   headline: title,
   description: description,
   datePublished: publishDate.toISOString(),
+  dateModified: publishDate.toISOString(),
+  image: articleImageUrl,
+  mainEntityOfPage: postCanonicalUrl,
   author: {
     '@type': 'Person',
     name: author,
@@ -38,12 +47,12 @@ const articleSchema = {
   publisher: {
     '@type': 'Organization',
     name: 'Nashville Insurance Advisors, LLC',
-    url: 'https://nashvilleinsuranceadvisors.com',
+    url: siteUrl,
   },
 };
 ---
 
-<BaseLayout title={`${title} | Nashville Insurance Advisors`} description={description} ogImage={ogImage}>
+<BaseLayout title={`${title} | Nashville Insurance Advisors`} description={description} ogImage={ogImage} breadcrumbTitle={title}>
   <article class="max-w-3xl mx-auto px-4 sm:px-6 py-16">
 
     <!-- Breadcrumb -->

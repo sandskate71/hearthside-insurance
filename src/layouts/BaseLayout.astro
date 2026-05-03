@@ -10,9 +10,10 @@ interface Props {
   canonical?: string;
   ogImage?: string;
   noindex?: boolean;
+  breadcrumbTitle?: string;
 }
 
-const { title, description, canonical, ogImage, noindex } = Astro.props;
+const { title, description, canonical, ogImage, noindex, breadcrumbTitle } = Astro.props;
 ---
 
 <!doctype html>
@@ -31,6 +32,7 @@ const { title, description, canonical, ogImage, noindex } = Astro.props;
       canonical={canonical}
       ogImage={ogImage}
       noindex={noindex}
+      breadcrumbTitle={breadcrumbTitle}
     />
   </head>
   <body>

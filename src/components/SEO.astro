@@ -5,6 +5,7 @@ interface Props {
   canonical?: string;
   ogImage?: string;
   noindex?: boolean;
+  breadcrumbTitle?: string;
 }
 
 const {
@@ -13,6 +14,7 @@ const {
   canonical,
   ogImage = '/og-default.png',
   noindex = false,
+  breadcrumbTitle,
 } = Astro.props;
 
 const siteUrl = 'https://nashvilleinsuranceadvisors.com';
@@ -33,10 +35,15 @@ const localBusinessSchema = {
     name: 'Enrique Gandara',
     jobTitle: 'Independent Insurance Advisor',
   },
+  image: `${siteUrl}/og-default.png`,
+  logo: `${siteUrl}/images/logo-dark.svg`,
+  priceRange: '$$',
   address: {
     '@type': 'PostalAddress',
+    streetAddress: 'Nashville Metro Area',
     addressLocality: 'Nashville',
     addressRegion: 'TN',
+    postalCode: '37201',
     addressCountry: 'US',
   },
   areaServed: {
@@ -62,6 +69,46 @@ const localBusinessSchema = {
   },
   sameAs: ['https://nashvilleia.com'],
 };
+
+const segmentNames: Record<string, string> = {
+  'about': 'About',
+  'services': 'Services',
+  'home-auto': 'Home & Auto Insurance',
+  'small-business': 'Small Business Insurance',
+  'life-annuities': 'Life Insurance & Annuities',
+  'long-term-care': 'Long-Term Care Insurance',
+  'medicare': 'Medicare Planning',
+  'process': 'Our Process',
+  'contact': 'Contact',
+  'blog': 'Blog',
+};
+
+const pathname = Astro.url.pathname.replace(/\/$/, '');
+const segments = pathname.split('/').filter(Boolean);
+
+let breadcrumbSchema = null;
+if (segments.length > 0) {
+  const items: { name: string; url: string }[] = [{ name: 'Home', url: siteUrl }];
+  let currentPath = '';
+  for (let i = 0; i < segments.length; i++) {
+    currentPath += '/' + segments[i];
+    const isLast = i === segments.length - 1;
+    const name = isLast && breadcrumbTitle
+      ? breadcrumbTitle
+      : (segmentNames[segments[i]] ?? segments[i]);
+    items.push({ name, url: `${siteUrl}${currentPath}` });
+  }
+  breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: items.map((item, index) => ({
+      '@type': 'ListItem',
+      position: index + 1,
+      name: item.name,
+      item: item.url,
+    })),
+  };
+}
 ---
 
 <!-- Primary Meta -->
@@ -76,6 +123,8 @@ const localBusinessSchema = {
 <meta property="og:title" content={title} />
 <meta property="og:description" content={description} />
 <meta property="og:image" content={ogImageUrl} />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
 <meta property="og:site_name" content="Nashville Insurance Advisors" />
 <meta property="og:locale" content="en_US" />
 
@@ -87,3 +136,8 @@ const localBusinessSchema = {
 
 <!-- Schema.org LocalBusiness -->
 <script type="application/ld+json" set:html={JSON.stringify(localBusinessSchema)} />
+
+<!-- Schema.org BreadcrumbList -->
+{breadcrumbSchema && (
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+)}
