@@ -99,7 +99,11 @@ const quickLinks = [
     <!-- Bottom Bar -->
     <div class="border-t border-navy-800 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-navy-400">
       <p>&copy; {currentYear} Nashville Insurance Advisors, LLC. All rights reserved.</p>
-      <p>Licensed in Tennessee — Life, Health, Property &amp; Casualty</p>
+      <div class="flex items-center gap-4 flex-wrap justify-center">
+        <a href="/privacy-policy" class="hover:text-navy-200 transition-colors">Privacy Policy</a>
+        <span aria-hidden="true">·</span>
+        <p>Licensed in Tennessee — Life, Health, Property &amp; Casualty</p>
+      </div>
     </div>
   </div>
 </footer>
