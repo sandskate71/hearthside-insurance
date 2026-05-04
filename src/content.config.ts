@@ -22,4 +22,18 @@ const blog = defineCollection({
   }),
 });
 
-export const collections = { blog };
+const businessStories = defineCollection({
+  loader: glob({ pattern: '**/*.{md,mdx}', base: './src/content/business-stories' }),
+  schema: z.object({
+    businessName: z.string(),
+    tagline: z.string(),
+    description: z.string(),
+    funFacts: z.array(z.string()),
+    websiteUrl: z.string().url(),
+    youtubeVideoId: z.string(),
+    featured: z.boolean().default(false),
+    pubDate: z.coerce.date(),
+  }),
+});
+
+export const collections = { blog, businessStories };

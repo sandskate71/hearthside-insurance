@@ -12,7 +12,9 @@ export default defineConfig({
   },
   integrations: [
     sitemap({
-      filter: (page) => !page.includes('/blog/placeholder'),
+      filter: (page) =>
+        !page.includes('/blog/placeholder') &&
+        !page.includes('/nashville-business-stories/placeholder'),
     }),
   ],
 });
