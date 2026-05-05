@@ -58,7 +58,7 @@ const localBusinessSchema = {
   serviceType: [
     'Property & Casualty Insurance',
     'Life Insurance',
-    'Annuities',
+    'Retirement Income Planning',
     'Long-Term Care Insurance',
     'Medicare Planning',
     'Small Business Insurance',
@@ -75,12 +75,14 @@ const segmentNames: Record<string, string> = {
   'services': 'Services',
   'home-auto': 'Home & Auto Insurance',
   'small-business': 'Small Business Insurance',
-  'life-annuities': 'Life Insurance & Annuities',
+  'life-insurance': 'Life Insurance',
+  'retirement-income': 'Retirement Income Planning',
   'long-term-care': 'Long-Term Care Insurance',
   'medicare': 'Medicare Planning',
   'process': 'Our Process',
   'contact': 'Contact',
   'blog': 'Blog',
+  'faq': 'FAQ',
 };
 
 const pathname = Astro.url.pathname.replace(/\/$/, '');

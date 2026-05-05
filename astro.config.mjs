@@ -7,6 +7,9 @@ import sitemap from '@astrojs/sitemap';
 // https://astro.build/config
 export default defineConfig({
   site: 'https://nashvilleinsuranceadvisors.com',
+  redirects: {
+    '/services/life-annuities': '/services/life-insurance',
+  },
   vite: {
     plugins: [tailwindcss()]
   },

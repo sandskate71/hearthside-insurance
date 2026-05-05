@@ -3,8 +3,8 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 ---
 
 <BaseLayout
-  title="Nashville Life Insurance & Annuities | Independent Advisor"
-  description="Independent life insurance and annuity planning for Nashville residents — income protection, retirement income strategies, and wealth transfer from an advisor who works for you."
+  title="Life Insurance Nashville, TN | Independent Advisor"
+  description="Independent life insurance review for Nashville families — term, whole, and universal life. We help you figure out what you have, what you need, and whether it still fits."
 >
 
   <!-- Page Hero -->
@@ -15,11 +15,11 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
         <span>/</span>
         <a href="/services" class="hover:text-white transition-colors">Services</a>
         <span>/</span>
-        <span class="text-gold-400">Life & Annuities</span>
+        <span class="text-gold-400">Life Insurance</span>
       </nav>
-      <h1 class="text-4xl md:text-5xl font-serif font-bold mb-4">Life Insurance &amp; Annuities</h1>
+      <h1 class="text-4xl md:text-5xl font-serif font-bold mb-4">Life Insurance</h1>
       <p class="text-navy-200 text-lg max-w-2xl">
-        Life insurance isn't about you — it's about who you'd leave behind. Annuities aren't about getting rich — they're about not running out. We help you figure out how much, what kind, and how it fits your retirement picture.
+        Life insurance isn't about you — it's about who you'd leave behind. We help you figure out how much, what kind, and whether what you have still fits the life you're living now.
       </p>
     </div>
   </section>
@@ -32,24 +32,21 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
         <!-- Primary Content -->
         <div class="lg:col-span-2">
           <h2 class="text-2xl md:text-3xl font-serif font-bold text-navy-900 mb-6">
-            Life Insurance &amp; Annuity Review for Nashville Families
+            Life Insurance Review for Nashville Families
           </h2>
           <div class="space-y-5 text-gray-600 leading-relaxed">
             <p>Most people buy life insurance once — when they get married, have a kid, or buy a house — and never look at it again. The problem is your life changes. Your income goes up. Your mortgage gets paid down. Your kids grow up. The policy that made sense at 32 might be the wrong fit at 52. We review what you have, what it actually does, and whether it still matches the life you're living now.</p>
-            <p>Annuities get a bad reputation because they're often sold wrong — pushed by agents chasing commissions on products their clients don't understand. Done right, an annuity solves a specific problem: making sure you don't outlive your income. If you're within 10 years of retirement and worried about what happens when the paycheck stops, an annuity might be part of the answer. We explain how they actually work — the guarantees, the tradeoffs, the fine print — before anything gets signed.</p>
-            <p>As an independent advisor we're not tied to one carrier's product lineup. We can look across multiple insurers and find the right fit for your situation — whether that's a straightforward term policy, a permanent life strategy, or a fixed or indexed annuity for retirement income. No quota to hit. No product to push. Just an honest look at what makes sense for your life and your family.</p>
+            <p>As an independent advisor we're not tied to one carrier's product lineup. We can look across multiple insurers and find the right fit for your situation — whether that's a straightforward term policy, a permanent life strategy, or a survivorship policy for estate planning. No quota to hit. No product to push. Just an honest look at what makes sense for your life and your family.</p>
           </div>
 
           <!-- Coverage Types -->
           <div class="mt-12">
-            <h3 class="text-xl font-serif font-bold text-navy-900 mb-6">Products We Review & Place</h3>
+            <h3 class="text-xl font-serif font-bold text-navy-900 mb-6">Life Insurance Policies We Review &amp; Place</h3>
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
               {[
                 { name: 'Term Life Insurance', desc: 'Pure income replacement for a defined period. Simple, affordable, and the right starting point for most families with dependents and a mortgage.' },
                 { name: 'Whole Life Insurance', desc: 'Permanent coverage that builds cash value over time. Works best as part of a longer-term wealth or estate strategy, not a standalone purchase.' },
                 { name: 'Universal Life Insurance', desc: 'Flexible permanent coverage with adjustable premiums. More moving parts than whole life — we make sure you understand them before you commit.' },
-                { name: 'Fixed Annuities', desc: 'A guaranteed income stream you cannot outlive. Predictable, principal-protected, and a core tool for retirement income planning.' },
-                { name: 'Indexed Annuities', desc: 'Growth tied to a market index with downside protection. More upside potential than fixed, with a floor that protects your principal.' },
                 { name: 'Survivorship Life', desc: 'Joint coverage on two lives that pays at the second death. Most commonly used for estate planning and wealth transfer strategies.' },
               ].map((product) => (
                 <div class="p-5 rounded-xl border border-gray-200 bg-gray-50">
@@ -58,16 +55,6 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
                 </div>
               ))}
             </div>
-          </div>
-
-          <!-- Retirement Income Section -->
-          <div class="mt-12 p-8 rounded-2xl bg-navy-900 text-white">
-            <h3 class="text-xl font-serif font-bold mb-4">
-              Retirement Income Planning in Nashville
-            </h3>
-            <p class="text-navy-200 text-sm leading-relaxed">
-              For most Nashville families, retirement income comes from a combination of Social Security, savings, and — if they planned ahead — guaranteed income sources like annuities. The question isn't just how much you've saved. It's how long it needs to last, what your fixed expenses look like, and what happens if one spouse dies first. We work through that picture with you so retirement feels like a plan, not a guess.
-            </p>
           </div>
         </div>
 
@@ -96,9 +83,9 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
             <div class="p-6 rounded-xl border border-gray-200 bg-gray-50">
               <h4 class="font-serif font-semibold text-navy-900 mb-3">Related Services</h4>
               <ul class="space-y-2">
+                <li><a href="/services/retirement-income" class="text-sm text-gold-600 hover:text-gold-700 transition-colors">Retirement Income Planning →</a></li>
                 <li><a href="/services/long-term-care" class="text-sm text-gold-600 hover:text-gold-700 transition-colors">Long-Term Care →</a></li>
                 <li><a href="/services/medicare" class="text-sm text-gold-600 hover:text-gold-700 transition-colors">Medicare Planning →</a></li>
-                <li><a href="/services/home-auto" class="text-sm text-gold-600 hover:text-gold-700 transition-colors">Home & Auto Insurance →</a></li>
               </ul>
             </div>
           </div>
