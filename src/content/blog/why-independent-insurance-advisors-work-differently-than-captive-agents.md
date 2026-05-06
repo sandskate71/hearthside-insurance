@@ -3,6 +3,7 @@ title: "Why Independent Insurance Advisors Work Differently Than Captive Agents"
 description: "Many Nashville families don't realize there is a major difference between independent insurance advisors and captive agents. Here's how the models work — and why it matters."
 publishDate: 2026-05-06
 category: "General"
+author: "Enrique Gandara"
 draft: false
 ---
 

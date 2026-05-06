@@ -16,6 +16,7 @@ const blog = defineCollection({
       'Medicare',
       'Insurance Basics',
       'Nashville',
+      'General',
     ]),
     featured: z.boolean().default(false),
     draft: z.boolean().default(false),
