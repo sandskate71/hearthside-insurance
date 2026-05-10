@@ -31,11 +31,12 @@ const articleImageUrl = ogImage
   ? (ogImage.startsWith('http') ? ogImage : `${siteUrl}${ogImage}`)
   : `${siteUrl}/og-default.png`;
 
-const articleSchema = {
+const blogPostingSchema = {
   '@context': 'https://schema.org',
-  '@type': 'Article',
+  '@type': 'BlogPosting',
   headline: title,
   description: description,
+  url: postCanonicalUrl,
   datePublished: publishDate.toISOString(),
   dateModified: publishDate.toISOString(),
   image: articleImageUrl,
@@ -46,13 +47,16 @@ const articleSchema = {
   },
   publisher: {
     '@type': 'Organization',
-    name: 'Nashville Insurance Advisors, LLC',
+    name: 'Nashville Insurance Advisors',
     url: siteUrl,
   },
 };
 ---
 
 <BaseLayout title={`${title} | Nashville Insurance Advisors`} description={description} ogImage={ogImage} breadcrumbTitle={title}>
+
+  <script slot="head" type="application/ld+json" set:html={JSON.stringify(blogPostingSchema)} />
+
   <article class="max-w-3xl mx-auto px-4 sm:px-6 py-16">
 
     <!-- Breadcrumb -->
@@ -102,5 +106,4 @@ const articleSchema = {
     </aside>
   </article>
 
-  <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
 </BaseLayout>
