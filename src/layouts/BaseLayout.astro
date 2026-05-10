@@ -55,6 +55,7 @@ const { title, description, canonical, ogImage, noindex, breadcrumbTitle } = Ast
       noindex={noindex}
       breadcrumbTitle={breadcrumbTitle}
     />
+    <slot name="head" />
   </head>
   <body>
     <Header />

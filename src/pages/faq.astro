@@ -91,6 +91,24 @@ const sections = [
     ],
   },
 ];
+
+const faqSchemaIds = new Set(['life-insurance', 'long-term-care', 'retirement-income']);
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: sections
+    .filter(s => faqSchemaIds.has(s.id))
+    .flatMap(s => s.questions)
+    .filter(q => q.a !== null)
+    .map(q => ({
+      '@type': 'Question',
+      name: q.q,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: q.a,
+      },
+    })),
+};
 ---
 
 <BaseLayout
@@ -98,6 +116,8 @@ const sections = [
   description="Honest answers to common insurance questions — life insurance, long-term care, retirement income planning, and how the Coverage Blueprint works."
   breadcrumbTitle="FAQ"
 >
+
+  <script slot="head" type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
 
   <!-- Page Hero -->
   <section class="bg-navy-900 text-white py-16 md:py-20">
