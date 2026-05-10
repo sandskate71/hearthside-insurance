@@ -58,4 +58,6 @@ Sometimes families are underinsured and don't know it. Sometimes they're paying 
 
 If you have a pool, a trampoline, teenagers on your auto policy, or a home where the neighborhood tends to gather — it's worth having the conversation.
 
+Learn more about our [Home & Auto Insurance](/services/home-auto) services.
+
 [Book a Discovery Meeting](/contact/) — we'll walk through what your exposure actually looks like.

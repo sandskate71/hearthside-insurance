@@ -152,4 +152,6 @@ If you have not reviewed your homeowners coverage in several years — especiall
 
 Nashville Insurance Advisors offers Discovery Meetings and Coverage Blueprint reviews for Nashville-area families and homeowners who want a clearer understanding of their current coverage.
 
+Learn more about our [Home & Auto Insurance](/services/home-auto) services.
+
 The goal is clarity first — not pressure

@@ -71,6 +71,8 @@ If you're not in transition but your primary coverage is through work, it's wort
 
 Either way, I'm happy to sit down and walk through it. Book a Discovery Meeting at the link below — no pitch, no pressure, just a straight look at where you stand.
 
+Learn more about our [Life Insurance](/services/life-insurance) services.
+
 ---
 
 *Enrique Gandara is an independent insurance advisor serving Nashville metro families and small businesses. Nashville Insurance Advisors works by appointment only — no storefront, no quotas, no captive carrier.*

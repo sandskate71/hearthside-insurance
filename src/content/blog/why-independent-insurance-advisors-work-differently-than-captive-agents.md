@@ -166,4 +166,6 @@ At Nashville Insurance Advisors, we built the Coverage Blueprint because we beli
 
 If you would like a second opinion on your current coverage, Nashville Insurance Advisors offers Discovery Meetings and Coverage Blueprint reviews for Nashville-area families and business owners.
 
+Learn more about [About Your Advisor](/about).
+
 The goal is clarity first — not pressure.

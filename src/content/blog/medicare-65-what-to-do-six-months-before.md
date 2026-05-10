@@ -69,4 +69,6 @@ That's the Coverage Blueprint — a structured review of everything you have, ev
 
 If your 65th birthday is in the next six to twelve months, that's the right time to start — not the month before enrollment. The decisions you make during your Medigap open enrollment window can't be undone.
 
+Learn more about our [Medicare Planning](/services/medicare) services.
+
 [Book a Discovery Meeting](/contact/) — we'll walk through the timeline together.

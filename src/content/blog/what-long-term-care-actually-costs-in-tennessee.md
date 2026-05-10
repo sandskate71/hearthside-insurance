@@ -167,4 +167,6 @@ The goal is simply understanding the potential impact long before a crisis force
 
 Nashville Insurance Advisors offers Discovery Meetings and Coverage Blueprint reviews for Nashville-area families who want a clearer understanding of their overall protection and retirement planning picture.
 
+Learn more about our [Long-Term Care](/services/long-term-care) services.
+
 The goal is clarity first — not pressure.

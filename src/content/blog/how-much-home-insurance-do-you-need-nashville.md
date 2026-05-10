@@ -78,6 +78,8 @@ It takes about 15 minutes. And it's one of the things I find most often produces
 
 If you want to schedule one, book a Discovery Meeting at the link below. No pitch, no pressure. Just a straight look at where you actually stand.
 
+Learn more about our [Home & Auto Insurance](/services/home-auto) services.
+
 ---
 
 *Enrique Gandara is an independent insurance advisor serving Nashville metro families and small businesses. Nashville Insurance Advisors works by appointment only — no storefront, no quotas, no captive carrier.*

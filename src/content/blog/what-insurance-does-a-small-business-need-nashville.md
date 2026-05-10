@@ -60,6 +60,8 @@ I work with small business owners across Nashville, Brentwood, Franklin, and the
 
 If you want to sit down and walk through your business coverage, book a Discovery Meeting at the link below. No pitch, no pressure. Just a straight look at where you actually stand.
 
+Learn more about our [Small Business Insurance](/services/small-business) services.
+
 ---
 
 *Enrique Gandara is an independent insurance advisor serving Nashville metro families and small businesses. Nashville Insurance Advisors works by appointment only — no storefront, no quotas, no captive carrier.*
