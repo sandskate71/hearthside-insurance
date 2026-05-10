@@ -1,0 +1,152 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const neighborhoods = [
+  {
+    name: 'Brentwood',
+    href: '/neighborhoods/brentwood',
+    description: "Tennessee's wealthiest suburb, with median home values exceeding $1 million and a concentration of executives, high-net-worth families, and business owners.",
+    tags: ['High-Value Homes', 'Umbrella Coverage', 'Life Insurance'],
+  },
+  {
+    name: 'Franklin',
+    href: '/neighborhoods/franklin',
+    description: "Historic charm and $1M+ home values — plus thousands of relocating families who need a fresh look at their coverage for Tennessee's risk profile.",
+    tags: ['Relocation Coverage', 'Small Business', 'Long-Term Care'],
+  },
+  {
+    name: 'Nolensville',
+    href: '/neighborhoods/nolensville',
+    description: "One of the fastest-growing suburbs in the state, with new construction homes and young families building equity — many with coverage priced for the lender, not the homeowner.",
+    tags: ['New Construction', 'Young Families', 'Life Insurance'],
+  },
+  {
+    name: 'Hendersonville',
+    href: '/neighborhoods/hendersonville',
+    description: "Old Hickory Lake living adds watercraft, dock liability, and flood exposure that standard home policies simply don't cover.",
+    tags: ['Watercraft', 'Flood Coverage', 'Medicare'],
+  },
+  {
+    name: 'Green Hills',
+    href: '/neighborhoods/green-hills',
+    description: "Nashville's most established in-city neighborhood — professionals and executives with complex coverage needs and elevated urban liability exposure.",
+    tags: ['Umbrella Coverage', 'Business Owners', 'Retirement Planning'],
+  },
+  {
+    name: 'Bellevue',
+    href: '/neighborhoods/bellevue',
+    description: "West Nashville's established community, where rising values and proximity to the Harpeth River create quiet coverage gaps many homeowners don't know they have.",
+    tags: ['Flood Exposure', 'Dwelling Limits', 'Life Insurance'],
+  },
+  {
+    name: 'Mount Juliet',
+    href: '/neighborhoods/mount-juliet',
+    description: "Wilson County's fastest-growing community, drawing families with new construction priced at builder minimums and a growing small business corridor.",
+    tags: ['New Construction', 'Young Families', 'Small Business'],
+  },
+  {
+    name: 'Spring Hill',
+    href: '/neighborhoods/spring-hill',
+    description: "Straddling Williamson and Maury County, Spring Hill draws families from across the country — many with out-of-state policies that need updating for Tennessee.",
+    tags: ['Out-of-State Policies', 'Small Business', 'Tornado Exposure'],
+  },
+  {
+    name: 'Murfreesboro',
+    href: '/neighborhoods/murfreesboro',
+    description: "One of America's fastest-growing cities, with rising home values and a large, fast-growing 65-plus population navigating Medicare enrollment.",
+    tags: ['Rising Values', 'Medicare Planning', 'Small Business'],
+  },
+  {
+    name: 'Hermitage',
+    href: '/neighborhoods/hermitage',
+    description: "Affordable east Nashville — first-time buyers and young families who bought at lower prices and haven't revisited their coverage as values have climbed.",
+    tags: ['First-Time Buyers', 'Dwelling Limits', 'Life Insurance'],
+  },
+];
+---
+
+<BaseLayout
+  title="Insurance Advisor in the Nashville Metro | Areas We Serve | Nashville Insurance Advisors"
+  description="Nashville Insurance Advisors serves families and businesses across the Nashville metro — Brentwood, Franklin, Nolensville, Hendersonville, Green Hills, Bellevue, Mount Juliet, Spring Hill, Murfreesboro, and Hermitage."
+  breadcrumbTitle="Areas We Serve"
+>
+
+  <!-- Hero -->
+  <section class="bg-navy-900 text-white py-16 md:py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <nav class="flex items-center gap-2 text-sm text-navy-300 mb-6" aria-label="Breadcrumb">
+        <a href="/" class="hover:text-white transition-colors">Home</a>
+        <span>/</span>
+        <span class="text-gold-400">Areas We Serve</span>
+      </nav>
+      <h1 class="text-4xl md:text-5xl font-serif font-bold mb-4">Nashville Metro Coverage — Your Neighborhood, Your Advisor</h1>
+      <p class="text-navy-200 text-lg max-w-2xl">
+        We serve families and businesses across 10 communities in the Nashville metro. Click your neighborhood to see the coverage gaps we most commonly find there.
+      </p>
+    </div>
+  </section>
+
+  <!-- Neighborhood Grid -->
+  <section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {neighborhoods.map((n) => (
+          <a
+            href={n.href}
+            class="group flex flex-col rounded-xl border border-gray-200 bg-white hover:border-gold-400 hover:shadow-md transition-all p-6"
+          >
+            <div class="flex items-start justify-between mb-3">
+              <h2 class="text-xl font-serif font-bold text-navy-900 group-hover:text-gold-700 transition-colors">
+                {n.name}
+              </h2>
+              <svg class="w-4 h-4 text-gold-400 flex-shrink-0 mt-1 opacity-0 group-hover:opacity-100 transition-opacity" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+            </div>
+            <p class="text-gray-600 text-sm leading-relaxed mb-4 flex-1">{n.description}</p>
+            <div class="flex flex-wrap gap-2 mt-auto">
+              {n.tags.map((tag) => (
+                <span class="px-2.5 py-1 rounded-full bg-gold-50 text-gold-700 text-xs font-medium">
+                  {tag}
+                </span>
+              ))}
+            </div>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Coverage Blueprint callout -->
+  <section class="py-16 bg-gold-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl">
+        <p class="text-gold-600 text-xs font-semibold uppercase tracking-widest mb-2">How It Works</p>
+        <h2 class="text-3xl font-serif font-bold text-navy-900 mb-5">The Coverage Blueprint</h2>
+        <p class="text-gray-700 text-base leading-relaxed mb-4">
+          Nashville Insurance Advisors doesn't start with a quote. We start with questions — about your home, your family, your business, your assets, and your plans. That conversation is called the Discovery Meeting, and it's free, no pressure, and no sales pitch.
+        </p>
+        <p class="text-gray-700 text-base leading-relaxed">
+          From there, we do a Blueprint Meeting where we review your current coverage, identify gaps, overlaps, and anything that hasn't kept up with your life. Implementation happens at your pace — not ours.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-20 bg-navy-900 text-white text-center">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl md:text-4xl font-serif font-bold mb-4">Ready to review your coverage?</h2>
+      <p class="text-navy-200 text-lg mb-8 max-w-xl mx-auto">
+        Serving families and businesses across the Nashville metro by appointment only.
+      </p>
+      <a
+        href="/contact"
+        class="inline-flex items-center justify-center px-8 py-4 bg-gold-500 hover:bg-gold-600 text-navy-900 font-semibold text-lg rounded-lg transition-colors"
+      >
+        Book a Discovery Meeting
+      </a>
+    </div>
+  </section>
+
+</BaseLayout>

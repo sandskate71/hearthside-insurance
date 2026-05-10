@@ -1,0 +1,176 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+interface Props {
+  neighborhood: string;
+  description: string;
+  intro: string;
+  gaps: [string, string, string];
+}
+
+const { neighborhood, description, intro, gaps } = Astro.props;
+
+const title = `Insurance Advisor in ${neighborhood} TN | Nashville Insurance Advisors`;
+
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'InsuranceAgency',
+  name: 'Nashville Insurance Advisors',
+  url: 'https://nashvilleinsuranceadvisors.com',
+  telephone: '(615) 326-9899',
+  email: 'team@nashvilleia.com',
+  areaServed: `${neighborhood}, Tennessee`,
+  description,
+  address: {
+    '@type': 'PostalAddress',
+    addressLocality: 'Nashville',
+    addressRegion: 'TN',
+    addressCountry: 'US',
+  },
+};
+
+const services = [
+  {
+    name: 'Home & Auto Insurance',
+    href: '/services/home-auto',
+    text: "We review dwelling coverage against today's rebuild costs and make sure your auto policy reflects your household's actual risk — not what you paid years ago.",
+  },
+  {
+    name: 'Life Insurance',
+    href: '/services/life-insurance',
+    text: 'We help families size life insurance to real obligations — mortgage balance, income replacement, and the financial needs of the people who depend on them.',
+  },
+  {
+    name: 'Long-Term Care Insurance',
+    href: '/services/long-term-care',
+    text: 'We structure long-term care coverage while options are still affordable and available, before health underwriting becomes an obstacle.',
+  },
+  {
+    name: 'Medicare Planning',
+    href: '/services/medicare',
+    text: 'We guide residents through the Medicare enrollment window and help choose between Supplement and Advantage based on specific doctors, budget, and health needs.',
+  },
+  {
+    name: 'Retirement Income Planning',
+    href: '/services/retirement-income',
+    text: 'We build retirement income plans around real numbers — what you spend, what needs to be guaranteed, and what can stay invested for growth.',
+  },
+  {
+    name: 'Small Business Insurance',
+    href: '/services/small-business',
+    text: "We review commercial coverage for business owners — general liability, professional liability, cyber, commercial auto, and workers' comp.",
+  },
+];
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  breadcrumbTitle={neighborhood}
+>
+
+  <script slot="head" type="application/ld+json" set:html={JSON.stringify(schema)} />
+
+  <!-- Hero -->
+  <section class="bg-navy-900 text-white py-16 md:py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <nav class="flex items-center gap-2 text-sm text-navy-300 mb-6" aria-label="Breadcrumb">
+        <a href="/" class="hover:text-white transition-colors">Home</a>
+        <span>/</span>
+        <a href="/neighborhoods/" class="hover:text-white transition-colors">Areas We Serve</a>
+        <span>/</span>
+        <span class="text-gold-400">{neighborhood}</span>
+      </nav>
+      <h1 class="text-4xl md:text-5xl font-serif font-bold mb-5">
+        Independent Insurance Advisor Serving {neighborhood}, Tennessee
+      </h1>
+      <p class="text-navy-200 text-lg max-w-2xl leading-relaxed">{intro}</p>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="mb-10">
+        <p class="text-gold-600 text-xs font-semibold uppercase tracking-widest mb-2">Coverage Areas</p>
+        <h2 class="text-3xl font-serif font-bold text-navy-900">
+          Coverage We Review for {neighborhood} Families and Businesses
+        </h2>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+        {services.map((service) => (
+          <div class="flex gap-4 p-6 rounded-xl border border-gray-200 bg-white hover:border-gold-400 transition-colors group">
+            <div class="w-1 flex-shrink-0 rounded-full bg-gold-400 self-stretch"></div>
+            <div>
+              <a
+                href={service.href}
+                class="font-serif font-semibold text-navy-900 text-base group-hover:text-gold-700 transition-colors"
+              >
+                {service.name}
+              </a>
+              <p class="text-gray-600 text-sm mt-1 leading-relaxed">{service.text}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Coverage Gaps -->
+  <section class="py-16 bg-gold-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl">
+        <p class="text-gold-600 text-xs font-semibold uppercase tracking-widest mb-2">What We Commonly Find</p>
+        <h2 class="text-3xl font-serif font-bold text-navy-900 mb-8">
+          Common Coverage Gaps We Find in {neighborhood}
+        </h2>
+        <ul class="space-y-5">
+          {gaps.map((gap) => (
+            <li class="flex gap-4">
+              <span class="flex-shrink-0 mt-1 w-5 h-5 rounded-full bg-gold-400 flex items-center justify-center">
+                <svg class="w-3 h-3 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                </svg>
+              </span>
+              <p class="text-gray-700 text-base leading-relaxed">{gap}</p>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Coverage Blueprint -->
+  <section class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl rounded-2xl border border-navy-200 bg-navy-50/30 px-8 py-10">
+        <p class="text-gold-600 text-xs font-semibold uppercase tracking-widest mb-2">Our Process</p>
+        <h2 class="text-2xl font-serif font-bold text-navy-900 mb-5">How the Coverage Blueprint Works</h2>
+        <div class="space-y-4 text-gray-700 text-base leading-relaxed">
+          <p>Nashville Insurance Advisors doesn't start with a quote. We start with questions — about your home, your family, your business, your assets, and your plans. That conversation is called the Discovery Meeting, and it's free, no pressure, and no sales pitch.</p>
+          <p>From there, we do a Blueprint Meeting where we review your current coverage, identify gaps, overlaps, and anything that hasn't kept up with your life. Implementation happens at your pace — not ours. The goal is to make sure you actually understand your coverage picture before anything changes.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-20 bg-navy-900 text-white text-center">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl md:text-4xl font-serif font-bold mb-4">Ready to review your coverage?</h2>
+      <p class="text-navy-200 text-lg mb-8 max-w-xl mx-auto">
+        The best way to get a straight answer is a real conversation with an advisor who works for you, not a carrier.
+      </p>
+      <a
+        href="/contact"
+        class="inline-flex items-center justify-center px-8 py-4 bg-gold-500 hover:bg-gold-600 text-navy-900 font-semibold text-lg rounded-lg transition-colors"
+      >
+        Book a Discovery Meeting
+      </a>
+      <p class="mt-8 text-navy-400 text-sm">
+        Serving {neighborhood} and the greater Nashville metro by appointment only.
+      </p>
+    </div>
+  </section>
+
+</BaseLayout>
