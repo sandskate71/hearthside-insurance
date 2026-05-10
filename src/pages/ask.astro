@@ -1,0 +1,222 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const sections = [
+  {
+    label: 'Home & Auto Insurance',
+    id: 'home-auto',
+    questions: [
+      {
+        q: 'Does home insurance cover tornado damage in Tennessee?',
+        a: "Yes — standard home insurance policies cover tornado damage because tornadoes are classified as windstorms, which are a covered peril. Your policy covers the structure of your home, other structures on your property, personal belongings, and additional living expenses if your home becomes uninhabitable. The catch to watch for in Tennessee is a separate wind or hail deductible — some policies set this as a percentage of your dwelling coverage rather than a flat dollar amount, which can mean thousands more out of pocket before insurance kicks in. Your car is not covered under home insurance for tornado damage — that falls under your auto policy's comprehensive coverage. If you haven't reviewed your declarations page recently, it's worth checking your wind deductible before storm season.",
+      },
+      {
+        q: 'How much does home insurance cost in Nashville?',
+        a: "The average home insurance premium in Nashville runs roughly $2,600 to $2,900 per year for a policy with $300,000 in dwelling coverage, though the range is wide depending on your home's age, construction, location, and coverage levels. What most people don't realize is that the premium is almost secondary to whether the coverage limit is right. A policy that's $200 cheaper but underinsures your home by $150,000 is not a good deal. The number that matters most is your dwelling coverage — specifically whether it reflects what it would actually cost to rebuild your home today, not what you paid for it years ago.",
+      },
+      {
+        q: 'What is a wind or hail deductible and do I have one?',
+        a: "A wind or hail deductible is a separate, often higher deductible that applies specifically to damage caused by wind or hail — the most common causes of home insurance claims in Tennessee. Unlike your standard deductible, which is usually a flat dollar amount like $1,000 or $2,500, a wind or hail deductible is often set as a percentage of your dwelling coverage — typically 1% to 2%. On a $400,000 home, a 2% wind deductible means $8,000 out of pocket before insurance covers anything. Many Nashville homeowners don't know they have this deductible until they file a claim. Pull out your declarations page and look for it — it should be listed separately from your standard deductible.",
+      },
+      {
+        q: 'Does home insurance cover flood damage in Nashville?',
+        a: "No — standard home insurance policies do not cover flood damage, and this is one of the most misunderstood gaps in coverage. Flood insurance is a separate policy, typically purchased through the National Flood Insurance Program or a private carrier. This matters in Nashville because flooding doesn't just happen in designated flood zones — heavy rain, drainage issues, and storm surge can cause water damage to homes well outside high-risk areas. If your home flooded during a storm, whether that's covered depends entirely on how the water got in. Water that comes in through a damaged roof during a storm is typically covered. Water that rises from the ground and enters your home is flood damage and is not.",
+      },
+      {
+        q: 'What does umbrella insurance actually cover?',
+        a: "Umbrella insurance provides liability coverage above and beyond what your home and auto policies cover. If someone is injured at your home, in a car accident you caused, or makes a claim against you that exceeds your underlying policy limits, umbrella coverage picks up where those policies stop. In Nashville, families with pools, trampolines, teenage drivers, or dogs have elevated liability exposure that standard policies often don't fully address. A $1 million umbrella policy typically costs $150 to $300 per year — which is one of the best values in personal insurance. Most people who need it don't have it.",
+      },
+    ],
+  },
+  {
+    label: 'Medicare',
+    id: 'medicare',
+    questions: [
+      {
+        q: 'What is the difference between Medicare Advantage and Medicare Supplement?',
+        a: "Medicare Supplement — also called Medigap — works alongside Original Medicare to cover out-of-pocket costs like deductibles, copays, and coinsurance. You can see any doctor or specialist nationwide who accepts Medicare, with predictable out-of-pocket costs. Medicare Advantage is a private plan that replaces Original Medicare and typically includes drug coverage and extra benefits like dental and vision, often at a lower monthly premium. The tradeoff is that Advantage plans use provider networks, so your choice of doctors and hospitals is more restricted. The right choice depends on your health, your doctors, your budget, and how much you value flexibility versus lower premiums — there is no universally better option.",
+      },
+      {
+        q: 'What is the Medigap open enrollment window and what happens if I miss it?',
+        a: "The Medigap open enrollment window is a six-month period that begins the month you turn 65 and enroll in Medicare Part B. During this window, you have guaranteed issue rights — meaning no insurance company can deny you a Medigap plan or charge you more based on your health history. Once that window closes, insurers can require medical underwriting, which means they can deny your application or charge significantly higher premiums based on pre-existing conditions. Missing this window is one of the most consequential and irreversible Medicare mistakes people make. If you are approaching 65, the Medigap window should be on your planning calendar before anything else.",
+      },
+      {
+        q: "When should I sign up for Medicare if I'm still working at 65?",
+        a: "It depends on your employer coverage. If you have employer-sponsored health insurance through a company with 20 or more employees, you can generally delay Medicare enrollment without penalty while that coverage is active. If your employer has fewer than 20 employees, Medicare becomes your primary coverage at 65 and you should enroll on time to avoid gaps. The penalty for late Part B enrollment is a 10% premium increase for each 12-month period you were eligible but didn't enroll — and that penalty stays with you permanently. This is a decision that deserves a real conversation before your 65th birthday, not a last-minute Google search.",
+      },
+      {
+        q: 'What is the difference between Medicare Plan G and Plan N?',
+        a: "Both Plan G and Plan N are popular Medigap options for people new to Medicare. Plan G covers nearly everything Original Medicare doesn't — you pay only the Part B deductible, which is $257 in 2026, and the plan covers the rest. Plan N also covers most costs, but you pay copays of up to $20 for office visits and up to $50 for emergency room visits, plus Part B excess charges if your doctor doesn't accept Medicare assignment. Plan N typically costs less per month than Plan G. The right choice depends on how often you use healthcare — if you rarely see doctors, Plan N's lower premium may save you money overall; if you have frequent visits, Plan G's predictability may be worth the higher premium.",
+      },
+    ],
+  },
+  {
+    label: 'Life Insurance',
+    id: 'life-insurance',
+    questions: [
+      {
+        q: 'How much life insurance do I actually need?',
+        a: "The honest answer is that it depends on your specific situation — your income, your debts, your family's expenses, and what other assets your family could rely on. A useful starting point is to add up your mortgage balance, other debts, and the income your family would need for the years they'd depend on it, then subtract existing savings and your spouse's income. Rules of thumb like \"10 times your salary\" are starting points, not answers — a family with a $400,000 mortgage and three young kids needs a very different number than a dual-income couple with no debt and grown children. The most important thing is to run the actual numbers rather than guess at a round figure.",
+      },
+      {
+        q: 'What happens to my life insurance when I leave my job?',
+        a: "Employer-sponsored group life insurance ends when your employment ends — it is a benefit tied to your job, not a policy you own. Most group plans give you the right to either convert your coverage to an individual policy or port the group term coverage, but both options typically have a 30-day deadline from your last day of work. If you miss that window, both options disappear. If you are healthy, you can usually do better by applying for a new individual term policy on the open market rather than converting or porting, since market rates are often more competitive. The key is to act before your last day, not after.",
+      },
+      {
+        q: 'Is the life insurance through my employer enough?',
+        a: "For most families, no. Employer coverage is typically one to two times your annual salary — which sounds significant but rarely covers a mortgage, years of income replacement, and other financial obligations a family depends on. The deeper issue is that employer coverage disappears when you leave the job, get laid off, or the company changes its benefits. Individual term life insurance follows you regardless of where you work, costs less than most people expect, and is sized to what your family actually needs rather than what your HR department offers. If employer coverage is your only life insurance, that is worth a real conversation.",
+      },
+    ],
+  },
+  {
+    label: 'Long-Term Care',
+    id: 'long-term-care',
+    questions: [
+      {
+        q: 'What does long-term care insurance actually cover?',
+        a: "Long-term care insurance covers the cost of extended care when you can no longer perform basic daily activities on your own — things like bathing, dressing, eating, or moving safely. This includes care in a nursing home, an assisted living facility, or in your own home through a home health aide. Standard health insurance and Medicare do not cover most long-term care costs, which is why a separate plan is needed. In Tennessee, the average cost of a private room in a nursing facility runs over $80,000 per year — a cost that can deplete a retirement portfolio quickly without a plan in place.",
+      },
+      {
+        q: 'When is the right time to think about long-term care coverage?',
+        a: "The best time is in your mid-50s, before health issues start to appear. Long-term care insurance requires medical underwriting, which means the healthier you are when you apply, the more options you have and the lower your premiums will be. Many people wait until they see a need on the horizon — a parent requiring care, a health scare — and by that point some options are no longer available to them. Waiting does not make the problem go away, it just reduces the number of ways you can address it. A conversation in your mid-50s takes 30 minutes and can shape a much more secure plan for your 70s and 80s.",
+      },
+      {
+        q: 'What if I pay for long-term care insurance and never use it?',
+        a: "With traditional standalone long-term care policies, unused benefits do not return to you — similar to auto insurance you never filed a claim on. However, modern hybrid policies — which combine life insurance or an annuity with a long-term care benefit — are structured differently. With a hybrid policy, if you never need long-term care, the death benefit passes to your beneficiaries. The money does not disappear. This is one reason hybrid structures have become more popular than traditional standalone LTC policies for people who want coverage without the \"use it or lose it\" concern.",
+      },
+    ],
+  },
+  {
+    label: 'Small Business Insurance',
+    id: 'small-business',
+    questions: [
+      {
+        q: 'What insurance does a small business actually need in Tennessee?',
+        a: "At minimum, most small businesses need a Business Owners Policy — which bundles general liability and commercial property coverage — plus any coverage specific to their industry. Common gaps include professional liability for service-based businesses, cyber liability for any business that stores customer data or processes payments, commercial auto if employees drive for work, and workers' compensation if you have employees. In Tennessee, workers' comp is required for most businesses with five or more employees, and for construction businesses with even one employee. The real issue is that most small business owners bought coverage once and never reviewed it as the business grew — which is where meaningful gaps tend to accumulate.",
+      },
+      {
+        q: 'Does my personal auto insurance cover me when I drive for work?',
+        a: "Generally, no. Personal auto insurance typically excludes coverage for accidents that occur while using your vehicle for business purposes — making deliveries, visiting clients, traveling between job sites. If you or an employee is involved in an accident while driving for work and you don't have commercial auto coverage, your personal policy may deny the claim. This is one of the most common and overlooked gaps for small business owners. If anyone in your business drives for work purposes, commercial auto coverage is worth reviewing.",
+      },
+    ],
+  },
+];
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: sections
+    .flatMap(s => s.questions)
+    .map(q => ({
+      '@type': 'Question',
+      name: q.q,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: q.a,
+      },
+    })),
+};
+---
+
+<BaseLayout
+  title="Ask the Advisors | Nashville Insurance Advisors"
+  description="Plain answers to real insurance questions — home, auto, Medicare, life insurance, long-term care, and small business coverage. No jargon. No sales pitch."
+  breadcrumbTitle="Ask the Advisors"
+>
+
+  <script slot="head" type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+
+  <!-- Page Hero -->
+  <section class="bg-navy-900 text-white py-16 md:py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <nav class="flex items-center gap-2 text-sm text-navy-300 mb-6" aria-label="Breadcrumb">
+        <a href="/" class="hover:text-white transition-colors">Home</a>
+        <span>/</span>
+        <span class="text-gold-400">Ask the Advisors</span>
+      </nav>
+      <h1 class="text-4xl md:text-5xl font-serif font-bold mb-4">Ask the Advisors</h1>
+      <p class="text-navy-200 text-lg max-w-2xl">
+        Real questions. Plain answers. No jargon, no sales pitch — just straight information from an independent advisory team that works for you.
+      </p>
+    </div>
+  </section>
+
+  <!-- Q&A Content -->
+  <section class="py-20 bg-white">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <!-- Section jump links -->
+      <nav class="flex flex-wrap gap-3 mb-14" aria-label="Topic sections">
+        {sections.map((section) => (
+          <a
+            href={`#${section.id}`}
+            class="px-4 py-2 rounded-full border border-navy-200 text-sm font-medium text-navy-700 hover:border-gold-400 hover:text-navy-900 transition-colors"
+          >
+            {section.label}
+          </a>
+        ))}
+      </nav>
+
+      <div class="space-y-16">
+        {sections.map((section) => (
+          <div id={section.id}>
+            <div class="mb-8">
+              <p class="text-gold-600 text-xs font-semibold uppercase tracking-widest mb-2">
+                {section.label}
+              </p>
+              <h2 class="text-2xl font-serif font-bold text-navy-900">
+                {section.label} Questions
+              </h2>
+            </div>
+
+            <div class="space-y-3">
+              {section.questions.map((item) => (
+                <details class="group rounded-xl border border-gray-200 bg-gray-50 overflow-hidden">
+                  <summary class="flex items-center justify-between gap-4 px-6 py-5 cursor-pointer list-none select-none">
+                    <span class="font-serif font-semibold text-navy-900 text-base leading-snug">
+                      {item.q}
+                    </span>
+                    <span class="flex-shrink-0 w-6 h-6 rounded-full bg-navy-100 flex items-center justify-center transition-transform duration-200 group-open:rotate-45">
+                      <svg class="w-3.5 h-3.5 text-navy-700" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4" />
+                      </svg>
+                    </span>
+                  </summary>
+
+                  <div class="px-6 pb-6">
+                    <div class="pt-1 border-t border-gray-200 mt-1">
+                      <p class="text-gray-600 text-sm leading-relaxed pt-4">{item.a}</p>
+                    </div>
+                  </div>
+                </details>
+              ))}
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-20 bg-navy-900 text-white text-center">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl md:text-4xl font-serif font-bold mb-4">Still have a question?</h2>
+      <p class="text-navy-200 text-lg mb-8 max-w-xl mx-auto">
+        The best way to get a straight answer is a real conversation with an advisor who works for you, not a carrier.
+      </p>
+      <a
+        href="/contact"
+        class="inline-flex items-center justify-center px-8 py-4 bg-gold-500 hover:bg-gold-600 text-navy-900 font-semibold text-lg rounded-lg transition-colors"
+      >
+        Book a Discovery Meeting
+      </a>
+    </div>
+  </section>
+
+</BaseLayout>
+
+<style>
+  details > summary::-webkit-details-marker {
+    display: none;
+  }
+</style>
