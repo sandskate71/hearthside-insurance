@@ -28,13 +28,12 @@ const currentPath = Astro.url.pathname;
     <div class="flex items-center justify-between h-16 md:h-20">
 
       <!-- Logo / Brand -->
-      <a href="/" class="flex items-center">
-        <img
-          src="/images/logo-dark.svg"
-          alt="Nashville Insurance Advisors"
-          height="52"
-          class="h-[52px] w-auto"
-        />
+      <a href="/" class="flex items-center" aria-label="Nashville Insurance Advisors — Home">
+        <svg width="32" height="40" viewBox="0 0 52 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect x="0" y="0" width="9" height="56" fill="white" rx="1"/>
+          <polygon points="9,0 43,46 43,0 52,0 52,56 43,56 9,10 9,56 0,56 0,0" fill="white"/>
+          <rect x="0" y="58" width="52" height="4" fill="#C9A84C" rx="1"/>
+        </svg>
       </a>
 
       <!-- Desktop Nav -->
