@@ -28,12 +28,16 @@ const currentPath = Astro.url.pathname;
     <div class="flex items-center justify-between h-16 md:h-20">
 
       <!-- Logo / Brand -->
-      <a href="/" class="flex items-center" aria-label="Nashville Insurance Advisors — Home">
-        <svg width="32" height="40" viewBox="0 0 52 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <a href="/" class="flex items-center gap-[14px]" aria-label="Nashville Insurance Advisors — Home">
+        <svg width="42" height="52" viewBox="0 0 52 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
           <rect x="0" y="0" width="9" height="56" fill="white" rx="1"/>
           <polygon points="9,0 43,46 43,0 52,0 52,56 43,56 9,10 9,56 0,56 0,0" fill="white"/>
           <rect x="0" y="58" width="52" height="4" fill="#C9A84C" rx="1"/>
         </svg>
+        <div class="flex flex-col">
+          <span style="font-family: 'Lora', serif; font-size: 13px; font-weight: 700; color: white; letter-spacing: 0.3px; line-height: 1.2;">Nashville Insurance Advisors</span>
+          <span style="font-family: 'Inter', sans-serif; font-size: 6.5px; letter-spacing: 2.5px; color: #C9A84C; text-transform: uppercase; margin-top: 3px;">Independent Advisory</span>
+        </div>
       </a>
 
       <!-- Desktop Nav -->
