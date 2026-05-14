@@ -9,6 +9,8 @@ export default defineConfig({
   site: 'https://nashvilleinsuranceadvisors.com',
   redirects: {
     '/services/life-annuities': '/services/life-insurance',
+    '/faq': '/ask',
+    '/faq/': '/ask',
   },
   vite: {
     plugins: [tailwindcss()]
