@@ -1,7 +1,7 @@
 ---
 title: "How Much Monthly Income Will You Actually Need in Retirement?"
 description: "Most people approach retirement with a savings number but not an expense number — and the savings number doesn't mean anything without the other one."
-publishDate: 2026-05-22
+publishDate: 2026-05-13
 category: "Retirement Income"
 author: "Enrique Gandara"
 draft: false

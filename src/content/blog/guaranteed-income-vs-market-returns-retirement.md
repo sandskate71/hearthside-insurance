@@ -1,7 +1,7 @@
 ---
 title: "Guaranteed Income vs. Market Returns — How Retirees Actually Sleep at Night"
 description: "The portfolio that built your retirement savings doesn't necessarily work the same way after you stop contributing. Here's what changes — and why guaranteed income exists."
-publishDate: 2026-06-05
+publishDate: 2026-05-13
 category: "Retirement Income"
 author: "Enrique Gandara"
 draft: false

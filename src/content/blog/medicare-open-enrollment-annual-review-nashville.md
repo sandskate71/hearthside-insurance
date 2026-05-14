@@ -1,7 +1,7 @@
 ---
 title: "Medicare Open Enrollment: Why Most People Should Look Every Year"
 description: "Every October 15, Medicare's Annual Enrollment Period opens. Most people ignore it. That can quietly cost them thousands."
-publishDate: 2026-06-12
+publishDate: 2026-05-13
 category: "Medicare"
 author: "Enrique Gandara"
 draft: false

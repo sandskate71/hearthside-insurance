@@ -1,7 +1,7 @@
 ---
 title: "Why Social Security Timing Matters More Than Most People Think"
 description: "Most people claim Social Security as soon as they can. For many, that's the most expensive decision of retirement — especially if you're married."
-publishDate: 2026-05-29
+publishDate: 2026-05-13
 category: "Retirement Income"
 author: "Enrique Gandara"
 draft: false

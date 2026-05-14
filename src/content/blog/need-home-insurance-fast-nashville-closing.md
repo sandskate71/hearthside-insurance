@@ -1,7 +1,7 @@
 ---
 title: "Need Coverage in Two Weeks? Here's How That Actually Works"
 description: "Closing on a Nashville home soon and your lender needs proof of insurance? Here's how to get bound fast without ending up with a policy you don't understand."
-publishDate: 2026-05-15
+publishDate: 2026-05-13
 category: "Home & Auto"
 author: "Enrique Gandara"
 draft: false
