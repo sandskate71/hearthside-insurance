@@ -12,6 +12,7 @@ const blog = defineCollection({
       'Home & Auto',
       'Small Business',
       'Life Insurance',
+      'Retirement Income',
       'Long-Term Care',
       'Medicare',
       'Insurance Basics',
