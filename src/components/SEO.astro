@@ -23,7 +23,7 @@ const ogImageUrl = ogImage.startsWith('http') ? ogImage : `${siteUrl}${ogImage}`
 
 const localBusinessSchema = {
   '@context': 'https://schema.org',
-  '@type': 'ProfessionalService',
+  '@type': 'InsuranceAgency',
   '@id': siteUrl,
   name: 'Nashville Insurance Advisors, LLC',
   description: 'Independent insurance advisor serving the Nashville metro area — home, auto, life, Medicare, and long-term care.',
@@ -40,7 +40,6 @@ const localBusinessSchema = {
   priceRange: '$$',
   address: {
     '@type': 'PostalAddress',
-    streetAddress: 'Nashville Metro Area',
     addressLocality: 'Nashville',
     addressRegion: 'TN',
     postalCode: '37201',
@@ -67,7 +66,7 @@ const localBusinessSchema = {
     '@type': 'OpeningHoursSpecification',
     description: 'By appointment only',
   },
-  sameAs: ['https://nashvilleia.com'],
+  sameAs: [],
 };
 
 const segmentNames: Record<string, string> = {
