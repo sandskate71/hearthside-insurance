@@ -20,6 +20,10 @@ export default defineConfig({
       filter: (page) =>
         !page.includes('/blog/placeholder') &&
         !page.includes('/nashville-business-stories/placeholder'),
+      serialize(item) {
+        item.lastmod = new Date().toISOString();
+        return item;
+      },
     }),
   ],
 });

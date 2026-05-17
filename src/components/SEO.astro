@@ -45,15 +45,19 @@ const localBusinessSchema = {
     postalCode: '37201',
     addressCountry: 'US',
   },
-  areaServed: {
-    '@type': 'GeoCircle',
-    geoMidpoint: {
-      '@type': 'GeoCoordinates',
-      latitude: 36.1627,
-      longitude: -86.7816,
-    },
-    geoRadius: '80000',
-  },
+  areaServed: [
+    { '@type': 'City', name: 'Nashville', containedInPlace: { '@type': 'State', name: 'Tennessee' } },
+    { '@type': 'City', name: 'Brentwood', containedInPlace: { '@type': 'State', name: 'Tennessee' } },
+    { '@type': 'City', name: 'Franklin', containedInPlace: { '@type': 'State', name: 'Tennessee' } },
+    { '@type': 'City', name: 'Nolensville', containedInPlace: { '@type': 'State', name: 'Tennessee' } },
+    { '@type': 'City', name: 'Hendersonville', containedInPlace: { '@type': 'State', name: 'Tennessee' } },
+    { '@type': 'City', name: 'Green Hills', containedInPlace: { '@type': 'State', name: 'Tennessee' } },
+    { '@type': 'City', name: 'Bellevue', containedInPlace: { '@type': 'State', name: 'Tennessee' } },
+    { '@type': 'City', name: 'Mount Juliet', containedInPlace: { '@type': 'State', name: 'Tennessee' } },
+    { '@type': 'City', name: 'Spring Hill', containedInPlace: { '@type': 'State', name: 'Tennessee' } },
+    { '@type': 'City', name: 'Murfreesboro', containedInPlace: { '@type': 'State', name: 'Tennessee' } },
+    { '@type': 'City', name: 'Hermitage', containedInPlace: { '@type': 'State', name: 'Tennessee' } },
+  ],
   serviceType: [
     'Property & Casualty Insurance',
     'Life Insurance',
@@ -88,29 +92,26 @@ const segmentNames: Record<string, string> = {
 const pathname = Astro.url.pathname.replace(/\/$/, '');
 const segments = pathname.split('/').filter(Boolean);
 
-let breadcrumbSchema = null;
-if (segments.length > 0) {
-  const items: { name: string; url: string }[] = [{ name: 'Home', url: siteUrl }];
-  let currentPath = '';
-  for (let i = 0; i < segments.length; i++) {
-    currentPath += '/' + segments[i];
-    const isLast = i === segments.length - 1;
-    const name = isLast && breadcrumbTitle
-      ? breadcrumbTitle
-      : (segmentNames[segments[i]] ?? segments[i]);
-    items.push({ name, url: `${siteUrl}${currentPath}` });
-  }
-  breadcrumbSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'BreadcrumbList',
-    itemListElement: items.map((item, index) => ({
-      '@type': 'ListItem',
-      position: index + 1,
-      name: item.name,
-      item: item.url,
-    })),
-  };
+const items: { name: string; url: string }[] = [{ name: 'Home', url: siteUrl }];
+let currentPath = '';
+for (let i = 0; i < segments.length; i++) {
+  currentPath += '/' + segments[i];
+  const isLast = i === segments.length - 1;
+  const name = isLast && breadcrumbTitle
+    ? breadcrumbTitle
+    : (segmentNames[segments[i]] ?? segments[i]);
+  items.push({ name, url: `${siteUrl}${currentPath}` });
 }
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: items.map((item, index) => ({
+    '@type': 'ListItem',
+    position: index + 1,
+    name: item.name,
+    item: item.url,
+  })),
+};
 ---
 
 <!-- Primary Meta -->
@@ -140,6 +141,4 @@ if (segments.length > 0) {
 <script type="application/ld+json" set:html={JSON.stringify(localBusinessSchema)} />
 
 <!-- Schema.org BreadcrumbList -->
-{breadcrumbSchema && (
-  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
-)}
+<script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
