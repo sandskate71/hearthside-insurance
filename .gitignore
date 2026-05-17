@@ -32,3 +32,8 @@ Thumbs.db
 
 # Claude Code
 .claude/
+
+# Generated audit reports
+*-SEO-ANALYSIS-*.md
+*-AUDIT-REPORT.md
+ACTION-PLAN.md
