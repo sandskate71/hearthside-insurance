@@ -73,7 +73,7 @@ Many insurance conversations begin with a quote request.
 
 Those are understandable questions. But they are often incomplete questions.
 
-At Nashville Insurance Advisors, we believe insurance conversations should start further upstream.
+At Fount Insurance, we believe insurance conversations should start further upstream.
 
 Before talking about products, we want to understand:
 
@@ -162,9 +162,9 @@ Insurance is one of those areas where most people assume everything is basically
 
 Independent insurance advisors and captive agents operate under very different structures, and that structure naturally shapes the process, recommendations, and flexibility available to clients.
 
-At Nashville Insurance Advisors, we built the Coverage Blueprint because we believe insurance decisions should start with understanding the person first — not just generating a quote.
+At Fount Insurance, we built the Coverage Blueprint because we believe insurance decisions should start with understanding the person first — not just generating a quote.
 
-If you would like a second opinion on your current coverage, Nashville Insurance Advisors offers Discovery Meetings and Coverage Blueprint reviews for Nashville-area families and business owners.
+If you would like a second opinion on your current coverage, Fount Insurance offers Discovery Meetings and Coverage Blueprint reviews for Nashville-area families and business owners.
 
 Learn more about [About Your Advisor](/about).
 

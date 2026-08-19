@@ -64,4 +64,4 @@ Learn more about our [Small Business Insurance](/services/small-business) servic
 
 ---
 
-*Enrique Gandara is an independent insurance advisor serving Nashville metro families and small businesses. Nashville Insurance Advisors works by appointment only — no storefront, no quotas, no captive carrier.*
+*Enrique Gandara is an independent insurance advisor serving Nashville metro families and small businesses. Fount Insurance works by appointment only — no storefront, no quotas, no captive carrier.*

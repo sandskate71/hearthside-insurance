@@ -52,7 +52,7 @@ That said, the right coverage amount does depend on your specific situation — 
 
 ## How We Approach This
 
-At Nashville Insurance Advisors, umbrella coverage is one of the first things we look at during a Coverage Blueprint review. We're not trying to sell a policy — we're trying to understand your actual exposure.
+At Fount Insurance, umbrella coverage is one of the first things we look at during a Coverage Blueprint review. We're not trying to sell a policy — we're trying to understand your actual exposure.
 
 Sometimes families are underinsured and don't know it. Sometimes they're paying for coverage that doesn't align with how they actually live. The Blueprint process looks at everything together so the recommendation is based on your life, not a general rule of thumb.
 

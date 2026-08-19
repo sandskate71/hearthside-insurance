@@ -43,7 +43,7 @@ const blogPostingSchema = {
   image: articleImageUrl,
   mainEntityOfPage: postCanonicalUrl,
   author: {
-    '@type': 'Person',
+    '@type': author === BRAND.name ? 'Organization' : 'Person',
     name: author,
   },
   publisher: {

@@ -132,7 +132,7 @@ The important thing is that the decision is being made intentionally rather than
 
 ## Why We Include This in the Coverage Blueprint
 
-At Nashville Insurance Advisors, long-term care conversations are usually part of the broader Coverage Blueprint process.
+At Fount Insurance, long-term care conversations are usually part of the broader Coverage Blueprint process.
 
 Not because we believe everyone needs the same solution.
 
@@ -165,7 +165,7 @@ The goal is not fear.
 
 The goal is simply understanding the potential impact long before a crisis forces rushed decisions.
 
-Nashville Insurance Advisors offers Discovery Meetings and Coverage Blueprint reviews for Nashville-area families who want a clearer understanding of their overall protection and retirement planning picture.
+Fount Insurance offers Discovery Meetings and Coverage Blueprint reviews for Nashville-area families who want a clearer understanding of their overall protection and retirement planning picture.
 
 Learn more about our [Long-Term Care](/services/long-term-care) services.
 

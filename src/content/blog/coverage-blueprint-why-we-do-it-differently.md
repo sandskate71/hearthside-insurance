@@ -1,6 +1,6 @@
 ---
 title: "Why We Built the Coverage Blueprint"
-description: "Most insurance agents start with a quote. Nashville Insurance Advisors starts with questions. Here's why we built a different process — and what it means for you."
+description: "Most insurance agents start with a quote. Fount Insurance starts with questions. Here's why we built a different process — and what it means for you — for Nashville families and business owners."
 publishDate: 2026-05-01
 category: "Insurance Basics"
 draft: false
@@ -12,7 +12,7 @@ Someone files a claim — a leak under the dishwasher, a fender bender, a health
 
 And the worst part isn't the denied claim. The worst part is that nobody ever sat down with them and explained what they actually had.
 
-That's the problem I built Nashville Insurance Advisors to solve.
+That's the problem I built Fount Insurance to solve, here in Nashville.
 
 ## Most insurance is sold, not explained.
 

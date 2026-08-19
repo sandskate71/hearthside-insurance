@@ -121,7 +121,7 @@ That is very different from simply renewing the same policy year after year with
 
 ## What We Review During a Coverage Blueprint
 
-At Nashville Insurance Advisors, home insurance reviews are usually part of the larger Coverage Blueprint process.
+At Fount Insurance, home insurance reviews are usually part of the larger Coverage Blueprint process.
 
 We look at things like:
 
@@ -150,7 +150,7 @@ But many insurance policies have remained surprisingly static.
 
 If you have not reviewed your homeowners coverage in several years — especially after renovations, rising property values, or major life changes — it may be worth taking another look.
 
-Nashville Insurance Advisors offers Discovery Meetings and Coverage Blueprint reviews for Nashville-area families and homeowners who want a clearer understanding of their current coverage.
+Fount Insurance offers Discovery Meetings and Coverage Blueprint reviews for Nashville-area families and homeowners who want a clearer understanding of their current coverage.
 
 Learn more about our [Home & Auto Insurance](/services/home-auto) services.
 

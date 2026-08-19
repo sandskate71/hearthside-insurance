@@ -124,7 +124,7 @@ That conversation deserves more attention than it usually gets.
 
 ## This Is Not About Buying the Biggest Policy Possible
 
-At Nashville Insurance Advisors, we are not trying to convince every family they need an enormous life insurance policy.
+At Fount Insurance, we are not trying to convince every family they need an enormous life insurance policy.
 
 The goal is simply to understand:
 - what would happen financially if income disappeared
@@ -154,7 +154,7 @@ And if health changes happen before you replace that coverage, your future optio
 
 That is why many families choose to secure personal coverage they control first, then treat employer coverage as additional protection on top.
 
-Nashville Insurance Advisors offers Discovery Meetings and Coverage Blueprint reviews for Nashville-area families who want a clearer understanding of their current protection strategy.
+Fount Insurance offers Discovery Meetings and Coverage Blueprint reviews for Nashville-area families who want a clearer understanding of their current protection strategy.
 
 Learn more about our [Life Insurance](/services/life-insurance) services.
 
