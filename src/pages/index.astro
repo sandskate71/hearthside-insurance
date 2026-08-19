@@ -10,7 +10,7 @@ import { BRAND } from '../consts';
 >
 
   <!-- Hero -->
-  <section class="relative text-white py-20 md:py-28 overflow-hidden">
+  <section class="relative text-white py-15 md:py-21 overflow-hidden">
     <!-- Video background -->
     <video
       class="absolute inset-0 w-full h-full object-cover"
@@ -36,12 +36,18 @@ import { BRAND } from '../consts';
         <p class="text-lg md:text-xl text-navy-200 leading-relaxed mb-10 max-w-2xl" style="text-shadow: 0 2px 8px rgba(0,0,0,0.8);">
           Every other agent starts with a quote. We start with questions. {BRAND.name} is an independent advisory firm that reviews your full coverage picture before recommending anything.
         </p>
-        <div class="flex flex-col sm:flex-row gap-4">
+        <div class="flex flex-col sm:flex-row sm:flex-wrap gap-4">
           <a
             href="/contact"
             class="inline-flex items-center justify-center px-8 py-4 bg-gold-500 hover:bg-gold-600 text-navy-900 font-semibold text-lg rounded-lg transition-colors"
           >
             Book a Discovery Meeting
+          </a>
+          <a
+            href="/contact/"
+            class="inline-flex items-center justify-center px-8 py-4 border-2 border-gold-500 text-gold-400 hover:bg-gold-500 hover:text-navy-900 font-medium text-lg rounded-lg transition-colors"
+          >
+            Request a Free Policy Review
           </a>
           <a
             href="/process"
@@ -56,7 +62,7 @@ import { BRAND } from '../consts';
   </section>
 
   <!-- Trust Bar -->
-  <section class="bg-navy-800 text-white py-8">
+  <section class="bg-navy-800 text-white py-6">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex flex-wrap justify-center gap-8 text-sm text-navy-200">
         <span class="flex items-center gap-2">
@@ -80,7 +86,7 @@ import { BRAND } from '../consts';
   </section>
 
   <!-- Why Independent Matters -->
-  <section class="py-20 bg-white">
+  <section class="py-15 bg-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="max-w-2xl mx-auto text-center mb-14">
         <h2 class="text-3xl md:text-4xl font-serif font-bold text-navy-900 mb-4">
@@ -120,7 +126,7 @@ import { BRAND } from '../consts';
   </section>
 
   <!-- Services Overview -->
-  <section class="py-20" style="background-color: #f0f4fa;">
+  <section class="py-13" style="background-color: #f0f4fa;">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="max-w-3xl mx-auto text-center mb-14">
         <h2 class="text-3xl md:text-4xl font-serif font-bold text-navy-900 mb-4">Insurance Coverage We Review in Nashville</h2>
@@ -129,10 +135,10 @@ import { BRAND } from '../consts';
         </p>
       </div>
 
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
 
         <!-- Home & Auto -->
-        <a href="/services/home-auto" class="group p-8 bg-white rounded-2xl border border-gray-100 hover:border-gold-300 hover:shadow-lg transition-all duration-200">
+        <a href="/services/home-auto" class="group p-6 bg-white rounded-2xl border border-gray-100 hover:border-gold-300 hover:shadow-lg transition-all duration-200">
           <div class="w-11 h-11 rounded-xl bg-navy-50 flex items-center justify-center mb-5" style="background-color: #e8edf5;">
             <svg class="w-5 h-5 text-navy-900" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
               <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
@@ -150,7 +156,7 @@ import { BRAND } from '../consts';
         </a>
 
         <!-- Small Business -->
-        <a href="/services/small-business" class="group p-8 bg-white rounded-2xl border border-gray-100 hover:border-gold-300 hover:shadow-lg transition-all duration-200">
+        <a href="/services/small-business" class="group p-6 bg-white rounded-2xl border border-gray-100 hover:border-gold-300 hover:shadow-lg transition-all duration-200">
           <div class="w-11 h-11 rounded-xl bg-navy-50 flex items-center justify-center mb-5" style="background-color: #e8edf5;">
             <svg class="w-5 h-5 text-navy-900" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
               <rect width="20" height="14" x="2" y="7" rx="2" ry="2"/>
@@ -168,7 +174,7 @@ import { BRAND } from '../consts';
         </a>
 
         <!-- Life Insurance -->
-        <a href="/services/life-insurance" class="group p-8 bg-white rounded-2xl border border-gray-100 hover:border-gold-300 hover:shadow-lg transition-all duration-200">
+        <a href="/services/life-insurance" class="group p-6 bg-white rounded-2xl border border-gray-100 hover:border-gold-300 hover:shadow-lg transition-all duration-200">
           <div class="w-11 h-11 rounded-xl bg-navy-50 flex items-center justify-center mb-5" style="background-color: #e8edf5;">
             <svg class="w-5 h-5 text-navy-900" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
               <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
@@ -185,7 +191,7 @@ import { BRAND } from '../consts';
         </a>
 
         <!-- Retirement Income Planning -->
-        <a href="/services/retirement-income" class="group p-8 bg-white rounded-2xl border border-gray-100 hover:border-gold-300 hover:shadow-lg transition-all duration-200">
+        <a href="/services/retirement-income" class="group p-6 bg-white rounded-2xl border border-gray-100 hover:border-gold-300 hover:shadow-lg transition-all duration-200">
           <div class="w-11 h-11 rounded-xl bg-navy-50 flex items-center justify-center mb-5" style="background-color: #e8edf5;">
             <svg class="w-5 h-5 text-navy-900" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
               <polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/>
@@ -203,7 +209,7 @@ import { BRAND } from '../consts';
         </a>
 
         <!-- Long-Term Care -->
-        <a href="/services/long-term-care" class="group p-8 bg-white rounded-2xl border border-gray-100 hover:border-gold-300 hover:shadow-lg transition-all duration-200">
+        <a href="/services/long-term-care" class="group p-6 bg-white rounded-2xl border border-gray-100 hover:border-gold-300 hover:shadow-lg transition-all duration-200">
           <div class="w-11 h-11 rounded-xl bg-navy-50 flex items-center justify-center mb-5" style="background-color: #e8edf5;">
             <svg class="w-5 h-5 text-navy-900" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
               <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
@@ -221,7 +227,7 @@ import { BRAND } from '../consts';
         </a>
 
         <!-- Medicare -->
-        <a href="/services/medicare" class="group p-8 bg-white rounded-2xl border border-gray-100 hover:border-gold-300 hover:shadow-lg transition-all duration-200">
+        <a href="/services/medicare" class="group p-6 bg-white rounded-2xl border border-gray-100 hover:border-gold-300 hover:shadow-lg transition-all duration-200">
           <div class="w-11 h-11 rounded-xl bg-navy-50 flex items-center justify-center mb-5" style="background-color: #e8edf5;">
             <svg class="w-5 h-5 text-navy-900" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
               <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
@@ -241,8 +247,33 @@ import { BRAND } from '../consts';
     </div>
   </section>
 
+  <!-- Mid-page CTA Band -->
+  <section class="bg-navy-900 text-gold-50 py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col items-center text-center gap-6">
+        <h2 class="text-3xl md:text-4xl font-serif font-bold text-gold-50">
+          Not sure what you're missing?
+        </h2>
+        <div class="flex flex-col sm:flex-row gap-4">
+          <a
+            href="/contact"
+            class="inline-flex items-center justify-center px-8 py-4 bg-gold-500 hover:bg-gold-600 text-navy-900 font-semibold text-lg rounded-lg transition-colors"
+          >
+            Book a Discovery Meeting
+          </a>
+          <a
+            href={`tel:${BRAND.phoneE164}`}
+            class="inline-flex items-center justify-center px-8 py-4 border-2 border-gold-500 text-gold-400 hover:bg-gold-500 hover:text-navy-900 font-medium text-lg rounded-lg transition-colors"
+          >
+            Call {BRAND.phone}
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Process Teaser -->
-  <section class="py-20 bg-white">
+  <section class="py-15 bg-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
         <div>
@@ -298,7 +329,7 @@ import { BRAND } from '../consts';
   </section>
 
   <!-- About Teaser -->
-  <section class="py-20 bg-navy-900 text-white">
+  <section class="py-15 bg-navy-900 text-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="max-w-3xl mx-auto">
         <div class="flex flex-col items-center text-center">
@@ -332,7 +363,7 @@ import { BRAND } from '../consts';
   </section>
 
   <!-- CTA Section -->
-  <section class="py-20" style="background-color: #fdf8ee;">
+  <section class="py-15" style="background-color: #fdf8ee;">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
       <h2 class="text-3xl md:text-4xl font-serif font-bold text-navy-900 mb-4">
         Ready to understand your coverage?
