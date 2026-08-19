@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { BRAND } from '../consts';
 
 const stages = [
   {
@@ -63,7 +64,7 @@ const faqs = [
 
 <BaseLayout
   title="Nashville Coverage Blueprint Process | Insurance Advisor"
-  description="Nashville Insurance Advisors uses a deliberate, three-stage Coverage Blueprint process — giving you a complete picture of your coverage and a clear plan to fix it."
+  description={`${BRAND.name} uses a deliberate, three-stage Coverage Blueprint process — giving you a complete picture of your coverage and a clear plan to fix it.`}
 >
 
   <!-- Page Hero -->

@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { BRAND } from '../consts';
 
 const sections = [
   {
@@ -245,7 +246,7 @@ const faqSchema = {
 ---
 
 <BaseLayout
-  title="Ask the Advisors | Nashville Insurance Advisors"
+  title={`Ask the Advisors | ${BRAND.name}`}
   description="Plain answers to real insurance questions — home, auto, Medicare, life insurance, long-term care, and small business coverage. No jargon. No sales pitch."
   breadcrumbTitle="Ask the Advisors"
 >

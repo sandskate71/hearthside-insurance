@@ -1,0 +1,35 @@
+<svg width="1584" height="396" viewBox="0 0 1584 396" xmlns="http://www.w3.org/2000/svg">
+  <!-- Navy background -->
+  <rect width="1584" height="396" fill="#0F2044"/>
+
+  <!-- Subtle diagonal lines -->
+  <line x1="0" y1="396" x2="300" y2="0" stroke="white" stroke-opacity="0.03" stroke-width="1"/>
+  <line x1="200" y1="396" x2="500" y2="0" stroke="white" stroke-opacity="0.03" stroke-width="1"/>
+  <line x1="400" y1="396" x2="700" y2="0" stroke="white" stroke-opacity="0.03" stroke-width="1"/>
+  <line x1="600" y1="396" x2="900" y2="0" stroke="white" stroke-opacity="0.03" stroke-width="1"/>
+
+  <!-- N mark left side -->
+  <g transform="translate(80, 60) scale(3.0)">
+    <rect x="4" y="4" width="13" height="58" rx="2.5" fill="white"/>
+    <rect x="47" y="4" width="13" height="58" rx="2.5" fill="white"/>
+    <polygon points="4,4 17,4 60,62 60,58 47,58 4,8" fill="white"/>
+    <g transform="translate(0, -50) scale(0.555, 0.9)">
+      <path d="M4,138 C4,136 8,133 30,132 C55,130 80,130 108,132 C116,133 118,136 116,138 C116,140 112,142 108,141 C80,139 55,139 30,141 C8,142 4,140 4,138Z" fill="#C9A84C"/>
+    </g>
+  </g>
+
+  <!-- Gold vertical rule -->
+  <rect x="310" y="60" width="2" height="276" fill="#C9A84C" opacity="0.5"/>
+
+  <!-- Wordmark -->
+  <text x="345" y="178" font-family="Georgia, serif" font-weight="700" font-size="52" fill="white" letter-spacing="2">Nashville Insurance Advisors</text>
+
+  <!-- Tagline -->
+  <text x="345" y="238" font-family="Georgia, serif" font-weight="400" font-style="italic" font-size="24" fill="#C9A84C" letter-spacing="1">We don't shop rates. We review lives.</text>
+
+  <!-- Location -->
+  <text x="345" y="290" font-family="Georgia, serif" font-weight="400" font-size="18" fill="white" opacity="0.6" letter-spacing="1">Nashville, Tennessee  ·  Independent Insurance Advisor</text>
+
+  <!-- Gold bottom bar -->
+  <rect x="0" y="378" width="1584" height="18" fill="#C9A84C"/>
+</svg>

@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { BRAND } from '../consts';
 
 interface Props {
   neighborhood: string;
@@ -10,15 +11,16 @@ interface Props {
 
 const { neighborhood, description, intro, gaps } = Astro.props;
 
-const title = `Insurance Advisor in ${neighborhood} TN | Nashville Insurance Advisors`;
+const title = `Insurance Advisor in ${neighborhood} TN | ${BRAND.name}`;
 
 const schema = {
   '@context': 'https://schema.org',
   '@type': 'InsuranceAgency',
-  name: 'Nashville Insurance Advisors, LLC',
-  url: 'https://nashvilleinsuranceadvisors.com',
-  telephone: '(615) 326-9899',
-  email: 'team@nashvilleia.com',
+  name: BRAND.name,
+  legalName: BRAND.legalName,
+  url: BRAND.url,
+  telephone: BRAND.phoneE164,
+  email: BRAND.email,
   areaServed: `${neighborhood}, Tennessee`,
   description,
 };
@@ -141,7 +143,7 @@ const services = [
         <p class="text-gold-600 text-xs font-semibold uppercase tracking-widest mb-2">Our Process</p>
         <h2 class="text-2xl font-serif font-bold text-navy-900 mb-5">How the Coverage Blueprint Works</h2>
         <div class="space-y-4 text-gray-700 text-base leading-relaxed">
-          <p>Nashville Insurance Advisors doesn't start with a quote. We start with questions — about your home, your family, your business, your assets, and your plans. That conversation is called the Discovery Meeting, and it's free, no pressure, and no sales pitch.</p>
+          <p>{BRAND.name} doesn't start with a quote. We start with questions — about your home, your family, your business, your assets, and your plans. That conversation is called the Discovery Meeting, and it's free, no pressure, and no sales pitch.</p>
           <p>From there, we do a Blueprint Meeting where we review your current coverage, identify gaps, overlaps, and anything that hasn't kept up with your life. Implementation happens at your pace — not ours. The goal is to make sure you actually understand your coverage picture before anything changes.</p>
         </div>
       </div>

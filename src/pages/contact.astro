@@ -1,10 +1,11 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { BRAND } from '../consts';
 ---
 
 <BaseLayout
   title="Schedule Coverage Review Nashville | Insurance Advisor"
-  description="Schedule your comprehensive insurance coverage review with Nashville Insurance Advisors. By appointment only, serving the Nashville metro area. Call today."
+  description={`Schedule your comprehensive insurance coverage review with ${BRAND.name}. By appointment only, serving the Nashville metro area. Call today.`}
 >
 
   <!-- Page Hero -->
@@ -40,8 +41,8 @@ import BaseLayout from '../layouts/BaseLayout.astro';
               </div>
               <div>
                 <p class="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-1">Phone</p>
-                <a href="tel:+16153269899" class="text-lg font-medium text-navy-900 hover:text-gold-600 transition-colors">
-                  (615) 326-9899
+                <a href={`tel:${BRAND.phoneE164}`} class="text-lg font-medium text-navy-900 hover:text-gold-600 transition-colors">
+                  {BRAND.phone}
                 </a>
               </div>
             </div>
@@ -54,8 +55,8 @@ import BaseLayout from '../layouts/BaseLayout.astro';
               </div>
               <div>
                 <p class="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-1">Email</p>
-                <a href="mailto:team@nashvilleia.com" class="text-lg font-medium text-navy-900 hover:text-gold-600 transition-colors">
-                  team@nashvilleia.com
+                <a href={`mailto:${BRAND.email}`} class="text-lg font-medium text-navy-900 hover:text-gold-600 transition-colors">
+                  {BRAND.email}
                 </a>
               </div>
             </div>
@@ -201,7 +202,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
           <div class="mt-6 p-6 rounded-xl border border-gold-200 bg-gold-50" style="background-color: #fdf8ee; border-color: #e5a848;">
             <p class="text-sm font-semibold text-navy-900 mb-1">Prefer to book directly?</p>
             <p class="text-sm text-gray-600">
-              Call us at <a href="tel:+16153269899" class="font-medium text-navy-900 hover:text-gold-600 transition-colors">(615) 326-9899</a> or email <a href="mailto:team@nashvilleia.com" class="font-medium text-navy-900 hover:text-gold-600 transition-colors">team@nashvilleia.com</a> — we'll find a time that works.
+              Call us at <a href={`tel:${BRAND.phoneE164}`} class="font-medium text-navy-900 hover:text-gold-600 transition-colors">{BRAND.phone}</a> or email <a href={`mailto:${BRAND.email}`} class="font-medium text-navy-900 hover:text-gold-600 transition-colors">{BRAND.email}</a> — we'll find a time that works.
             </p>
           </div>
         </div>

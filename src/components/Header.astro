@@ -1,4 +1,6 @@
 ---
+import { BRAND } from '../consts';
+
 const navLinks = [
   { label: 'Home', href: '/' },
   { label: 'About', href: '/about' },
@@ -28,7 +30,7 @@ const currentPath = Astro.url.pathname;
     <div class="flex items-center justify-between h-16 md:h-20">
 
       <!-- Logo / Brand -->
-      <a href="/" class="flex items-center gap-[14px]" aria-label="Nashville Insurance Advisors — Home">
+      <a href="/" class="flex items-center gap-[14px]" aria-label={`${BRAND.name} — Home`}>
         <svg width="52" height="66" viewBox="0 0 120 155" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
           <rect x="8" y="8" width="16" height="108" fill="white" rx="2"/>
           <rect x="96" y="8" width="16" height="108" fill="white" rx="2"/>
@@ -36,7 +38,7 @@ const currentPath = Astro.url.pathname;
           <path d="M4,138 C4,136 8,133 30,132 C55,130 80,130 108,132 C116,133 118,136 116,138 C116,140 112,142 108,141 C80,139 55,139 30,141 C8,142 4,140 4,138Z" fill="#C9A84C"/>
         </svg>
         <div class="flex flex-col">
-          <span style="font-family: 'Lora', serif; font-size: 13px; font-weight: 700; color: white; letter-spacing: 0.3px; line-height: 1.2;">Nashville Insurance Advisors</span>
+          <span style="font-family: 'Lora', serif; font-size: 13px; font-weight: 700; color: white; letter-spacing: 0.3px; line-height: 1.2;">{BRAND.name}</span>
         </div>
       </a>
 

@@ -1,11 +1,12 @@
 ---
 import NeighborhoodPage from '../../components/NeighborhoodPage.astro';
+import { BRAND } from '../../consts';
 ---
 
 <NeighborhoodPage
   neighborhood="Bellevue"
   description="Independent insurance advisor serving Bellevue Nashville TN — home, auto, life insurance, and coverage reviews for Bellevue families in west Nashville."
-  intro="Bellevue is Nashville's most underrated west-side community — established homes, strong neighborhood roots, and a price point more accessible than Belle Meade or Green Hills next door. Rising home values driven by west Nashville's ongoing redevelopment mean coverage set five or ten years ago is quietly falling behind what it would actually cost to rebuild today. Nashville Insurance Advisors works with Bellevue families who want a straight look at where their coverage actually stands."
+  intro={`Bellevue is Nashville's most underrated west-side community — established homes, strong neighborhood roots, and a price point more accessible than Belle Meade or Green Hills next door. Rising home values driven by west Nashville's ongoing redevelopment mean coverage set five or ten years ago is quietly falling behind what it would actually cost to rebuild today. ${BRAND.name} works with Bellevue families who want a straight look at where their coverage actually stands.`}
   gaps={[
     "Home insurance dwelling limits set years ago that haven't kept pace with rising west Nashville property values and construction costs",
     "Flood exposure near the Harpeth River that many homeowners in lower-lying parts of Bellevue don't realize they carry",

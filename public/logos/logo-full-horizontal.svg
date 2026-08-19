@@ -1,0 +1,24 @@
+<svg width="800" height="200" viewBox="0 0 800 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Navy background -->
+  <rect width="800" height="200" fill="#0F2044"/>
+
+  <!-- N mark -->
+  <g transform="translate(30, 25) scale(1.67)">
+    <rect x="4" y="4" width="13" height="58" rx="2.5" fill="white"/>
+    <rect x="47" y="4" width="13" height="58" rx="2.5" fill="white"/>
+    <polygon points="4,4 17,4 60,62 60,58 47,58 4,8" fill="white"/>
+    <g transform="translate(0, -50) scale(0.555, 0.9)">
+      <path d="M4,138 C4,136 8,133 30,132 C55,130 80,130 108,132 C116,133 118,136 116,138 C116,140 112,142 108,141 C80,139 55,139 30,141 C8,142 4,140 4,138Z" fill="#C9A84C"/>
+    </g>
+  </g>
+
+  <!-- Gold vertical rule -->
+  <rect x="165" y="40" width="2" height="120" fill="#C9A84C" opacity="0.5"/>
+
+  <!-- Wordmark -->
+  <text x="192" y="90" font-family="Georgia, 'Times New Roman', serif" font-weight="700" font-size="36" fill="white" letter-spacing="1">Nashville Insurance</text>
+  <text x="192" y="138" font-family="Georgia, 'Times New Roman', serif" font-weight="700" font-size="36" fill="white" letter-spacing="1">Advisors</text>
+
+  <!-- Tagline -->
+  <text x="192" y="168" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="16" fill="#C9A84C" letter-spacing="0.5">We don't shop rates. We review lives.</text>
+</svg>

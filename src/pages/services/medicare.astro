@@ -1,10 +1,11 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import { BRAND } from '../../consts';
 ---
 
 <BaseLayout
   title="Medicare Advisor Nashville, TN | Independent Planning"
-  description="Independent Medicare planning for Nashville seniors turning 65 — Medicare Supplement, Advantage, and Part D plan review at Nashville Insurance Advisors."
+  description={`Independent Medicare planning for Nashville seniors turning 65 — Medicare Supplement, Advantage, and Part D plan review at ${BRAND.name}.`}
 >
 
   <!-- Page Hero -->
@@ -97,10 +98,10 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
                 Schedule Your Medicare Review
               </a>
               <a
-                href="tel:+16153269899"
+                href={`tel:${BRAND.phoneE164}`}
                 class="block w-full text-center px-4 py-3 mt-3 border border-navy-600 hover:border-navy-400 text-white font-medium rounded-lg transition-colors text-sm"
               >
-                Call (615) 326-9899
+                Call {BRAND.phone}
               </a>
             </div>
 

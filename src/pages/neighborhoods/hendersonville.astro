@@ -1,11 +1,12 @@
 ---
 import NeighborhoodPage from '../../components/NeighborhoodPage.astro';
+import { BRAND } from '../../consts';
 ---
 
 <NeighborhoodPage
   neighborhood="Hendersonville"
   description="Independent insurance advisor serving Hendersonville TN — home, auto, watercraft, Medicare, and life insurance planning for Hendersonville families on Old Hickory Lake."
-  intro="Hendersonville wraps around Old Hickory Lake and offers a suburban lifestyle that ranges from affordable starter homes to multi-million dollar waterfront estates — each with its own insurance considerations. Lakefront living adds complexity that standard home policies don't address: watercraft coverage, dock liability, and flood exposure from a body of water that doesn't behave like typical ground-level flooding. Nashville Insurance Advisors helps Hendersonville families review coverage across their home, lake assets, and longer-term planning needs."
+  intro={`Hendersonville wraps around Old Hickory Lake and offers a suburban lifestyle that ranges from affordable starter homes to multi-million dollar waterfront estates — each with its own insurance considerations. Lakefront living adds complexity that standard home policies don't address: watercraft coverage, dock liability, and flood exposure from a body of water that doesn't behave like typical ground-level flooding. ${BRAND.name} helps Hendersonville families review coverage across their home, lake assets, and longer-term planning needs.`}
   gaps={[
     "Watercraft and dock liability not covered under standard home insurance policies",
     "Flood exposure from Old Hickory Lake not addressed by standard home policies — flood insurance is a separate policy that many lakeside homeowners don't have",

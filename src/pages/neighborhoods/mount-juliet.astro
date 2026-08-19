@@ -1,11 +1,12 @@
 ---
 import NeighborhoodPage from '../../components/NeighborhoodPage.astro';
+import { BRAND } from '../../consts';
 ---
 
 <NeighborhoodPage
   neighborhood="Mount Juliet"
   description="Independent insurance advisor serving Mount Juliet TN — home, auto, life insurance, and Medicare planning for Mount Juliet families in Wilson County."
-  intro="Mount Juliet is Wilson County's fastest-growing community, drawing families with newer construction, strong schools, and more square footage per dollar than Williamson County options to the west. New construction homes here often come with insurance priced to satisfy the mortgage lender's minimums — not to cover what it would actually cost to rebuild if a tornado came through. Nashville Insurance Advisors helps Mount Juliet families get a real look at their coverage before they need it."
+  intro={`Mount Juliet is Wilson County's fastest-growing community, drawing families with newer construction, strong schools, and more square footage per dollar than Williamson County options to the west. New construction homes here often come with insurance priced to satisfy the mortgage lender's minimums — not to cover what it would actually cost to rebuild if a tornado came through. ${BRAND.name} helps Mount Juliet families get a real look at their coverage before they need it.`}
   gaps={[
     "New construction policies priced at builder minimums, not actual replacement cost in today's labor and materials market",
     "Young families with new mortgages and no life insurance conversation yet — the most common gap in a fast-growing suburb",

@@ -1,12 +1,13 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { BRAND } from '../consts';
 
 const lastUpdated = 'May 3, 2026';
 ---
 
 <BaseLayout
-  title="Privacy Policy | Nashville Insurance Advisors"
-  description="Privacy policy for Nashville Insurance Advisors, LLC — how we collect, use, and protect your information when you contact us or use our website."
+  title={`Privacy Policy | ${BRAND.name}`}
+  description={`Privacy policy for ${BRAND.legalName} — how we collect, use, and protect your information when you contact us or use our website.`}
 >
 
   <!-- Page Hero -->
@@ -19,7 +20,7 @@ const lastUpdated = 'May 3, 2026';
       </nav>
       <h1 class="text-4xl md:text-5xl font-serif font-bold mb-4">Privacy Policy</h1>
       <p class="text-navy-200 text-lg max-w-2xl">
-        Nashville Insurance Advisors, LLC — last updated {lastUpdated}
+        {BRAND.legalName} — last updated {lastUpdated}
       </p>
     </div>
   </section>
@@ -30,7 +31,7 @@ const lastUpdated = 'May 3, 2026';
       <div class="prose prose-lg prose-headings:font-serif prose-headings:text-navy-900 prose-a:text-gold-600 max-w-none text-gray-600">
 
         <p>
-          This Privacy Policy describes how Nashville Insurance Advisors, LLC ("we," "us," or "our"), operated by Enrique Gandara, collects, uses, and protects information you provide when you visit nashvilleinsuranceadvisors.com or contact us to schedule an insurance review. We are committed to protecting your privacy and handling your information with care.
+          This Privacy Policy describes how {BRAND.legalName} ("we," "us," or "our"), operated by Enrique Gandara, collects, uses, and protects information you provide when you visit {BRAND.domain} or contact us to schedule an insurance review. We are committed to protecting your privacy and handling your information with care.
         </p>
 
         <h2>Information We Collect</h2>
@@ -58,7 +59,7 @@ const lastUpdated = 'May 3, 2026';
 
         <h2>We Do Not Sell Your Information</h2>
         <p>
-          Nashville Insurance Advisors does not sell, rent, trade, or otherwise transfer your personal information to any third party for their independent use. Your contact information is not shared with insurance carriers, lead brokers, or any other commercial entity without your explicit consent.
+          {BRAND.name} does not sell, rent, trade, or otherwise transfer your personal information to any third party for their independent use. Your contact information is not shared with insurance carriers, lead brokers, or any other commercial entity without your explicit consent.
         </p>
 
         <h2>Third-Party Services</h2>
@@ -120,10 +121,10 @@ const lastUpdated = 'May 3, 2026';
           If you have questions, concerns, or requests related to this Privacy Policy or your personal information, please contact us:
         </p>
         <ul>
-          <li><strong>Business:</strong> Nashville Insurance Advisors, LLC</li>
+          <li><strong>Business:</strong> {BRAND.legalName}</li>
           <li><strong>Advisor:</strong> Enrique Gandara</li>
-          <li><strong>Email:</strong> <a href="mailto:team@nashvilleia.com">team@nashvilleia.com</a></li>
-          <li><strong>Phone:</strong> <a href="tel:+16153269899">(615) 326-9899</a></li>
+          <li><strong>Email:</strong> <a href={`mailto:${BRAND.email}`}>{BRAND.email}</a></li>
+          <li><strong>Phone:</strong> <a href={`tel:${BRAND.phoneE164}`}>{BRAND.phone}</a></li>
           <li><strong>Service area:</strong> Nashville Metro Area, Tennessee</li>
         </ul>
 

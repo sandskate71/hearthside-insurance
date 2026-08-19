@@ -1,11 +1,12 @@
 ---
 import NeighborhoodPage from '../../components/NeighborhoodPage.astro';
+import { BRAND } from '../../consts';
 ---
 
 <NeighborhoodPage
   neighborhood="Spring Hill"
   description="Independent insurance advisor serving Spring Hill TN — home, auto, life insurance, and small business coverage for Spring Hill families in Williamson and Maury County."
-  intro="Spring Hill straddles Williamson and Maury County and offers one of the best value propositions in the Nashville metro — newer homes, strong schools, and more land per dollar than you'd find closer to the city. Its rapid growth has brought thousands of families from other states, many carrying policies that don't reflect Tennessee's specific risks including tornado exposure, local construction costs, and the regulatory differences that come with crossing county lines. Nashville Insurance Advisors works with Spring Hill families and small business owners who want an independent second opinion on their coverage."
+  intro={`Spring Hill straddles Williamson and Maury County and offers one of the best value propositions in the Nashville metro — newer homes, strong schools, and more land per dollar than you'd find closer to the city. Its rapid growth has brought thousands of families from other states, many carrying policies that don't reflect Tennessee's specific risks including tornado exposure, local construction costs, and the regulatory differences that come with crossing county lines. ${BRAND.name} works with Spring Hill families and small business owners who want an independent second opinion on their coverage.`}
   gaps={[
     "Out-of-state or outdated policies that don't reflect Tennessee's tornado and wind risk profile",
     "Small business coverage gaps that have accumulated as businesses have grown faster than their insurance was updated",

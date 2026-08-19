@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { BRAND } from '../consts';
 
 ---
 
@@ -33,7 +34,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
           We don't shop rates.<br />We review lives.
         </h1>
         <p class="text-lg md:text-xl text-navy-200 leading-relaxed mb-10 max-w-2xl" style="text-shadow: 0 2px 8px rgba(0,0,0,0.8);">
-          Every other agent starts with a quote. We start with questions. Nashville Insurance Advisors is an independent advisory firm that reviews your full coverage picture before recommending anything.
+          Every other agent starts with a quote. We start with questions. {BRAND.name} is an independent advisory firm that reviews your full coverage picture before recommending anything.
         </p>
         <div class="flex flex-col sm:flex-row gap-4">
           <a
@@ -314,7 +315,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
             A decade in financial planning — sitting across from Nashville families, walking them through their full picture until things actually made sense. Most people don't have a coverage problem, they have a clarity problem. Nobody's ever shown them how the pieces fit together.
           </p>
           <p class="text-navy-200 text-lg leading-relaxed mb-8">
-            That's the whole point of Nashville Insurance Advisors. Not the cheapest quote. Not the fastest close. Just an honest look at where you are, where the gaps are, and what needs to be in place — so you can stop guessing and start feeling protected.
+            That's the whole point of {BRAND.name}. Not the cheapest quote. Not the fastest close. Just an honest look at where you are, where the gaps are, and what needs to be in place — so you can stop guessing and start feeling protected.
           </p>
           <a
             href="/about"
@@ -347,10 +348,10 @@ import BaseLayout from '../layouts/BaseLayout.astro';
           Book a Discovery Meeting
         </a>
         <a
-          href="tel:+16153269899"
+          href={`tel:${BRAND.phoneE164}`}
           class="inline-flex items-center justify-center px-8 py-4 border border-navy-300 hover:border-navy-500 text-navy-900 font-medium text-lg rounded-lg transition-colors"
         >
-          Call (615) 326-9899
+          Call {BRAND.phone}
         </a>
       </div>
     </div>

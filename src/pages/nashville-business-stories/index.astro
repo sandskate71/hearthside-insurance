@@ -1,13 +1,14 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { getCollection } from 'astro:content';
+import { BRAND } from '../../consts';
 
 const stories = (await getCollection('businessStories', ({ id }) => id !== 'placeholder'))
   .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 ---
 
 <BaseLayout
-  title="Nashville Business Stories | Nashville Insurance Advisors"
+  title={`Nashville Business Stories | ${BRAND.name}`}
   description="We sit down with the people building Nashville — their origin stories, what drives them, and what makes their business worth knowing."
 >
 
@@ -77,7 +78,7 @@ const stories = (await getCollection('businessStories', ({ id }) => id !== 'plac
   <!-- Footer credit -->
   <div class="bg-gray-50 border-t border-gray-100 py-6 text-center">
     <p class="text-xs text-gray-400 max-w-xl mx-auto">
-      Nashville Business Stories is brought to you by Nashville Insurance Advisors — independent insurance advisors serving Middle Tennessee.
+      Nashville Business Stories is brought to you by {BRAND.name} — independent insurance advisors serving Middle Tennessee.
     </p>
   </div>
 

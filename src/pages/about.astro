@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { BRAND } from '../consts';
 ---
 
 <BaseLayout
@@ -31,7 +32,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         <div>
           <img
             src="/enrique-gandara.jpg"
-            alt="Nashville Insurance Advisors — your independent advisor"
+            alt={`${BRAND.name} — your independent advisor`}
             class="w-full aspect-[4/5] rounded-2xl object-cover"
             style="object-position: center 15%;"
             loading="eager"
@@ -61,7 +62,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
             <p class="text-navy-900 font-serif text-lg italic leading-relaxed">
               "Most people don't have a coverage problem — they have a clarity problem. Nobody's ever shown them how the pieces fit together."
             </p>
-            <p class="text-gold-600 text-sm font-semibold mt-3">— Nashville Insurance Advisors</p>
+            <p class="text-gold-600 text-sm font-semibold mt-3">— {BRAND.name}</p>
           </div>
 
           <div class="mt-10 flex flex-col sm:flex-row gap-4">
@@ -72,10 +73,10 @@ import BaseLayout from '../layouts/BaseLayout.astro';
               Book a Discovery Meeting
             </a>
             <a
-              href="tel:+16153269899"
+              href={`tel:${BRAND.phoneE164}`}
               class="inline-flex items-center justify-center px-6 py-3 border border-gray-300 hover:border-navy-400 text-navy-900 font-medium rounded-lg transition-colors"
             >
-              Call (615) 326-9899
+              Call {BRAND.phone}
             </a>
           </div>
         </div>

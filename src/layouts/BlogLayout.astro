@@ -1,5 +1,6 @@
 ---
 import BaseLayout from './BaseLayout.astro';
+import { BRAND } from '../consts';
 
 interface Props {
   title: string;
@@ -25,7 +26,7 @@ const formattedDate = publishDate.toLocaleDateString('en-US', {
   day: 'numeric',
 });
 
-const siteUrl = 'https://nashvilleinsuranceadvisors.com';
+const siteUrl = BRAND.url;
 const postCanonicalUrl = new URL(Astro.url.pathname, siteUrl).href;
 const articleImageUrl = ogImage
   ? (ogImage.startsWith('http') ? ogImage : `${siteUrl}${ogImage}`)
@@ -47,13 +48,13 @@ const blogPostingSchema = {
   },
   publisher: {
     '@type': 'Organization',
-    name: 'Nashville Insurance Advisors',
+    name: BRAND.name,
     url: siteUrl,
   },
 };
 ---
 
-<BaseLayout title={`${title} | Nashville Insurance Advisors`} description={description} ogImage={ogImage} breadcrumbTitle={title}>
+<BaseLayout title={`${title} | ${BRAND.name}`} description={description} ogImage={ogImage} breadcrumbTitle={title}>
 
   <script slot="head" type="application/ld+json" set:html={JSON.stringify(blogPostingSchema)} />
 

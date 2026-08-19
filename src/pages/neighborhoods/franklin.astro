@@ -1,11 +1,12 @@
 ---
 import NeighborhoodPage from '../../components/NeighborhoodPage.astro';
+import { BRAND } from '../../consts';
 ---
 
 <NeighborhoodPage
   neighborhood="Franklin"
   description="Independent insurance advisor serving Franklin TN — home, auto, umbrella, life insurance, long-term care, and Medicare planning for Franklin families and small businesses."
-  intro="Franklin combines historic charm with some of the highest home values in Tennessee, with median prices between $1.2M and $1.4M and appreciation that continues to outpace the state. Families relocating here from California, the Northeast, and Texas often arrive with out-of-state policies that don't reflect Tennessee's tornado exposure, local construction costs, or Williamson County's specific risk profile. Nashville Insurance Advisors helps Franklin families and small business owners get an independent review before assuming their existing coverage still fits."
+  intro={`Franklin combines historic charm with some of the highest home values in Tennessee, with median prices between $1.2M and $1.4M and appreciation that continues to outpace the state. Families relocating here from California, the Northeast, and Texas often arrive with out-of-state policies that don't reflect Tennessee's tornado exposure, local construction costs, or Williamson County's specific risk profile. ${BRAND.name} helps Franklin families and small business owners get an independent review before assuming their existing coverage still fits.`}
   gaps={[
     "Out-of-state policies brought by relocating families that don't account for Tennessee tornado and wind exposure",
     "Small business owners with personal coverage but no formal commercial insurance review as their business has grown",

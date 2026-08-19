@@ -1,6 +1,7 @@
 ---
 import { getCollection, render } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import { BRAND } from '../../consts';
 
 export async function getStaticPaths() {
   const stories = await getCollection('businessStories', ({ id }) => id !== 'placeholder');
@@ -109,7 +110,7 @@ const { businessName, tagline, description, funFacts, websiteUrl, youtubeVideoId
   <div class="bg-navy-900 py-8 text-center">
     <p class="text-sm text-navy-300 max-w-xl mx-auto">
       Nashville Business Stories is brought to you by{' '}
-      <a href="/" class="text-gold-400 hover:text-gold-300 transition-colors font-medium">Nashville Insurance Advisors</a>
+      <a href="/" class="text-gold-400 hover:text-gold-300 transition-colors font-medium">{BRAND.name}</a>
       {' '}— independent insurance advisors serving Middle Tennessee.
     </p>
   </div>
