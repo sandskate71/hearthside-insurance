@@ -1,6 +1,6 @@
 ---
 title: "Why We Built the Coverage Blueprint"
-description: "Most insurance agents start with a quote. Fount Insurance starts with questions. Here's why we built a different process — and what it means for you — for Nashville families and business owners."
+description: "Most agents start with a quote. Fount Insurance starts with questions — a different process for Nashville families and business owners."
 publishDate: 2026-05-01
 category: "Insurance Basics"
 draft: false
