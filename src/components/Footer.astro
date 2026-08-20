@@ -29,9 +29,21 @@ const quickLinks = [
 
       <!-- Brand Column -->
       <div class="lg:col-span-1">
-        <a href="/" class="inline-block mb-4">
-          <span class="text-lg font-serif font-semibold text-white">{BRAND.name}</span>
-          <span class="block text-xs text-gold-400 tracking-widest uppercase">LLC</span>
+        <a href="/" class="inline-flex items-center gap-3 mb-4">
+          <!-- Mark only: both horizontal lockups carry an opaque navy panel that
+               would not sit flush on the navy-950 footer. -->
+          <img
+            src="/logos/logo-mark.svg"
+            alt=""
+            width="36"
+            height="36"
+            class="h-9 w-9 flex-shrink-0"
+            aria-hidden="true"
+          />
+          <span>
+            <span class="text-lg font-serif font-semibold text-gold-50">{BRAND.name}</span>
+            <span class="block text-xs text-gold-400 tracking-widest uppercase">LLC</span>
+          </span>
         </a>
         <p class="text-sm text-navy-300 leading-relaxed mb-4">
           Independent insurance advisory for Nashville metro residents and small businesses — by appointment only.
