@@ -7,7 +7,7 @@ const blog = defineCollection({
     title: z.string(),
     description: z.string(),
     publishDate: z.coerce.date(),
-    author: z.string().default('Enrique Gandara'),
+    author: z.string().default('Hearthside Insurance'),
     category: z.enum([
       'Home & Auto',
       'Small Business',

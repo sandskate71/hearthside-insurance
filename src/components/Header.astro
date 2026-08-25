@@ -31,14 +31,11 @@ const currentPath = Astro.url.pathname;
 
       <!-- Logo / Brand -->
       <a href="/" class="flex items-center" aria-label={`${BRAND.name} — Home`}>
-        <!-- Lockup carries the wordmark, so no adjacent text span. 180x60 viewBox = 3:1. -->
-        <img
-          src="/logos/logo-full-horizontal.svg"
-          alt={BRAND.name}
-          width="132"
-          height="44"
-          class="h-11 w-auto"
-        />
+        <!-- PLACEHOLDER typographic wordmark. Swap for the Hearthside lockup
+             once the logo is designed. The Fount vector lockup is retired. -->
+        <span class="font-serif font-semibold text-white text-xl md:text-2xl tracking-tight">
+          {BRAND.name}
+        </span>
       </a>
 
       <!-- Desktop Nav -->

@@ -9,7 +9,7 @@ Most people spend more time planning their 65th birthday party than they spend p
 
 But here's what the insurance industry doesn't advertise loudly enough: **you have a window, and it closes.** Miss it, and you could face lifetime premium penalties, gaps in coverage, or lose your right to buy a Medigap plan without medical underwriting — ever.
 
-This is the timeline we walk every client through at Fount Insurance. Here's what to do, and when.
+This is the timeline we walk every client through at Hearthside Insurance. Here's what to do, and when.
 
 ## Why 6 Months Matters
 

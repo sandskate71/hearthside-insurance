@@ -53,9 +53,9 @@ What we look at:
 
 If everything still looks right, we leave you in your current plan. If something better has come along, we walk you through the comparison. The decision is always yours.
 
-## The October Life Review
+## The Annual Life Review
 
-For our clients, this is built into a broader annual conversation we call the Life Review. Every October — before AEP opens — we sit down for a structured review of your full coverage picture. Not just Medicare, but home, auto, life, long-term care, retirement income, business if applicable.
+For our clients, this is built into a broader annual conversation we call the Life Review. Every year, in the month you first came on board, we sit down for a structured review of your full coverage picture. Not just Medicare, but home, auto, life, long-term care, retirement income, business if applicable.
 
 Medicare is the most time-sensitive piece because of the enrollment window, but it's not the only thing that changes year to year. Home values change. Health changes. Family situations change. Coverage that fit a year ago might not fit now.
 
@@ -65,4 +65,4 @@ The Life Review is how we make sure your coverage actually evolves with your lif
 
 If you're on Medicare and you'd like a second opinion on your current plan — or you've never had anyone properly walk you through the alternatives — that's a Discovery Meeting. No pressure to switch. We compare across all the plans available in Nashville and tell you honestly whether your current plan is still the right one.
 
-Call (615) 326-9899 or [schedule a Discovery Meeting](/contact). October is the right time to start this conversation.
+Call (615) 326-9899 or [schedule a Discovery Meeting](/contact). Ahead of the October 15 enrollment window is the right time to start this conversation.

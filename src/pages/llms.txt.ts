@@ -5,9 +5,9 @@ const body = `# ${BRAND.name}
 
 > Independent insurance advisory firm serving the Nashville, Tennessee metro area. We review home, auto, life, long-term care, Medicare, small business, and retirement income coverage — by appointment only, no walk-ins.
 
-${BRAND.name} is an independent advisory practice, not a captive agent for any single carrier. We work with multiple carriers and our recommendations are based on each client's specific situation. Our process — the Coverage Blueprint — is a structured three-stage review: Discovery Meeting, Blueprint Meeting, and Implementation Meetings, followed by an Annual Life Review each October.
+${BRAND.name} is an independent advisory practice, not a captive agent for any single carrier. We work with multiple carriers and our recommendations are based on each client's specific situation. Our process — the Coverage Blueprint — is a structured four-stage review: Discovery Meeting, Blueprint Meeting, Implementation Meetings, and an Annual Life Review scheduled in each client's onboarding anniversary month.
 
-Licensed in Tennessee: Life, Health, Property & Casualty.
+Licensed in Tennessee: Property & Casualty.
 Phone: ${BRAND.phone}
 Email: ${BRAND.email}
 

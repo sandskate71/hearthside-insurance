@@ -5,7 +5,7 @@ description: "This entry is a placeholder while the first real Nashville Busines
 funFacts:
   - "This is a placeholder entry"
   - "The first real story is coming soon"
-websiteUrl: "https://nashvilleinsuranceadvisors.com"
+websiteUrl: "https://hearthsideinsurance.com"
 youtubeVideoId: "dQw4w9WgXcQ"
 featured: false
 pubDate: 2026-05-04

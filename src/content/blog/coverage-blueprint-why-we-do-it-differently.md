@@ -1,6 +1,6 @@
 ---
 title: "Why We Built the Coverage Blueprint"
-description: "Most agents start with a quote. Fount Insurance starts with questions — a different process for Nashville families and business owners."
+description: "Most agents start with a quote. Hearthside Insurance starts with questions — a different process for Nashville families and business owners."
 publishDate: 2026-05-01
 category: "Insurance Basics"
 draft: false
@@ -12,7 +12,7 @@ Someone files a claim — a leak under the dishwasher, a fender bender, a health
 
 And the worst part isn't the denied claim. The worst part is that nobody ever sat down with them and explained what they actually had.
 
-That's the problem I built Fount Insurance to solve, here in Nashville.
+That's the problem I built Hearthside Insurance to solve, here in Nashville.
 
 ## Most insurance is sold, not explained.
 
@@ -42,9 +42,9 @@ Before the second meeting — the Blueprint Meeting — we review every document
 
 In the Blueprint Meeting, we walk you through everything we found. In plain English. No jargon, no pressure, no sales pitch. Here's what you have. Here's where you're exposed. Here's what we recommend and why. Then you decide whether you want to move forward. If you do, we write your home and auto coverage right there in the meeting — you leave already protected.
 
-After that, if you're a client, we start working through the deeper lines over time. Medicare. Long-term care. Life insurance. Annuities. Each one gets its own focused conversation when the time is right. No rushing. No overwhelming you with decisions you're not ready to make.
+After that, if you're a client, we start working through the deeper lines over time. Medicare. Long-term care. Life insurance. Retirement income planning. Each one gets its own focused conversation when the time is right. No rushing. No overwhelming you with decisions you're not ready to make.
 
-And every October, every client sits down for their Annual Life Review — a full revisit of everything, adjusted for whatever has changed in the past year.
+And every year, in the month you first came on board, you sit down for your Annual Life Review — a full revisit of everything, adjusted for whatever has changed in the past year.
 
 ## Why does this matter?
 

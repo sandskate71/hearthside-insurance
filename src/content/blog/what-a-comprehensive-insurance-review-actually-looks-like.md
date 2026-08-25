@@ -83,4 +83,4 @@ Learn more about [Our Process](/process).
 
 ---
 
-*Enrique Gandara is an independent insurance advisor serving Nashville metro families and small businesses. Fount Insurance works by appointment only — no storefront, no quotas, no captive carrier.*
+*Enrique Gandara is an independent insurance advisor serving Nashville metro families and small businesses. Hearthside Insurance works by appointment only — no storefront, no quotas, no captive carrier.*
