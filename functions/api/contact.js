@@ -1,22 +1,16 @@
 /**
  * Cloudflare Pages Function — form handler for /contact and /ask.
  *
- * Requires ONE environment variable set in the Cloudflare Pages dashboard
- * (Settings → Environment variables), for Production and Preview:
- *
- *   RESEND_API_KEY   — API key from resend.com
- *
- * Optional overrides:
- *   FORM_TO          — recipient (default team@hearthsideinsurance.com)
- *   FORM_FROM        — verified sender (default forms@hearthsideinsurance.com)
- *
- * If RESEND_API_KEY is absent the endpoint FAILS LOUDLY with a 503 and tells the
- * visitor to call or email instead. It never returns a false success — silently
- * eating a lead is the failure mode this replaces.
+ * Delivers by email through FormSubmit (formsubmit.co) — free, no account, no
+ * API key. The endpoint alias below maps to team@hearthsideinsurance.com and
+ * was activated on 2026-08-25. If FormSubmit ever rejects a send, the visitor
+ * gets an honest error page telling them to call or email — never a false
+ * success. Silently eating a lead is the failure mode this replaced.
  */
 
+const FORMSUBMIT_ENDPOINT = 'https://formsubmit.co/ajax/bbf5827bc511a6596b72ab910422f130';
+
 const TO_DEFAULT = 'team@hearthsideinsurance.com';
-const FROM_DEFAULT = 'Hearthside Website <forms@hearthsideinsurance.com>';
 
 const esc = (v) =>
   String(v ?? '')
@@ -50,7 +44,7 @@ a{color:#0f1e3d}
   });
 }
 
-export async function onRequestPost({ request, env }) {
+export async function onRequestPost({ request }) {
   let form;
   try {
     form = await request.formData();
@@ -93,35 +87,21 @@ export async function onRequestPost({ request, env }) {
       .join('') +
     `</table><p style="color:#888;font-size:12px">Sent from ${esc(source)} at ${new Date().toISOString()}</p>`;
 
-  const key = env.RESEND_API_KEY;
-  if (!key) {
-    console.error('FORM SUBMISSION NOT DELIVERED — RESEND_API_KEY is not set.\n' + text);
-    return page({
-      status: 503,
-      heading: "We couldn't send that just now",
-      body: `<p>Our contact form is temporarily unavailable and your message was <strong>not</strong> delivered. Please don't retry — reach us directly instead:</p>
-<p>Call <a href="tel:+16153269899">(615) 326-9899</a><br>Email <a href="mailto:${TO_DEFAULT}">${TO_DEFAULT}</a></p>
-<p>Sorry about that.</p>`,
-    });
-  }
-
   try {
-    const res = await fetch('https://api.resend.com/emails', {
-      method: 'POST',
-      headers: { Authorization: `Bearer ${key}`, 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        from: env.FORM_FROM || FROM_DEFAULT,
-        to: [env.FORM_TO || TO_DEFAULT],
-        subject,
-        text,
-        html,
-        ...(replyTo ? { reply_to: replyTo } : {}),
-      }),
-    });
+    const payload = { _subject: subject };
+    for (const [k, v] of fields) payload[k] = v;
+    if (replyTo) payload._replyto = replyTo;
+    payload._template = 'table';
 
-    if (!res.ok) {
-      const detail = await res.text();
-      console.error('Resend rejected the send:', res.status, detail, '\n', text);
+    const res = await fetch(FORMSUBMIT_ENDPOINT, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+      body: JSON.stringify(payload),
+    });
+    const body = await res.json().catch(() => ({}));
+
+    if (!res.ok || String(body.success) !== 'true') {
+      console.error('FormSubmit rejected the send:', res.status, JSON.stringify(body), '\n', text);
       return page({
         status: 502,
         heading: "We couldn't send that just now",
