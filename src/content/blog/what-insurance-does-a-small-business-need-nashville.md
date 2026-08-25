@@ -2,7 +2,7 @@
 title: "What Insurance Does a Small Business Actually Need in Nashville?"
 description: "Most Nashville small business owners have a basic policy and assume they're covered. Here's what a real coverage review actually turns up — and what's commonly missing."
 publishDate: 2026-05-09
-author: "Enrique Gandara"
+author: "Hearthside Insurance"
 category: "Small Business"
 tags: ["small business insurance Nashville", "commercial insurance Nashville", "business owners policy", "Nashville insurance advisor"]
 slug: "what-insurance-does-a-small-business-need-nashville"
@@ -50,7 +50,7 @@ When I sit down with a small business owner, I'm not starting with a quote. I'm 
 
 What do you do? Who are your customers? Do you have employees? Do you drive for the business? Do you store customer information? What would happen to the business if you couldn't work for six months?
 
-Those answers tell me where the real exposure is. Then we look at what coverage exists and where the gaps are. That's the Coverage Blueprint — applied to a business instead of a family.
+Those answers tell me where the real exposure is. Then we look at what coverage exists and where the gaps are. That's the Coverage Roadmap — applied to a business instead of a family.
 
 ## Who this matters most for
 
@@ -58,10 +58,10 @@ If you're a solo operator or very small business, some of this may not apply yet
 
 I work with small business owners across Nashville, Brentwood, Franklin, and the surrounding area. The conversation is free. The gaps we find usually aren't.
 
-If you want to sit down and walk through your business coverage, book a Discovery Meeting at the link below. No pitch, no pressure. Just a straight look at where you actually stand.
+If you want to sit down and walk through your business coverage, book a Coverage Check at the link below. No pitch, no pressure. Just a straight look at where you actually stand.
 
 Learn more about our [Small Business Insurance](/services/small-business) services.
 
 ---
 
-*Enrique Gandara is an independent insurance advisor serving Nashville metro families and small businesses. Hearthside Insurance works by appointment only — no storefront, no quotas, no captive carrier.*
+*Hearthside Insurance is an independent insurance advisory practice serving Nashville metro families and small businesses. Hearthside Insurance works by appointment only — no storefront, no quotas, no captive carrier.*

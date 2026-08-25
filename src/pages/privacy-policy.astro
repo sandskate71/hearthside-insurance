@@ -39,10 +39,10 @@ const lastUpdated = 'May 3, 2026';
         <ul>
           <li><strong>Contact form submissions</strong> — your first and last name, email address, phone number, and the topic or message you submit through the contact form on our website.</li>
           <li><strong>Direct communications</strong> — information you share when you call, email, or message us directly to inquire about our services.</li>
-          <li><strong>Scheduling information</strong> — details you provide when booking a discovery meeting or coverage review appointment.</li>
+          <li><strong>Scheduling information</strong> — details you provide when booking a coverage check or coverage review appointment.</li>
         </ul>
         <p>
-          We do not use cookies for tracking, do not operate any user accounts or login systems, and do not automatically collect personal information beyond standard web server logs (IP address, browser type, referring page) that your browser sends to any website you visit.
+          Apart from the analytics cookies described under Third-Party Services below, we do not use cookies for tracking, do not operate any user accounts or login systems, and do not automatically collect personal information beyond standard web server logs (IP address, browser type, referring page) that your browser sends to any website you visit.
         </p>
 
         <h2>How We Use Your Information</h2>
@@ -66,17 +66,20 @@ const lastUpdated = 'May 3, 2026';
         <p>Our website uses a limited number of third-party services:</p>
         <ul>
           <li>
-            <strong>Web hosting (Cloudflare / Netlify)</strong> — Our site is hosted on infrastructure that may log standard access data (IP addresses, request timestamps) for security and performance purposes. These providers have their own privacy policies governing that data.
+            <strong>Web hosting (Cloudflare Pages)</strong> — Our site is hosted on Cloudflare, which may log standard access data (IP addresses, request timestamps) for security and performance purposes. Cloudflare has its own privacy policy governing that data.
           </li>
           <li>
             <strong>Google Fonts</strong> — We load web fonts from Google Fonts, which may log your IP address when your browser fetches the font files. See <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google's Privacy Policy</a> for details.
           </li>
           <li>
-            <strong>Contact form processing</strong> — Form submissions may be processed through Netlify Forms or a similar service. Submitted data is transmitted securely and accessible only to us.
+            <strong>Google Analytics</strong> — We use Google Analytics 4 to understand how visitors find and move through the site in aggregate. It collects standard measurement data such as pages viewed, approximate location, device type, and referring site. We do not use it to identify individual visitors, and we do not run advertising, remarketing, or behavioral retargeting on this website. See <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google's Privacy Policy</a> for details.
+          </li>
+          <li>
+            <strong>Contact form processing</strong> — Form submissions are received by a serverless function running on Cloudflare and delivered by email to our team inbox through Resend, a third-party email delivery provider. Submissions are not stored in a database. Transmission is encrypted, and the contents are accessible only to us.
           </li>
         </ul>
         <p>
-          We do not use Google Analytics, Facebook Pixel, or any behavioral tracking or retargeting tools on this website.
+          Beyond the aggregate analytics described above, we do not use Facebook Pixel, advertising pixels, or any behavioral retargeting tools on this website.
         </p>
 
         <h2>Data Security</h2>
@@ -138,7 +141,7 @@ const lastUpdated = 'May 3, 2026';
           href="/contact"
           class="inline-block px-6 py-3 bg-gold-500 hover:bg-gold-600 text-navy-900 font-semibold rounded-lg transition-colors"
         >
-          Book a Discovery Meeting
+          Book a Coverage Check
         </a>
       </div>
     </div>

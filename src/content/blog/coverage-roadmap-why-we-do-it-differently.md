@@ -1,5 +1,5 @@
 ---
-title: "Why We Built the Coverage Blueprint"
+title: "Why We Built the Coverage Roadmap"
 description: "Most agents start with a quote. Hearthside Insurance starts with questions — a different process for Nashville families and business owners."
 publishDate: 2026-05-01
 category: "Insurance Basics"
@@ -28,19 +28,19 @@ They asked for your current policy and gave you a cheaper version of it.
 
 Think about how a good doctor works. You come in with a concern. They listen. They ask questions. They run tests. They look at your full health picture before they recommend anything. Only then — after they actually understand what's going on — do they tell you what they think you need.
 
-That's what insurance advice should look like. And that's what we built the Coverage Blueprint to do.
+That's what insurance advice should look like. And that's what we built the Coverage Roadmap to do.
 
-The Coverage Blueprint is our three-stage process for reviewing your coverage the right way. Not the fast way. Not the way that's easiest for us. The way that's actually useful to you.
+The Coverage Roadmap is our four-stage process for reviewing your coverage the right way. Not the fast way. Not the way that's easiest for us. The way that's actually useful to you.
 
 ## Here's how it works.
 
-The first meeting is called the Discovery Meeting. We don't bring quotes. We don't bring products. We bring questions. We want to understand your life — your property, your family, your business if you have one, your assets, your concerns. What do you have? What do you think you have? What keeps you up at night? At the end of that meeting, we give you a Coverage Checklist — a simple list of the documents we need — and you upload everything to your secure client portal.
+The first meeting is called the Coverage Check. We don't bring quotes. We don't bring products. We bring questions. We want to understand your life — your property, your family, your business if you have one, your assets, your concerns. What do you have? What do you think you have? What keeps you up at night? At the end of that meeting, we give you a Coverage Checklist — a simple list of the documents we need — and you upload everything to your secure client portal.
 
 Then we do the homework.
 
-Before the second meeting — the Blueprint Meeting — we review every document you've sent. Every policy. Every declarations page. Every limit and exclusion. We map your full coverage picture and identify every gap. What's missing. What's misaligned. What would happen if something went wrong today.
+Before the second meeting — the Coverage Roadmap Review — we review every document you've sent. Every policy. Every declarations page. Every limit and exclusion. We map your full coverage picture and identify every gap. What's missing. What's misaligned. What would happen if something went wrong today.
 
-In the Blueprint Meeting, we walk you through everything we found. In plain English. No jargon, no pressure, no sales pitch. Here's what you have. Here's where you're exposed. Here's what we recommend and why. Then you decide whether you want to move forward. If you do, we write your home and auto coverage right there in the meeting — you leave already protected.
+In the Coverage Roadmap Review, we walk you through everything we found. In plain English. No jargon, no pressure, no sales pitch. Here's what you have. Here's where you're exposed. Here's what we recommend and why. Then you decide whether you want to move forward. If you do, we write your home and auto coverage right there in the meeting — you leave already protected.
 
 After that, if you're a client, we start working through the deeper lines over time. Medicare. Long-term care. Life insurance. Retirement income planning. Each one gets its own focused conversation when the time is right. No rushing. No overwhelming you with decisions you're not ready to make.
 
@@ -52,7 +52,7 @@ Because insurance is one of those things that feels fine until it isn't. You pay
 
 Most people find out too late.
 
-The Coverage Blueprint exists so you find out now — while you can still do something about it. Before the leak. Before the accident. Before the diagnosis. Before your Medicare enrollment window closes and you're locked into a plan that doesn't fit.
+The Coverage Roadmap exists so you find out now — while you can still do something about it. Before the leak. Before the accident. Before the diagnosis. Before your Medicare enrollment window closes and you're locked into a plan that doesn't fit.
 
 We're not the fastest option. We're not the cheapest option. We don't do 15-minute quote calls and we don't try to bind coverage on the first conversation.
 
@@ -62,6 +62,6 @@ That's the whole point.
 
 Learn more about [Our Process](/process).
 
-## Ready to start your Coverage Blueprint?
+## Ready to start your Coverage Roadmap?
 
-Schedule a Discovery Meeting. No pressure, no products, no pitch. Just a conversation about where you are and whether we can help.
+Schedule a Coverage Check. No pressure, no products, no pitch. Just a conversation about where you are and whether we can help.

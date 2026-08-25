@@ -5,7 +5,7 @@ const body = `# ${BRAND.name}
 
 > Independent insurance advisory firm serving the Nashville, Tennessee metro area. We review home, auto, life, long-term care, Medicare, small business, and retirement income coverage — by appointment only, no walk-ins.
 
-${BRAND.name} is an independent advisory practice, not a captive agent for any single carrier. We work with multiple carriers and our recommendations are based on each client's specific situation. Our process — the Coverage Blueprint — is a structured four-stage review: Discovery Meeting, Blueprint Meeting, Implementation Meetings, and an Annual Life Review scheduled in each client's onboarding anniversary month.
+${BRAND.name} is an independent advisory practice, not a captive agent for any single carrier. We work with multiple carriers and our recommendations are based on each client's specific situation. Our process — the Coverage Roadmap — is a structured four-stage review: Coverage Check, Quote & Bind, Coverage Roadmap Review, and an Annual Life Review scheduled in each client's onboarding anniversary month.
 
 Licensed in Tennessee: Property & Casualty.
 Phone: ${BRAND.phone}
@@ -13,10 +13,10 @@ Email: ${BRAND.email}
 
 ## Core Pages
 
-- [Home](${BRAND.url}/): Overview of the independent advisory approach and the Coverage Blueprint process.
+- [Home](${BRAND.url}/): Overview of the independent advisory approach and the Coverage Roadmap process.
 - [About](${BRAND.url}/about): Background on the advisory practice and its approach to coverage reviews.
-- [Our Process](${BRAND.url}/process): Full explanation of the Coverage Blueprint — Discovery Meeting, Blueprint Meeting, Implementation Meetings, and the Annual Life Review.
-- [Contact](${BRAND.url}/contact): Schedule a Discovery Meeting or send a message.
+- [Our Process](${BRAND.url}/process): Full explanation of the Coverage Roadmap — Coverage Check, Quote & Bind, Coverage Roadmap Review, and the Annual Life Review. Two entry points: Fast Track and Roadmap First.
+- [Contact](${BRAND.url}/contact): Schedule a Coverage Check or send a message.
 
 ## Services
 

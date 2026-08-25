@@ -3,7 +3,7 @@ title: "What Long-Term Care Actually Costs in Tennessee"
 description: "Many Nashville families underestimate the financial and emotional cost of long-term care. Here's what Middle Tennessee families should know."
 publishDate: 2026-05-06
 category: "General"
-author: "Enrique Gandara"
+author: "Hearthside Insurance"
 draft: false
 ---
 
@@ -130,9 +130,9 @@ Others may choose to self-fund intentionally after reviewing their overall finan
 
 The important thing is that the decision is being made intentionally rather than accidentally.
 
-## Why We Include This in the Coverage Blueprint
+## Why We Include This in the Coverage Roadmap
 
-At Hearthside Insurance, long-term care conversations are usually part of the broader Coverage Blueprint process.
+At Hearthside Insurance, long-term care conversations are usually part of the broader Coverage Roadmap process.
 
 Not because we believe everyone needs the same solution.
 
@@ -165,7 +165,7 @@ The goal is not fear.
 
 The goal is simply understanding the potential impact long before a crisis forces rushed decisions.
 
-Hearthside Insurance offers Discovery Meetings and Coverage Blueprint reviews for Nashville-area families who want a clearer understanding of their overall protection and retirement planning picture.
+Hearthside Insurance offers Coverage Checks and Coverage Roadmap reviews for Nashville-area families who want a clearer understanding of their overall protection and retirement planning picture.
 
 Learn more about our [Long-Term Care](/services/long-term-care) services.
 

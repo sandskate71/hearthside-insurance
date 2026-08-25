@@ -2,7 +2,7 @@
 title: "Does My Small Business Need Workers' Compensation in Tennessee?"
 description: "Tennessee's workers' compensation rules catch a lot of small business owners off guard. Here's who actually needs it, what the thresholds are, and what happens if you get it wrong."
 publishDate: 2026-05-09
-author: "Enrique Gandara"
+author: "Hearthside Insurance"
 category: "Small Business"
 tags: ["workers compensation Tennessee", "small business insurance Nashville", "workers comp Nashville", "commercial insurance Nashville"]
 slug: "does-my-small-business-need-workers-compensation-tennessee"
@@ -65,14 +65,14 @@ The right number requires a real quote based on your specific business. That's a
 
 ## What to do
 
-If you are not sure whether you are required to carry workers' comp — or whether you should carry it even if you're not — that's exactly the kind of question a Coverage Blueprint is designed to answer.
+If you are not sure whether you are required to carry workers' comp — or whether you should carry it even if you're not — that's exactly the kind of question a Coverage Roadmap is designed to answer.
 
 I work with small business owners across Nashville, Brentwood, Franklin, and the surrounding area. The conversation starts with understanding your business, not with selling you a policy.
 
-Book a Discovery Meeting at the link below if you want to sit down and work through it.
+Book a Coverage Check at the link below if you want to sit down and work through it.
 
 Learn more about our [Small Business Insurance](/services/small-business) services.
 
 ---
 
-*Enrique Gandara is an independent insurance advisor serving Nashville metro families and small businesses. Hearthside Insurance works by appointment only — no storefront, no quotas, no captive carrier.*
+*Hearthside Insurance is an independent insurance advisory practice serving Nashville metro families and small businesses. Hearthside Insurance works by appointment only — no storefront, no quotas, no captive carrier.*

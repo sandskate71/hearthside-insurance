@@ -3,6 +3,7 @@ title: "Medicare at 65: What to Do 6 Months Before Your Birthday"
 description: "Turning 65 in Nashville? Here's the month-by-month Medicare enrollment timeline most people miss — and why the Medigap window is the most important deadline you've never heard of."
 publishDate: 2026-05-03
 category: "Medicare"
+noindex: true
 ---
 
 Most people spend more time planning their 65th birthday party than they spend planning their Medicare enrollment. That's not a criticism — Medicare is genuinely complicated, and nobody hands you a clear timeline when the clock starts ticking.
@@ -65,10 +66,10 @@ Neither path is wrong for everyone. But it's a decision worth making deliberatel
 
 When a Nashville client comes to us approaching 65, Medicare is rarely the only conversation. It connects to everything else: retirement income, long-term care exposure, life insurance coverage that may no longer fit, and whether existing policies still make sense.
 
-That's the Coverage Blueprint — a structured review of everything you have, everything you're exposed to, and what actually needs to change. Medicare is often the door that opens that conversation.
+That's the Coverage Roadmap — a structured review of everything you have, everything you're exposed to, and what actually needs to change. Medicare is often the door that opens that conversation.
 
 If your 65th birthday is in the next six to twelve months, that's the right time to start — not the month before enrollment. The decisions you make during your Medigap open enrollment window can't be undone.
 
 Learn more about our [Medicare Planning](/services/medicare) services.
 
-[Book a Discovery Meeting](/contact/) — we'll walk through the timeline together.
+[Book a Coverage Check](/contact/) — we'll walk through the timeline together.

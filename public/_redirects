@@ -1,0 +1,4 @@
+# Cloudflare Pages redirects — real 301s (Astro's config redirects emit meta-refresh on static builds)
+/faq                                        /ask                                        301
+/services/life-annuities                    /services/life-insurance                    301
+/blog/coverage-blueprint-why-we-do-it-differently  /blog/coverage-roadmap-why-we-do-it-differently  301

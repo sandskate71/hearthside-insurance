@@ -2,7 +2,7 @@
 title: "How Much Home Insurance Do You Actually Need in Nashville?"
 description: "Most Nashville homeowners set their coverage based on what they paid for the house — not what it would cost to rebuild it. In today's construction market, that gap can be financially devastating."
 publishDate: 2026-05-09
-author: "Enrique Gandara"
+author: "Hearthside Insurance"
 category: "Home & Auto"
 tags: ["home insurance Nashville", "dwelling coverage", "replacement cost", "homeowners insurance", "Nashville insurance advisor"]
 slug: "how-much-home-insurance-do-you-need-nashville"
@@ -46,7 +46,7 @@ Here's the issue: if you didn't call your insurance advisor when those projects 
 
 An updated kitchen that cost $40,000 adds real value to what it would cost to rebuild your home. If your dwelling coverage didn't get adjusted, you're carrying a gap you don't know about.
 
-This is one of the most common findings I see when I do a Coverage Blueprint review with a new client. They improved the home. They just never told their insurance.
+This is one of the most common findings I see when I do a Coverage Roadmap review with a new client. They improved the home. They just never told their insurance.
 
 ## So what number should you actually be at?
 
@@ -76,10 +76,10 @@ I do a free annual policy audit for homeowners in the Nashville metro. We look a
 
 It takes about 15 minutes. And it's one of the things I find most often produces a meaningful change for the families I work with.
 
-If you want to schedule one, book a Discovery Meeting at the link below. No pitch, no pressure. Just a straight look at where you actually stand.
+If you want to schedule one, book a Coverage Check at the link below. No pitch, no pressure. Just a straight look at where you actually stand.
 
 Learn more about our [Home & Auto Insurance](/services/home-auto) services.
 
 ---
 
-*Enrique Gandara is an independent insurance advisor serving Nashville metro families and small businesses. Hearthside Insurance works by appointment only — no storefront, no quotas, no captive carrier.*
+*Hearthside Insurance is an independent insurance advisory practice serving Nashville metro families and small businesses. Hearthside Insurance works by appointment only — no storefront, no quotas, no captive carrier.*

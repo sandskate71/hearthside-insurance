@@ -3,7 +3,7 @@ title: "Need Coverage in Two Weeks? Here's How That Actually Works"
 description: "Closing on a Nashville home soon and your lender needs proof of insurance? Here's how to get bound fast without ending up with a policy you don't understand."
 publishDate: 2026-05-13
 category: "Home & Auto"
-author: "Enrique Gandara"
+author: "Hearthside Insurance"
 draft: false
 ---
 
@@ -27,7 +27,7 @@ When you call us with a closing on the calendar, here's what actually happens.
 
 That part is fast on purpose. Your lender doesn't care about the nuances of dwelling coverage limits or wind/hail deductibles — they care about the document. We make sure the document is right.
 
-**The week after you move in.** We schedule a proper Coverage Blueprint review. No closing pressure. We look at the policy we wrote, walk you through what it covers and what it doesn't, and figure out whether the coverage we put in place actually fits your life.
+**The week after you move in.** We schedule a proper Coverage Roadmap review. No closing pressure. We look at the policy we wrote, walk you through what it covers and what it doesn't, and figure out whether the coverage we put in place actually fits your life.
 
 Sometimes it's exactly right and we don't change a thing. Sometimes we realize you need more dwelling coverage because Nashville construction costs ran up faster than your purchase price. Sometimes you need umbrella because the new house has a pool. Sometimes we adjust the auto policy at the same time because we're already in the conversation.
 
@@ -37,11 +37,11 @@ The point is: you get protected in time for closing, and then you actually under
 
 Most independent agents will write you a fast policy and walk away. Captive agents will write you whatever their carrier has in stock and walk away. Both of them leave you with the same problem — a policy you don't understand and won't think about again until something goes wrong.
 
-We work this way because the proper review is where the value is. The fast binder is the easy part. The Coverage Blueprint is where we earn our keep. We just don't make you wait for it.
+We work this way because the proper review is where the value is. The fast binder is the easy part. The Coverage Roadmap is where we earn our keep. We just don't make you wait for it.
 
 ## What it costs
 
-The Coverage Blueprint review is included. We don't charge for it. If you become a P&C client, you're already paying us through the standard agent commission built into your premium — that's how the industry works. We just spend more time with you than most agents do.
+The Coverage Roadmap review is included. We don't charge for it. If you become a P&C client, you're already paying us through the standard agent commission built into your premium — that's how the industry works. We just spend more time with you than most agents do.
 
 ## If you've got a closing coming up
 

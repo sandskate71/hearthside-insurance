@@ -5,32 +5,51 @@ import { BRAND } from '../consts';
 const stages = [
   {
     number: '01',
-    title: 'Stage 1 — The Discovery Meeting',
-    description: 'We learn your situation. You learn how we work.',
-    detail: 'This is a conversation — no documents required, no products discussed, no pressure. We talk through where you are, what you have, what\'s on your mind, and what you\'re trying to protect. At the end of the meeting we give you a Coverage Checklist — a simple list of everything to gather before our next meeting. You upload your documents to your secure client portal and we take it from there.',
+    title: 'Stage 1 — The Coverage Check',
+    description: 'Fifteen minutes. Bring your current declarations pages.',
+    detail: "A short, practical conversation. You bring what you're paying for now — the declarations pages from your home and auto policies — and we look at them together. Nothing is sold in this meeting and there is nothing to sign. By the end you'll know whether what you have is holding up, and what it would take to fix it if it isn't. No obligation either way.",
   },
   {
     number: '02',
-    title: 'Stage 2 — The Blueprint Meeting',
-    description: 'We present the full picture. You decide if you want to move forward.',
-    detail: 'Between Stage 1 and Stage 2 we do the homework. We review every document you\'ve uploaded, map your full coverage across every line, and identify every gap — what it is, what it would cost if triggered, and what needs to change. We walk you through the complete analysis in plain English. No jargon, no sales pitch. Then we present our recommendations. If you decide to become a client, we write your P&C coverage — home, auto, umbrella — right there. You leave the meeting already protected.',
+    title: 'Stage 2 — Quote & Bind',
+    description: 'Get covered.',
+    detail: "If you need coverage in place, we place it. We go through the options, explain what each one actually does and where it stops, and put the policy in force. You don't have to sit through a full review to get protected — that's backwards when you have a closing date on the calendar or a policy about to lapse. Coverage first. The deeper work comes next.",
   },
   {
     number: '03',
-    title: 'Stage 3 — Implementation Meetings',
-    description: 'We work through the deeper lines at a pace that makes sense.',
-    detail: 'Once you\'re a client, we start working through the lines that take more time and more conversation — Medicare, long-term care, life insurance, retirement income planning. Each line gets its own focused meeting. We don\'t rush these decisions. A life insurance recommendation or a retirement income strategy deserves a dedicated conversation, not a line item on a checklist. We move at your pace, in the order that makes sense for your situation.',
+    title: 'Stage 3 — The Coverage Roadmap Review',
+    description: "Thirty to forty-five days after you're covered. Included. Nothing to buy.",
+    detail: "Once you're protected, we do the real work. We map your full coverage picture across every line — home, auto, umbrella, life, long-term care, Medicare, retirement income planning — and identify every gap: what it is, what it would cost you if it triggered, and what needs to change. We walk you through all of it in plain English. This is part of being a client, not an upsell. There is nothing to buy at the end of it, and plenty of Roadmaps end with “you're in good shape.”",
+  },
+  {
+    number: '04',
+    title: 'Stage 4 — The Annual Life Review',
+    description: 'Every year, in the month you came aboard.',
+    detail: "Once a year, on the anniversary of the month you first came on board, we go back through your full coverage picture: what's changed in your life, what's changed with your carriers, what's changed in the market. We make adjustments where they're needed and confirm what's still working. Same advisor, every time. This isn't a courtesy call — it's a structured review that keeps your coverage current with your life.",
+  },
+];
+
+const entryPoints = [
+  {
+    label: 'Fast Track',
+    tag: 'Most people start here',
+    desc: "You have a deadline — a closing date, a renewal, a policy about to lapse, a lender asking for proof. We run the Coverage Check, get you covered, and do the Roadmap once you can breathe again.",
+  },
+  {
+    label: 'Roadmap First',
+    tag: 'Usually a referral',
+    desc: "No urgency, and you'd rather see the whole picture before anything moves. We do the full review first, then place coverage with everything already on the table.",
   },
 ];
 
 const outcomes = [
   {
     title: 'A complete coverage map',
-    desc: 'A plain-English summary of everything you have, what it covers, and what it doesn\'t. Not a stack of policy documents — an actual explanation.',
+    desc: "A plain-English summary of everything you have, what it covers, and what it doesn't. Not a stack of policy documents — an actual explanation.",
   },
   {
     title: 'A gap analysis',
-    desc: 'Every gap identified, quantified, and prioritized. You\'ll know exactly where you\'re exposed and what it would cost if something went wrong today.',
+    desc: "Every gap identified, quantified, and prioritized. You'll know exactly where you're exposed and what it would cost if something went wrong today.",
   },
   {
     title: 'A clear recommendation',
@@ -44,27 +63,27 @@ const outcomes = [
 
 const faqs = [
   {
-    q: 'How long does the Coverage Blueprint take?',
-    a: 'The Discovery Meeting runs about an hour. The Blueprint Meeting typically runs 60 to 90 minutes. Implementation meetings are shorter and more focused. Most clients complete the full three-stage process within two to four weeks.',
+    q: 'How long does the whole process take?',
+    a: "The Coverage Check runs about fifteen minutes. Placing coverage happens as soon as we have what we need from you. The Coverage Roadmap Review runs 60 to 90 minutes and usually lands 30 to 45 days after you're covered. After that, the Annual Life Review comes around once a year.",
   },
   {
-    q: 'Is there any cost for the initial review?',
-    a: 'No. The Discovery Meeting and Blueprint Meeting are complimentary. We\'re compensated by the carriers when coverage is placed — only if you decide to move forward, and only on what you choose to change. If your coverage is solid and nothing needs to change, we\'ll tell you that.',
+    q: 'Is there any cost for the review?',
+    a: "No. The Coverage Check and the Coverage Roadmap Review are both included. We're compensated by the carriers when coverage is placed, and only on what you choose to put in force. If your coverage is already solid, we'll tell you that.",
   },
   {
-    q: 'Do I need to bring anything to our first meeting?',
-    a: 'Nothing for the Discovery Meeting — just show up ready to talk. After that meeting we\'ll give you a Coverage Checklist with exactly what to gather. You upload everything to your secure client portal and we review it before the Blueprint Meeting.',
+    q: 'Do I need to bring anything to the Coverage Check?',
+    a: "Your current declarations pages — the summary pages from your home and auto policies. That's it. Before the Coverage Roadmap Review we'll send a short checklist and you upload everything to your secure client portal.",
   },
   {
-    q: "What if I'm happy with my current coverage?",
-    a: "That's a legitimate outcome. If we review everything and your coverage is solid, we'll tell you. Not every Coverage Blueprint results in changes. The goal is clarity — if you already have it, that's worth knowing too.",
+    q: 'Do I have to do the Roadmap?',
+    a: "No. Some people come to us for one policy and that's all they want. That's a fine place to stop. The Roadmap is included if you want it, and most clients take it once they've seen how we work.",
   },
 ];
 ---
 
 <BaseLayout
-  title="Nashville Coverage Blueprint Process | Insurance Advisor"
-  description={`${BRAND.name} uses a deliberate, three-stage Coverage Blueprint process — giving you a complete picture of your coverage and a clear plan to fix it.`}
+  title="The Coverage Roadmap | Nashville Insurance Process"
+  description={`${BRAND.name} uses a four-stage Coverage Roadmap — get covered when you need it, then a full review of your coverage picture across every line.`}
 >
 
   <!-- Page Hero -->
@@ -75,9 +94,9 @@ const faqs = [
         <span>/</span>
         <span class="text-gold-400">Our Process</span>
       </nav>
-      <h1 class="text-4xl md:text-5xl font-serif font-bold mb-4">The Coverage Blueprint</h1>
+      <h1 class="text-4xl md:text-5xl font-serif font-bold mb-4">The Coverage Roadmap</h1>
       <p class="text-navy-200 text-lg max-w-2xl">
-        A deliberate, three-stage process that gives you a complete picture of your coverage — and a clear plan for what needs to change.
+        Get covered when you need it. Then get the whole picture. Four stages, two ways in — both end in the same place.
       </p>
     </div>
   </section>
@@ -89,7 +108,7 @@ const faqs = [
         Why We Do It This Way
       </h2>
       <p class="text-gray-600 text-lg leading-relaxed">
-        Most insurance conversations start with a quote. Ours start with questions. A quote tells you what something costs. It doesn't tell you whether it's right for your life. The Coverage Blueprint is our answer to that problem — a structured process that examines your full coverage picture before any recommendations are made. Every client goes through the same three stages, in the same order. No shortcuts.
+        Most insurance conversations start and end with a quote. A quote tells you what something costs. It doesn't tell you whether it's right for your life. But making someone sit through a full review before they're allowed to get covered is backwards too — especially when there's a closing date on the calendar. So we do both, in whichever order fits your situation. Coverage when you need it. The full picture either way.
       </p>
     </div>
   </section>
@@ -122,15 +141,25 @@ const faqs = [
     </div>
   </section>
 
-  <!-- Annual Life Review -->
+  <!-- Two Ways In -->
   <section class="py-20 bg-white">
-    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-      <h2 class="text-2xl md:text-3xl font-serif font-bold text-navy-900 mb-5">
-        The Annual Life Review
-      </h2>
-      <p class="text-gray-600 text-lg leading-relaxed">
-        Every year, in the month you first came on board, you sit down for your Annual Life Review. We go back through your full coverage picture: what's changed in your life, what's changed with your carriers, what's changed in the market. We make adjustments where needed and confirm what's still working. Same advisor, every time. This isn't a courtesy call — it's a structured review that keeps your coverage current with your life.
-      </p>
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-2xl mx-auto text-center mb-12">
+        <h2 class="text-3xl font-serif font-bold text-navy-900 mb-4">Two Ways In, Same Destination</h2>
+        <p class="text-gray-600 leading-relaxed">
+          Where you start depends on whether the clock is running. Everyone ends up in the same place.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        {entryPoints.map((entry) => (
+          <div class="p-8 rounded-2xl border border-gray-100 shadow-sm" style="background-color: #f0f4fa;">
+            <span class="inline-block text-xs font-semibold uppercase tracking-wide text-gold-700 mb-3">{entry.tag}</span>
+            <h3 class="text-xl font-serif font-bold text-navy-900 mb-3">{entry.label}</h3>
+            <p class="text-gray-600 text-sm leading-relaxed">{entry.desc}</p>
+          </div>
+        ))}
+      </div>
     </div>
   </section>
 
@@ -175,7 +204,7 @@ const faqs = [
   <!-- CTA -->
   <section class="py-20 bg-navy-900 text-white text-center">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h2 class="text-3xl font-serif font-bold mb-4">Ready to start your Coverage Blueprint?</h2>
+      <h2 class="text-3xl font-serif font-bold mb-4">Ready to get started?</h2>
       <p class="text-navy-200 text-lg mb-8 max-w-xl mx-auto">
         Schedule a time that works for you. By appointment only in the Nashville metro area.
       </p>
@@ -183,7 +212,7 @@ const faqs = [
         href="/contact"
         class="inline-flex items-center justify-center px-8 py-4 bg-gold-500 hover:bg-gold-600 text-navy-900 font-semibold text-lg rounded-lg transition-colors"
       >
-        Schedule Your Discovery Meeting
+        Schedule Your Coverage Check
       </a>
     </div>
   </section>

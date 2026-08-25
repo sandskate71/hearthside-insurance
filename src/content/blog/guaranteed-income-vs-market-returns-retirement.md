@@ -3,7 +3,7 @@ title: "Guaranteed Income vs. Market Returns — How Retirees Actually Sleep at 
 description: "The portfolio that built your retirement savings doesn't necessarily work the same way after you stop contributing. Here's what changes — and why guaranteed income exists."
 publishDate: 2026-05-13
 category: "Retirement Income"
-author: "Enrique Gandara"
+author: "Hearthside Insurance"
 draft: false
 ---
 
@@ -53,6 +53,6 @@ For some families, the answer is zero — they have enough other guaranteed inco
 
 ## The conversation
 
-We don't sell annuities as a product. We build retirement income plans, and sometimes guaranteed income is part of the plan and sometimes it isn't. The honest version of this conversation looks at what you have, what you'll need, and what's at stake if the markets are unkind in the wrong years.
+We don't sell products off a shelf. We build retirement income plans, and sometimes guaranteed income is part of the plan and sometimes it isn't. The honest version of this conversation looks at what you have, what you'll need, and what's at stake if the markets are unkind in the wrong years.
 
-If you'd like to walk through your specific picture, schedule a [Discovery Meeting](/contact). We'll build the plan first. The products, if any, come after.
+If you'd like to walk through your specific picture, schedule a [Coverage Check](/contact). We'll build the plan first. The products, if any, come after.

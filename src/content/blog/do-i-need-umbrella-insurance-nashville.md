@@ -52,12 +52,12 @@ That said, the right coverage amount does depend on your specific situation — 
 
 ## How We Approach This
 
-At Hearthside Insurance, umbrella coverage is one of the first things we look at during a Coverage Blueprint review. We're not trying to sell a policy — we're trying to understand your actual exposure.
+At Hearthside Insurance, umbrella coverage is one of the first things we look at during a Coverage Roadmap review. We're not trying to sell a policy — we're trying to understand your actual exposure.
 
-Sometimes families are underinsured and don't know it. Sometimes they're paying for coverage that doesn't align with how they actually live. The Blueprint process looks at everything together so the recommendation is based on your life, not a general rule of thumb.
+Sometimes families are underinsured and don't know it. Sometimes they're paying for coverage that doesn't align with how they actually live. The Roadmap process looks at everything together so the recommendation is based on your life, not a general rule of thumb.
 
 If you have a pool, a trampoline, teenagers on your auto policy, or a home where the neighborhood tends to gather — it's worth having the conversation.
 
 Learn more about our [Home & Auto Insurance](/services/home-auto) services.
 
-[Book a Discovery Meeting](/contact/) — we'll walk through what your exposure actually looks like.
+[Book a Coverage Check](/contact/) — we'll walk through what your exposure actually looks like.

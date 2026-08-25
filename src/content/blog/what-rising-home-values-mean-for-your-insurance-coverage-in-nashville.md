@@ -3,7 +3,7 @@ title: "What Rising Home Values Mean for Your Insurance Coverage in Nashville"
 description: "Many Nashville homeowners are underinsured after rising home values and renovations. Here's what Middle Tennessee families should review."
 publishDate: 2026-05-06
 category: "General"
-author: "Enrique Gandara"
+author: "Hearthside Insurance"
 draft: false
 ---
 
@@ -119,9 +119,9 @@ The goal is to make sure the coverage actually reflects the life someone is livi
 
 That is very different from simply renewing the same policy year after year without asking questions.
 
-## What We Review During a Coverage Blueprint
+## What We Review During a Coverage Roadmap
 
-At Hearthside Insurance, home insurance reviews are usually part of the larger Coverage Blueprint process.
+At Hearthside Insurance, home insurance reviews are usually part of the larger Coverage Roadmap process.
 
 We look at things like:
 
@@ -150,7 +150,7 @@ But many insurance policies have remained surprisingly static.
 
 If you have not reviewed your homeowners coverage in several years — especially after renovations, rising property values, or major life changes — it may be worth taking another look.
 
-Hearthside Insurance offers Discovery Meetings and Coverage Blueprint reviews for Nashville-area families and homeowners who want a clearer understanding of their current coverage.
+Hearthside Insurance offers Coverage Checks and Coverage Roadmap reviews for Nashville-area families and homeowners who want a clearer understanding of their current coverage.
 
 Learn more about our [Home & Auto Insurance](/services/home-auto) services.
 

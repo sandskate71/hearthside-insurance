@@ -3,7 +3,7 @@ title: "How Much Monthly Income Will You Actually Need in Retirement?"
 description: "Most people approach retirement with a savings number but not an expense number — and the savings number doesn't mean anything without the other one."
 publishDate: 2026-05-13
 category: "Retirement Income"
-author: "Enrique Gandara"
+author: "Hearthside Insurance"
 draft: false
 ---
 
@@ -53,4 +53,4 @@ The right mix depends on your specific picture — what you have, what you owe, 
 
 Before any of that, do the two sheets. Even rough numbers tell you a lot. If you don't know your monthly fixed expenses within $500, you don't know what retirement actually costs you yet — and that's the first conversation worth having.
 
-If you'd like help working through it, that's what we do. Schedule a [Discovery Meeting](/contact) and we'll build the two sheets together. No products, no pitches — just the math, in plain numbers.
+If you'd like help working through it, that's what we do. Schedule a [Coverage Check](/contact) and we'll build the two sheets together. No products, no pitches — just the math, in plain numbers.

@@ -2,9 +2,9 @@
 title: "What a Comprehensive Insurance Review Actually Looks Like"
 description: "Most people have never had a real insurance review — just a renewal call or a quote. Here's what a genuine coverage review looks like and what it typically turns up."
 publishDate: 2026-05-09
-author: "Enrique Gandara"
+author: "Hearthside Insurance"
 category: "Insurance Basics"
-tags: ["insurance review Nashville", "coverage review", "independent insurance advisor Nashville", "Coverage Blueprint"]
+tags: ["insurance review Nashville", "coverage review", "independent insurance advisor Nashville", "Coverage Roadmap"]
 slug: "what-a-comprehensive-insurance-review-actually-looks-like"
 draft: false
 ---
@@ -13,7 +13,7 @@ Most people have never had a real insurance review.
 
 What they've had is a renewal call. Someone confirms your address, tells you your rate is going up a few percent, and asks if you want to keep the same coverage. That's not a review. That's a retention call dressed up as a service.
 
-A real insurance review looks different. Here's what I actually do when a new client sits down with me for a Coverage Blueprint.
+A real insurance review looks different. Here's what I actually do when a new client sits down with me for a Coverage Roadmap.
 
 ## It starts with questions, not quotes
 
@@ -41,7 +41,7 @@ For each policy I'm looking at a few things:
 
 ## What we typically find
 
-I want to be honest about this: most people who come in for a Coverage Blueprint find at least one meaningful gap.
+I want to be honest about this: most people who come in for a Coverage Roadmap find at least one meaningful gap.
 
 Not because they did anything wrong. Because insurance is complicated, life changes, and nobody was paying attention on their behalf. Their agent was focused on renewals, not reviews.
 
@@ -77,10 +77,10 @@ If any of these are true, a real review is worth your time:
 
 The conversation is free. What we find usually saves people money, closes gaps they didn't know they had, or both.
 
-If you want to sit down and go through it, book a Discovery Meeting at the link below.
+If you want to sit down and go through it, book a Coverage Check at the link below.
 
 Learn more about [Our Process](/process).
 
 ---
 
-*Enrique Gandara is an independent insurance advisor serving Nashville metro families and small businesses. Hearthside Insurance works by appointment only — no storefront, no quotas, no captive carrier.*
+*Hearthside Insurance is an independent insurance advisory practice serving Nashville metro families and small businesses. Hearthside Insurance works by appointment only — no storefront, no quotas, no captive carrier.*

@@ -2,7 +2,7 @@
 title: "What Happens to Your Life Insurance When You Leave Your Job?"
 description: "Most people don't realize their employer life insurance disappears when they leave — and the window to replace it without a medical exam is shorter than you think."
 publishDate: 2026-05-09
-author: "Enrique Gandara"
+author: "Hearthside Insurance"
 category: "Life Insurance"
 tags: ["life insurance Nashville", "group life insurance", "life insurance portability", "employer life insurance Tennessee"]
 slug: "what-happens-to-life-insurance-when-you-leave-your-job"
@@ -69,10 +69,10 @@ If you're mid-transition right now, move fast. Find out your deadline and call a
 
 If you're not in transition but your primary coverage is through work, it's worth taking stock of where you'd stand if that job ended tomorrow.
 
-Either way, I'm happy to sit down and walk through it. Book a Discovery Meeting at the link below — no pitch, no pressure, just a straight look at where you stand.
+Either way, I'm happy to sit down and walk through it. Book a Coverage Check at the link below — no pitch, no pressure, just a straight look at where you stand.
 
 Learn more about our [Life Insurance](/services/life-insurance) services.
 
 ---
 
-*Enrique Gandara is an independent insurance advisor serving Nashville metro families and small businesses. Hearthside Insurance works by appointment only — no storefront, no quotas, no captive carrier.*
+*Hearthside Insurance is an independent insurance advisory practice serving Nashville metro families and small businesses. Hearthside Insurance works by appointment only — no storefront, no quotas, no captive carrier.*

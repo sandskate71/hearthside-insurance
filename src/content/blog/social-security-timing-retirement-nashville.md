@@ -3,7 +3,7 @@ title: "Why Social Security Timing Matters More Than Most People Think"
 description: "Most people claim Social Security as soon as they can. For many, that's the most expensive decision of retirement — especially if you're married."
 publishDate: 2026-05-13
 category: "Retirement Income"
-author: "Enrique Gandara"
+author: "Hearthside Insurance"
 draft: false
 ---
 
@@ -56,4 +56,4 @@ The right time to make this decision is around 60, not 62. By 62 you're already 
 
 This is a one-time decision that follows you for the rest of your life. It's worth treating it like one.
 
-If you're approaching this decision and want to walk through the math for your situation, schedule a [Discovery Meeting](/contact). We'll model your specific numbers — your earnings record, your spouse's earnings record if applicable, your other income sources — and figure out what makes sense based on what you're actually trying to accomplish.
+If you're approaching this decision and want to walk through the math for your situation, schedule a [Coverage Check](/contact). We'll model your specific numbers — your earnings record, your spouse's earnings record if applicable, your other income sources — and figure out what makes sense based on what you're actually trying to accomplish.

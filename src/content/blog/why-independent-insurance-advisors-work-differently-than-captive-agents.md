@@ -3,7 +3,7 @@ title: "Why Independent Insurance Advisors Work Differently Than Captive Agents"
 description: "Many Nashville families don't realize there is a major difference between independent insurance advisors and captive agents. Here's how the models work — and why it matters."
 publishDate: 2026-05-06
 category: "General"
-author: "Enrique Gandara"
+author: "Hearthside Insurance"
 draft: false
 ---
 
@@ -84,7 +84,7 @@ Before talking about products, we want to understand:
 - Where might the gaps be?
 - What problems are you trying to avoid?
 
-That is why we built the Coverage Blueprint process.
+That is why we built the Coverage Roadmap process.
 
 The goal is not simply to shop policies. The goal is to understand the full picture first.
 
@@ -162,9 +162,9 @@ Insurance is one of those areas where most people assume everything is basically
 
 Independent insurance advisors and captive agents operate under very different structures, and that structure naturally shapes the process, recommendations, and flexibility available to clients.
 
-At Hearthside Insurance, we built the Coverage Blueprint because we believe insurance decisions should start with understanding the person first — not just generating a quote.
+At Hearthside Insurance, we built the Coverage Roadmap because we believe insurance decisions should start with understanding the person first — not just generating a quote.
 
-If you would like a second opinion on your current coverage, Hearthside Insurance offers Discovery Meetings and Coverage Blueprint reviews for Nashville-area families and business owners.
+If you would like a second opinion on your current coverage, Hearthside Insurance offers Coverage Checks and Coverage Roadmap reviews for Nashville-area families and business owners.
 
 Learn more about [About Your Advisor](/about).
 

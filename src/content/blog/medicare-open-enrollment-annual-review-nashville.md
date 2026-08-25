@@ -3,8 +3,9 @@ title: "Medicare Open Enrollment: Why Most People Should Look Every Year"
 description: "Every October 15, Medicare's Annual Enrollment Period opens. Most people ignore it. That can quietly cost them thousands."
 publishDate: 2026-05-13
 category: "Medicare"
-author: "Enrique Gandara"
+author: "Hearthside Insurance"
 draft: false
+noindex: true
 ---
 
 Every year, between October 15 and December 7, Medicare's Annual Enrollment Period opens. It's the window when most Medicare beneficiaries can switch their Advantage plan, change Part D drug coverage, or shift between Original Medicare and Advantage.
@@ -63,6 +64,6 @@ The Life Review is how we make sure your coverage actually evolves with your lif
 
 ## If you're not currently working with us
 
-If you're on Medicare and you'd like a second opinion on your current plan — or you've never had anyone properly walk you through the alternatives — that's a Discovery Meeting. No pressure to switch. We compare across all the plans available in Nashville and tell you honestly whether your current plan is still the right one.
+If you're on Medicare and you'd like a second opinion on your current plan — or you've never had anyone properly walk you through the alternatives — that's a Coverage Check. No pressure to switch. We compare across all the plans available in Nashville and tell you honestly whether your current plan is still the right one.
 
-Call (615) 326-9899 or [schedule a Discovery Meeting](/contact). Ahead of the October 15 enrollment window is the right time to start this conversation.
+Call (615) 326-9899 or [schedule a Coverage Check](/contact). Ahead of the October 15 enrollment window is the right time to start this conversation.

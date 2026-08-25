@@ -2,7 +2,7 @@
 title: "How Much Life Insurance Do You Actually Need?"
 description: "Most people either guess at a number or just take whatever their employer offers. Here's how to think through what your family would actually need — and how to get to a real answer."
 publishDate: 2026-05-09
-author: "Enrique Gandara"
+author: "Hearthside Insurance"
 category: "Life Insurance"
 tags: ["life insurance Nashville", "how much life insurance do I need", "term life insurance Nashville", "life insurance advisor Nashville"]
 slug: "how-much-life-insurance-do-i-actually-need"
@@ -75,12 +75,12 @@ The right answer depends on your situation. But if someone is pushing you toward
 
 Sit down and actually run the numbers. Income you'd need to replace, years you'd need it, debts to cover, existing assets to subtract.
 
-If the math feels complicated or you're not sure what you have, that's what a Coverage Blueprint is for. We go through the whole picture — what you have, what you need, what the gap is — before we ever talk about a specific product.
+If the math feels complicated or you're not sure what you have, that's what a Coverage Roadmap is for. We go through the whole picture — what you have, what you need, what the gap is — before we ever talk about a specific product.
 
-Book a Discovery Meeting at the link below. No pressure, no pitch. Just a straight look at where you stand.
+Book a Coverage Check at the link below. No pressure, no pitch. Just a straight look at where you stand.
 
 Learn more about our [Life Insurance](/services/life-insurance) services.
 
 ---
 
-*Enrique Gandara is an independent insurance advisor serving Nashville metro families and small businesses. Hearthside Insurance works by appointment only — no storefront, no quotas, no captive carrier.*
+*Hearthside Insurance is an independent insurance advisory practice serving Nashville metro families and small businesses. Hearthside Insurance works by appointment only — no storefront, no quotas, no captive carrier.*

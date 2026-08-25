@@ -3,7 +3,7 @@ title: "Is Employer Life Insurance Enough for a Young Family?"
 description: "Many Nashville families rely entirely on employer life insurance without realizing how easy it is to lose that coverage."
 publishDate: 2026-05-06
 category: "General"
-author: "Enrique Gandara"
+author: "Hearthside Insurance"
 draft: false
 ---
 
@@ -154,7 +154,7 @@ And if health changes happen before you replace that coverage, your future optio
 
 That is why many families choose to secure personal coverage they control first, then treat employer coverage as additional protection on top.
 
-Hearthside Insurance offers Discovery Meetings and Coverage Blueprint reviews for Nashville-area families who want a clearer understanding of their current protection strategy.
+Hearthside Insurance offers Coverage Checks and Coverage Roadmap reviews for Nashville-area families who want a clearer understanding of their current protection strategy.
 
 Learn more about our [Life Insurance](/services/life-insurance) services.
 
