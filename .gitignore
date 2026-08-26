@@ -1,5 +1,7 @@
 # build output
 dist/
+# stale build artifacts kept locally, never committed
+_to_delete/
 # generated types
 .astro/
 
