@@ -37,7 +37,31 @@ const esc = (v) =>
     .replace(/</g, '&lt;')
     .replace(/>/g, '&gt;');
 
-function page({ status, heading, body, backHref = '/' }) {
+/**
+ * Delivery-failure responses answer 200, not 502.
+ *
+ * Not a cosmetic choice. This site is served through a proxied Cloudflare zone,
+ * and the zone replaces 5xx response bodies with its own error page. Measured on
+ * hearthsideinsurance.com: the 400 "That didn't come through" page arrives whole
+ * at 1521 bytes with the phone number in it, while the 502 relay-failure page is
+ * replaced by a 16-byte "error code: 502". On *.pages.dev both arrive intact,
+ * which is why this was invisible in preview.
+ *
+ * The result was that the single most important page on this endpoint — the one
+ * telling a real prospect their message did not send and to call instead — was
+ * the only one visitors never saw. It has been that way since 370f296 (Aug 25).
+ *
+ * 200 is also defensible on its own terms: the request to this endpoint did
+ * succeed, and the delivery outcome is what the body describes. The machine
+ * signal moves to the X-Delivery-Failed header, and console.error still fires.
+ *
+ * This does NOT make a failure look like a lead. generate_lead is gated on the
+ * `lead` argument to page(), which only the genuine-success branch passes, and
+ * neither of these two returns passes one.
+ */
+const DELIVERY_FAILED = { status: 200, failed: true };
+
+function page({ status, heading, body, backHref = '/', failed = false }) {
   const html = `<!doctype html><html lang="en"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex">
@@ -57,10 +81,15 @@ a{color:#0f1e3d}
 <h1>${esc(heading)}</h1>${body}
 <a class="btn" href="${backHref}">Back to the site</a>
 </div></body></html>`;
-  return new Response(html, {
-    status,
-    headers: { 'Content-Type': 'text/html; charset=utf-8', 'Cache-Control': 'no-store' },
-  });
+  const headers = {
+    'Content-Type': 'text/html; charset=utf-8',
+    'Cache-Control': 'no-store',
+  };
+  // The status code no longer carries the "did it send" signal (see below), so
+  // expose it as a header for uptime checks and log searches.
+  if (failed) headers['X-Delivery-Failed'] = '1';
+
+  return new Response(html, { status, headers });
 }
 
 export async function onRequestPost({ request }) {
@@ -126,7 +155,7 @@ export async function onRequestPost({ request }) {
     if (!res.ok || String(body.success) !== 'true') {
       console.error('FormSubmit rejected the send:', res.status, JSON.stringify(body), '\n', text);
       return page({
-        status: 502,
+        ...DELIVERY_FAILED,
         heading: "We couldn't send that just now",
         body: `<p>Your message was <strong>not</strong> delivered. Please call <a href="tel:+16153269899">(615) 326-9899</a> or email <a href="mailto:${TO_DEFAULT}">${TO_DEFAULT}</a>.</p>`,
       });
@@ -134,7 +163,7 @@ export async function onRequestPost({ request }) {
   } catch (err) {
     console.error('Form send threw:', err, '\n', text);
     return page({
-      status: 502,
+      ...DELIVERY_FAILED,
       heading: "We couldn't send that just now",
       body: `<p>Your message was <strong>not</strong> delivered. Please call <a href="tel:+16153269899">(615) 326-9899</a> or email <a href="mailto:${TO_DEFAULT}">${TO_DEFAULT}</a>.</p>`,
     });
