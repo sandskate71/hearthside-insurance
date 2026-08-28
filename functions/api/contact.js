@@ -10,6 +10,25 @@
 
 const FORMSUBMIT_ENDPOINT = 'https://formsubmit.co/ajax/bbf5827bc511a6596b72ab910422f130';
 
+/**
+ * FormSubmit rejects any request without a Referer, and does it dishonestly:
+ * the reply is 200 with {"success":"false"} and the message "Make sure you open
+ * this page through a web server", which describes a problem this code does not
+ * have. Workers send no Referer, so every submission since 2026-08-25 failed
+ * this way and the visitor got the "call us" page. Nothing ever reached the
+ * inbox from this site.
+ *
+ * Sent as a constant, not the visitor's own Host. FormSubmit activates per
+ * referring domain, and this site answers on seven of them — forwarding the
+ * real host would demand a separate activation for each. One canonical value
+ * means one activation covers all of them.
+ *
+ * TEMPORARY. FormSubmit is a free service with no account and no data
+ * processing agreement, and this request carries prospect PII. It is the patch
+ * that stops the bleeding, not the destination.
+ */
+const FORMSUBMIT_REFERER = 'https://hearthsideinsurance.com/';
+
 const TO_DEFAULT = 'team@hearthsideinsurance.com';
 
 const esc = (v) =>
@@ -95,7 +114,11 @@ export async function onRequestPost({ request }) {
 
     const res = await fetch(FORMSUBMIT_ENDPOINT, {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+      headers: {
+        'Content-Type': 'application/json',
+        Accept: 'application/json',
+        Referer: FORMSUBMIT_REFERER,
+      },
       body: JSON.stringify(payload),
     });
     const body = await res.json().catch(() => ({}));
