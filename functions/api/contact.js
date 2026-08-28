@@ -1,33 +1,38 @@
 /**
  * Cloudflare Pages Function — form handler for /contact and /ask.
  *
- * Delivers by email through FormSubmit (formsubmit.co) — free, no account, no
- * API key. The endpoint alias below maps to team@hearthsideinsurance.com and
- * was activated on 2026-08-25. If FormSubmit ever rejects a send, the visitor
- * gets an honest error page telling them to call or email — never a false
- * success. Silently eating a lead is the failure mode this replaced.
+ * Delivers through Resend. Requires ONE environment variable, set in the
+ * Cloudflare Pages dashboard (Settings → Environment variables) for Production
+ * and Preview:
+ *
+ *   RESEND_API_KEY   — API key from resend.com
+ *
+ * Optional overrides:
+ *   FORM_TO          — recipient (default team@hearthsideinsurance.com)
+ *   FORM_FROM        — verified sender (default forms@send.hearthsideinsurance.com)
+ *
+ * This replaced FormSubmit, which never delivered a single submission from this
+ * site. It rejected every Referer-less request — and Workers send no Referer —
+ * and once that was fixed it rate-limited Cloudflare's shared egress IPs, which
+ * a Worker cannot control. It was also free, account-less and carried prospect
+ * PII with no data processing agreement.
+ *
+ * Delivery failures answer 200, never 5xx. See DELIVERY_FAILED below.
  */
-
-const FORMSUBMIT_ENDPOINT = 'https://formsubmit.co/ajax/bbf5827bc511a6596b72ab910422f130';
 
 /**
- * FormSubmit rejects any request without a Referer, and does it dishonestly:
- * the reply is 200 with {"success":"false"} and the message "Make sure you open
- * this page through a web server", which describes a problem this code does not
- * have. Workers send no Referer, so every submission since 2026-08-25 failed
- * this way and the visitor got the "call us" page. Nothing ever reached the
- * inbox from this site.
+ * The sender lives on a SUBDOMAIN, and that is deliberate.
  *
- * Sent as a constant, not the visitor's own Host. FormSubmit activates per
- * referring domain, and this site answers on seven of them — forwarding the
- * real host would demand a separate activation for each. One canonical value
- * means one activation covers all of them.
- *
- * TEMPORARY. FormSubmit is a free service with no account and no data
- * processing agreement, and this request carries prospect PII. It is the patch
- * that stops the bleeding, not the destination.
+ * The apex carries `v=spf1 include:_spf.google.com ~all` and MX to
+ * smtp.google.com — Google Workspace delivers team@hearthsideinsurance.com,
+ * which is the very address this form sends to. Verifying Resend against the
+ * apex would mean editing that SPF record, and a mistake there breaks the
+ * mailbox the leads land in. Verifying send.hearthsideinsurance.com instead
+ * puts Resend's SPF, DKIM and MX records on a name of their own and leaves the
+ * apex untouched.
  */
-const FORMSUBMIT_REFERER = 'https://hearthsideinsurance.com/';
+const SEND_SUBDOMAIN = 'send.hearthsideinsurance.com';
+const FROM_DEFAULT = `Hearthside Website <forms@${SEND_SUBDOMAIN}>`;
 
 const TO_DEFAULT = 'team@hearthsideinsurance.com';
 
@@ -92,7 +97,7 @@ a{color:#0f1e3d}
   return new Response(html, { status, headers });
 }
 
-export async function onRequestPost({ request }) {
+export async function onRequestPost({ request, env }) {
   let form;
   try {
     form = await request.formData();
@@ -135,25 +140,42 @@ export async function onRequestPost({ request }) {
       .join('') +
     `</table><p style="color:#888;font-size:12px">Sent from ${esc(source)} at ${new Date().toISOString()}</p>`;
 
-  try {
-    const payload = { _subject: subject };
-    for (const [k, v] of fields) payload[k] = v;
-    if (replyTo) payload._replyto = replyTo;
-    payload._template = 'table';
-
-    const res = await fetch(FORMSUBMIT_ENDPOINT, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        Accept: 'application/json',
-        Referer: FORMSUBMIT_REFERER,
-      },
-      body: JSON.stringify(payload),
+  const key = env.RESEND_API_KEY;
+  if (!key) {
+    // Answering 200 here too: a 503 body is replaced by the zone's own error
+    // page, so the visitor would see nothing at all. The copy differs from the
+    // rejected-send case because retrying cannot help.
+    console.error('FORM SUBMISSION NOT DELIVERED — RESEND_API_KEY is not set.\n' + text);
+    return page({
+      ...DELIVERY_FAILED,
+      heading: "We couldn't send that just now",
+      body: `<p>Our contact form is temporarily unavailable and your message was <strong>not</strong> delivered. Please don't retry — reach us directly instead:</p>
+<p>Call <a href="tel:+16153269899">(615) 326-9899</a><br>Email <a href="mailto:${TO_DEFAULT}">${TO_DEFAULT}</a></p>
+<p>Sorry about that.</p>`,
     });
-    const body = await res.json().catch(() => ({}));
+  }
 
-    if (!res.ok || String(body.success) !== 'true') {
-      console.error('FormSubmit rejected the send:', res.status, JSON.stringify(body), '\n', text);
+  try {
+    const res = await fetch('https://api.resend.com/emails', {
+      method: 'POST',
+      headers: { Authorization: `Bearer ${key}`, 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        from: env.FORM_FROM || FROM_DEFAULT,
+        to: [env.FORM_TO || TO_DEFAULT],
+        subject,
+        text,
+        html,
+        // Reply-To is the prospect's own address, so hitting reply in the inbox
+        // writes to the person rather than to the sending subdomain. Omitted
+        // entirely when they left the email field blank — a Reply-To pointing
+        // at forms@send.* would be worse than none.
+        ...(replyTo ? { reply_to: replyTo } : {}),
+      }),
+    });
+
+    if (!res.ok) {
+      const detail = await res.text();
+      console.error('Resend rejected the send:', res.status, detail, '\n', text);
       return page({
         ...DELIVERY_FAILED,
         heading: "We couldn't send that just now",
