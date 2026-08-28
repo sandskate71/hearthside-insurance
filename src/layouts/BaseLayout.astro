@@ -23,9 +23,15 @@ const { title, description, canonical, ogImage, noindex, breadcrumbTitle } = Ast
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="generator" content={Astro.generator} />
 
-    <!-- Google Analytics -->
+    <!-- Google Analytics.
+         `is:inline` is load-bearing: without it Astro bundles this as a module
+         and minifies `gtag` to a local name, so the function never reaches
+         `window` and `typeof gtag === 'function'` is false everywhere else on
+         the page. page_view still worked because dataLayer is global, which is
+         what made the breakage invisible. Any gtag call outside this block —
+         including the tel: handler below — depends on this staying inline. -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-F1H924T1E7"></script>
-    <script>
+    <script is:inline>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
@@ -74,5 +80,35 @@ const { title, description, canonical, ogImage, noindex, breadcrumbTitle } = Ast
       <slot />
     </main>
     <Footer />
+
+    <!-- GA4 phone_click. One delegated listener for the whole site: the number
+         sits in the header, the footer, the contact page and the urgent CTA,
+         and delegation means a tel: link added anywhere later is covered for
+         free. Never preventDefault and never await the beacon — a dropped hit
+         is acceptable, a delayed dial is not. -->
+    <script is:inline>
+      document.addEventListener('click', (e) => {
+        // e.target is not always an Element (text nodes, the document itself),
+        // and this listener must never be the thing that throws on a page.
+        const target = e.target;
+        if (!target || typeof target.closest !== 'function') return;
+
+        const link = target.closest('a[href^="tel:"]');
+        if (!link) return;
+
+        // Landmarks first: most taps are header or footer, and neither carries
+        // a section id, so nearest-id alone would report almost everything as
+        // 'unknown' and waste the dimension.
+        let location = 'unknown';
+        if (link.closest('header')) location = 'header';
+        else if (link.closest('footer')) location = 'footer';
+        else {
+          const section = link.closest('[id]');
+          if (section && section.id) location = section.id;
+        }
+
+        if (typeof gtag === 'function') gtag('event', 'phone_click', { link_location: location });
+      });
+    </script>
   </body>
 </html>
