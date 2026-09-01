@@ -54,3 +54,9 @@ What we'll need:
 - Any specific coverage your lender is requiring
 
 Everything else we can figure out together.
+
+## Related reading
+
+- [How Much Home Insurance Do You Actually Need in Nashville?](/blog/how-much-home-insurance-do-you-need-nashville)
+- [What a Comprehensive Insurance Review Actually Looks Like](/blog/what-a-comprehensive-insurance-review-actually-looks-like)
+- [Home & Auto Insurance](/services/home-auto) — how we review this line of coverage.

@@ -54,3 +54,9 @@ The right mix depends on your specific picture — what you have, what you owe, 
 Before any of that, do the two sheets. Even rough numbers tell you a lot. If you don't know your monthly fixed expenses within $500, you don't know what retirement actually costs you yet — and that's the first conversation worth having.
 
 If you'd like help working through it, that's what we do. Schedule a [Coverage Check](/contact) and we'll build the two sheets together. No products, no pitches — just the math, in plain numbers.
+
+## Related reading
+
+- [Guaranteed Income vs. Market Returns](/blog/guaranteed-income-vs-market-returns-retirement)
+- [Why Social Security Timing Matters More Than Most People Think](/blog/social-security-timing-retirement-nashville)
+- [Retirement Income Planning](/services/retirement-income) — how we review this line of coverage.

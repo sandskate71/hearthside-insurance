@@ -6,6 +6,7 @@ const sections = [
   {
     label: 'Home & Auto Insurance',
     id: 'home-auto',
+    service: { href: '/services/home-auto', label: 'Home &amp; Auto Insurance' },
     questions: [
       {
         q: 'Does home insurance cover tornado damage in Tennessee?',
@@ -52,6 +53,7 @@ const sections = [
   {
     label: 'Auto Insurance',
     id: 'auto-insurance',
+    service: { href: '/services/home-auto', label: 'Home &amp; Auto Insurance' },
     questions: [
       {
         q: 'What does "full coverage" auto insurance actually mean?',
@@ -108,6 +110,7 @@ const sections = [
   {
     label: 'Life Insurance',
     id: 'life-insurance',
+    service: { href: '/services/life-insurance', label: 'Life Insurance' },
     questions: [
       {
         q: 'How much life insurance do I actually need?',
@@ -138,6 +141,7 @@ const sections = [
   {
     label: 'Long-Term Care',
     id: 'long-term-care',
+    service: { href: '/services/long-term-care', label: 'Long-Term Care Insurance' },
     questions: [
       {
         q: 'What does long-term care insurance actually cover?',
@@ -156,6 +160,7 @@ const sections = [
   {
     label: 'Retirement & Long-Term Planning',
     id: 'retirement-planning',
+    service: { href: '/services/retirement-income', label: 'Retirement Income Planning' },
     questions: [
       {
         q: 'What is the difference between a will and a life insurance beneficiary designation?',
@@ -174,6 +179,7 @@ const sections = [
   {
     label: 'Small Business Insurance',
     id: 'small-business',
+    service: { href: '/services/small-business', label: 'Small Business Insurance' },
     questions: [
       {
         q: 'What insurance does a small business actually need in Tennessee?',
@@ -200,6 +206,7 @@ const sections = [
   {
     label: 'Working With an Independent Advisor',
     id: 'working-with-advisor',
+    service: { href: '/process', label: 'Our Process' },
     questions: [
       {
         q: 'What actually happens at a Coverage Check?',
@@ -366,6 +373,12 @@ const faqSchema = {
               <h2 class="text-2xl font-serif font-bold text-navy-900">
                 {section.label} Questions
               </h2>
+              {section.service && (
+                <p class="text-gray-600 text-sm mt-3">
+                  More detail on how we handle this:
+                  <a href={section.service.href} class="font-medium text-gold-700 underline underline-offset-2 hover:text-gold-800" set:html={section.service.label} />
+                </p>
+              )}
             </div>
 
             <div class="space-y-3">

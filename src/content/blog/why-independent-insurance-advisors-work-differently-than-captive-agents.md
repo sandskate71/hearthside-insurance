@@ -169,3 +169,8 @@ If you would like a second opinion on your current coverage, Hearthside Insuranc
 Learn more about [About Your Advisor](/about).
 
 The goal is clarity first — not pressure.
+
+## Related reading
+
+- [Why We Built the Coverage Roadmap](/blog/coverage-roadmap-why-we-do-it-differently)
+- [What a Comprehensive Insurance Review Actually Looks Like](/blog/what-a-comprehensive-insurance-review-actually-looks-like)

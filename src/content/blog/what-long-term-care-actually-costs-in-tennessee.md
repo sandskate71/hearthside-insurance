@@ -170,3 +170,8 @@ Hearthside Insurance offers Coverage Checks and Coverage Roadmap reviews for Nas
 Learn more about our [Long-Term Care](/services/long-term-care) services.
 
 The goal is clarity first — not pressure.
+
+## Related reading
+
+- [What a Comprehensive Insurance Review Actually Looks Like](/blog/what-a-comprehensive-insurance-review-actually-looks-like)
+- [How Much Life Insurance Do You Actually Need?](/blog/how-much-life-insurance-do-i-actually-need)

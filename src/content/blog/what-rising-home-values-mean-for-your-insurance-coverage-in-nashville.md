@@ -155,3 +155,10 @@ Hearthside Insurance offers Coverage Checks and Coverage Roadmap reviews for Nas
 Learn more about our [Home & Auto Insurance](/services/home-auto) services.
 
 The goal is clarity first — not pressure
+
+## Related reading
+
+- [How Much Home Insurance Do You Actually Need in Nashville?](/blog/how-much-home-insurance-do-you-need-nashville)
+- [Replacement Cost vs. Actual Cash Value: What Nashville Homeowners Get Wrong](/blog/replacement-cost-vs-actual-cash-value-nashville)
+- [Need Coverage in Two Weeks? Here's How That Actually Works](/blog/need-home-insurance-fast-nashville-closing)
+- [Insurance advisor serving Brentwood, TN](/neighborhoods/brentwood) — where Williamson County appreciation has moved fastest.

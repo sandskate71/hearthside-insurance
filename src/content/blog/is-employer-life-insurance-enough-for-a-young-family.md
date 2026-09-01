@@ -159,3 +159,8 @@ Hearthside Insurance offers Coverage Checks and Coverage Roadmap reviews for Nas
 Learn more about our [Life Insurance](/services/life-insurance) services.
 
 The goal is clarity first — not pressure.
+
+## Related reading
+
+- [What Happens to Your Life Insurance When You Leave Your Job?](/blog/what-happens-to-life-insurance-when-you-leave-your-job)
+- [How Much Life Insurance Do You Actually Need?](/blog/how-much-life-insurance-do-i-actually-need)

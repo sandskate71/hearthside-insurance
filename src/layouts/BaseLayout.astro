@@ -10,10 +10,11 @@ interface Props {
   canonical?: string;
   ogImage?: string;
   noindex?: boolean;
+  noindexFollow?: boolean;
   breadcrumbTitle?: string;
 }
 
-const { title, description, canonical, ogImage, noindex, breadcrumbTitle } = Astro.props;
+const { title, description, canonical, ogImage, noindex, noindexFollow, breadcrumbTitle } = Astro.props;
 ---
 
 <!doctype html>
@@ -70,6 +71,7 @@ const { title, description, canonical, ogImage, noindex, breadcrumbTitle } = Ast
       canonical={canonical}
       ogImage={ogImage}
       noindex={noindex}
+      noindexFollow={noindexFollow}
       breadcrumbTitle={breadcrumbTitle}
     />
     <slot name="head" />

@@ -50,3 +50,9 @@ A good policy should match how you actually live in — and rent out — your ho
 That's exactly the kind of thing a quick coverage review is built to catch. Send us your declarations page and tell us how you use the property, and we'll tell you straight where you stand — no quote, no pressure. We don't shop rates. We review lives.
 
 *Every policy and situation is different. This isn't a coverage determination on yours — it's a starting point for a real conversation. Confirm permit and tax specifics directly with Metro Codes.*
+
+## Related reading
+
+- [Does Homeowners Insurance Cover a Home-Based Business?](/blog/does-homeowners-insurance-cover-home-based-business)
+- [Do I Need Umbrella Insurance in Nashville?](/blog/do-i-need-umbrella-insurance-nashville)
+- [Home & Auto Insurance](/services/home-auto) — how we review this line of coverage.

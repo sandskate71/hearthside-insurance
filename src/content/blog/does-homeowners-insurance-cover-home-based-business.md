@@ -50,3 +50,9 @@ A home-based business is still a business, and it deserves coverage that knows i
 Tell us what you do and how you run it, and we'll point you to the right fix. No quote, no pressure. We don't shop rates. We review lives.
 
 *Every policy and business is different. This isn't a coverage determination on yours — it's a starting point for a real conversation.*
+
+## Related reading
+
+- [What Insurance Does a Small Business Actually Need in Nashville?](/blog/what-insurance-does-a-small-business-need-nashville)
+- [Does My Homeowners Policy Cover My Airbnb in Nashville?](/blog/does-my-homeowners-policy-cover-my-airbnb-nashville)
+- [Small Business Insurance](/services/small-business) — how we review this line of coverage.

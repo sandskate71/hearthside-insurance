@@ -65,3 +65,8 @@ Learn more about [Our Process](/process).
 ## Ready to start your Coverage Roadmap?
 
 Schedule a Coverage Check. No pressure, no products, no pitch. Just a conversation about where you are and whether we can help.
+
+## Related reading
+
+- [What a Comprehensive Insurance Review Actually Looks Like](/blog/what-a-comprehensive-insurance-review-actually-looks-like)
+- [Why Independent Insurance Advisors Work Differently Than Captive Agents](/blog/why-independent-insurance-advisors-work-differently-than-captive-agents)

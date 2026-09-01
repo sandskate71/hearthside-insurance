@@ -76,3 +76,8 @@ Learn more about our [Small Business Insurance](/services/small-business) servic
 ---
 
 *Hearthside Insurance is an independent insurance advisory practice serving Nashville metro families and small businesses. Hearthside Insurance works by appointment only — no storefront, no quotas, no captive carrier.*
+
+## Related reading
+
+- [What Insurance Does a Small Business Actually Need in Nashville?](/blog/what-insurance-does-a-small-business-need-nashville)
+- [Does Homeowners Insurance Cover a Home-Based Business?](/blog/does-homeowners-insurance-cover-home-based-business)

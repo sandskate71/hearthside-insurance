@@ -54,3 +54,10 @@ Replacement cost vs. actual cash value isn't fine print — it's the whole ballg
 Send us your declarations page and we'll show you exactly how yours would pay out, before a storm forces the issue. We don't shop rates. We review lives.
 
 *Every policy is different. This isn't a coverage determination on yours — it's a starting point for a real conversation.*
+
+## Related reading
+
+- [How Much Home Insurance Do You Actually Need in Nashville?](/blog/how-much-home-insurance-do-you-need-nashville)
+- [What Rising Home Values Mean for Your Insurance Coverage in Nashville](/blog/what-rising-home-values-mean-for-your-insurance-coverage-in-nashville)
+- [Home & Auto Insurance](/services/home-auto) — how we review this line of coverage.
+- [Insurance advisor serving Franklin, TN](/neighborhoods/franklin) — storm exposure and rebuild costs in Williamson County.
