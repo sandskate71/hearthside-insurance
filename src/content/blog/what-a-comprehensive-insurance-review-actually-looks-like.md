@@ -84,3 +84,9 @@ Learn more about [Our Process](/process).
 ---
 
 *Hearthside Insurance is an independent insurance advisory practice serving Nashville metro families and small businesses. Hearthside Insurance works by appointment only — no storefront, no quotas, no captive carrier.*
+
+## Related reading
+
+- [Why We Built the Coverage Roadmap](/blog/coverage-roadmap-why-we-do-it-differently)
+- [Why Independent Insurance Advisors Work Differently Than Captive Agents](/blog/why-independent-insurance-advisors-work-differently-than-captive-agents)
+- [What Long-Term Care Actually Costs in Tennessee](/blog/what-long-term-care-actually-costs-in-tennessee)

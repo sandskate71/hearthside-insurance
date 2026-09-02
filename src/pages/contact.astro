@@ -24,7 +24,7 @@ import { BRAND } from '../consts';
   </section>
 
   <!-- Contact Content -->
-  <section class="py-20 bg-white">
+  <section id="contact-details" class="py-20 bg-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-14">
 
@@ -99,7 +99,7 @@ import { BRAND } from '../consts';
         <!-- Contact Form / Scheduler -->
         <div>
           <div class="p-8 rounded-2xl border border-gray-200 bg-white shadow-sm">
-            <h2 class="text-2xl font-serif font-bold text-navy-900 mb-2">Send a Message</h2>
+            <h2 id="form-heading" class="text-2xl font-serif font-bold text-navy-900 mb-2">Send a Message</h2>
             <p class="text-gray-500 text-sm mb-8">
               Have a question or ready to get started? Fill out the form below and we'll get back to you within one business day. No spam, no pressure — just a real response from a real advisor.
             </p>
@@ -110,6 +110,34 @@ import { BRAND } from '../consts';
               <p class="hidden" aria-hidden="true">
                 <label>Company website<input type="text" name="company_website" tabindex="-1" autocomplete="off" /></label>
               </p>
+
+              <!-- Urgency fork — sets the hidden `urgency` field, which the
+                   Pages Function forwards like any other named field. -->
+              <input type="hidden" id="urgency" name="urgency" value="" />
+              <fieldset>
+                <legend class="block text-sm font-medium text-gray-700 mb-3">
+                  Are you looking to get coverage in place soon, or want a full review of what you have?
+                </legend>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                  <button
+                    type="button"
+                    data-urgency="urgent"
+                    aria-pressed="false"
+                    class="urgency-option px-5 py-4 rounded-lg border border-gray-300 bg-white text-left text-sm font-medium text-navy-900 hover:border-gold-400 transition-colors focus:outline-none focus:ring-2 focus:ring-navy-500 aria-pressed:border-gold-500 aria-pressed:bg-gold-50 aria-pressed:ring-2 aria-pressed:ring-gold-400"
+                  >
+                    I need coverage soon
+                  </button>
+                  <button
+                    type="button"
+                    data-urgency="review"
+                    aria-pressed="false"
+                    class="urgency-option px-5 py-4 rounded-lg border border-gray-300 bg-white text-left text-sm font-medium text-navy-900 hover:border-gold-400 transition-colors focus:outline-none focus:ring-2 focus:ring-navy-500 aria-pressed:border-gold-500 aria-pressed:bg-gold-50 aria-pressed:ring-2 aria-pressed:ring-gold-400"
+                  >
+                    I want a full review
+                  </button>
+                </div>
+              </fieldset>
+
               <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
                   <label for="first-name" class="block text-sm font-medium text-gray-700 mb-1.5">First name</label>
@@ -191,13 +219,14 @@ import { BRAND } from '../consts';
 
               <button
                 type="submit"
+                id="submit-button"
                 class="w-full px-6 py-4 bg-navy-900 hover:bg-navy-800 text-white font-semibold rounded-lg transition-colors text-sm"
               >
                 Send Message
               </button>
 
               <p class="text-xs text-gray-400 text-center">
-                We'll respond within one business day. No spam, no pressure. View our <a href="/privacy-policy" class="underline hover:text-gray-600 transition-colors">Privacy Policy</a>.
+                <span id="response-time">We'll respond within one business day.</span> No spam, no pressure. View our <a href="/privacy-policy" class="underline hover:text-gray-600 transition-colors">Privacy Policy</a>.
               </p>
             </form>
           </div>
@@ -213,5 +242,60 @@ import { BRAND } from '../consts';
       </div>
     </div>
   </section>
+
+  <script>
+    const urgencyField = document.getElementById('urgency');
+    const responseTime = document.getElementById('response-time');
+    const formHeading = document.getElementById('form-heading');
+    const submitButton = document.getElementById('submit-button');
+    const interest = document.getElementById('interest');
+    const options = document.querySelectorAll('[data-urgency]');
+
+    // The `review` entry repeats the server-rendered defaults, so switching
+    // back to it restores the page's original copy.
+    const COPY = {
+      urgent: {
+        responseTime: "We'll call you back today, during business hours (Mon–Thu 9–4, Fri 9–12).",
+        heading: 'Request a Callback',
+        submit: 'Request a Callback',
+      },
+      review: {
+        responseTime: "We'll respond within one business day.",
+        heading: 'Send a Message',
+        submit: 'Send Message',
+      },
+    };
+
+    // Only the full-review path maps cleanly onto an existing dropdown topic.
+    // "Coverage soon" says nothing about which line they need, so we leave the
+    // dropdown for them to answer.
+    const TOPIC = { review: 'comprehensive-review' };
+
+    function selectUrgency(value) {
+      const copy = COPY[value];
+      if (!copy) return;
+      if (urgencyField) urgencyField.value = value;
+      if (responseTime) responseTime.textContent = copy.responseTime;
+      if (formHeading) formHeading.textContent = copy.heading;
+      if (submitButton) submitButton.textContent = copy.submit;
+
+      options.forEach((el) => {
+        el.setAttribute('aria-pressed', String(el.getAttribute('data-urgency') === value));
+      });
+
+      // Never clobber a topic the visitor already picked.
+      if (interest && TOPIC[value] && interest.value === '') {
+        interest.value = TOPIC[value];
+      }
+    }
+
+    options.forEach((el) => {
+      el.addEventListener('click', () => selectUrgency(el.getAttribute('data-urgency')));
+    });
+
+    // Arriving from a hero CTA (/contact?path=urgent|review) pre-selects the fork.
+    const path = new URLSearchParams(window.location.search).get('path');
+    if (path) selectUrgency(path);
+  </script>
 
 </BaseLayout>

@@ -7,7 +7,7 @@ const body = `# ${BRAND.name}
 
 ${BRAND.name} is an independent advisory practice, not a captive agent for any single carrier. We work with multiple carriers and our recommendations are based on each client's specific situation. Our process — the Coverage Roadmap — is a structured four-stage review: Coverage Check, Quote & Bind, Coverage Roadmap Review, and an Annual Life Review scheduled in each client's onboarding anniversary month.
 
-Licensed in Tennessee: Property & Casualty.
+Licensed in Tennessee: Property & Casualty · Life & Health.
 Phone: ${BRAND.phone}
 Email: ${BRAND.email}
 

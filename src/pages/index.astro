@@ -38,20 +38,21 @@ import { BRAND } from '../consts';
         </p>
         <div class="flex flex-col sm:flex-row sm:flex-wrap gap-4">
           <a
-            href="/contact"
+            href="/contact?path=urgent"
             class="inline-flex items-center justify-center px-8 py-4 bg-gold-500 hover:bg-gold-600 text-navy-900 font-semibold text-lg rounded-lg transition-colors"
           >
-            Book a Coverage Check
+            I Need Coverage Now
           </a>
           <a
-            href="/contact/"
+            href="/contact?path=review"
             class="inline-flex items-center justify-center px-8 py-4 border-2 border-gold-500 text-gold-400 hover:bg-gold-500 hover:text-navy-900 font-medium text-lg rounded-lg transition-colors"
           >
-            Request a Free Policy Review
+            I Want a Full Review
           </a>
           <a
-            href="/process"
-            class="inline-flex items-center justify-center px-8 py-4 bg-white hover:bg-gray-100 text-navy-900 font-medium text-lg rounded-lg transition-colors"
+            href="#how-it-works"
+            class="inline-flex items-center justify-center text-lg font-medium text-white underline hover:text-gold-400 transition-colors"
+            style="text-shadow: 0 2px 8px rgba(0,0,0,0.8);"
           >
             How It Works
           </a>
@@ -71,7 +72,7 @@ import { BRAND } from '../consts';
         </span>
         <span class="flex items-center gap-2">
           <span class="w-2 h-2 rounded-full bg-gold-500 inline-block"></span>
-          Property &amp; Casualty
+          Property &amp; Casualty &middot; Life &amp; Health
         </span>
         <span class="flex items-center gap-2">
           <span class="w-2 h-2 rounded-full bg-gold-500 inline-block"></span>
@@ -248,7 +249,7 @@ import { BRAND } from '../consts';
   </section>
 
   <!-- Mid-page CTA Band -->
-  <section class="bg-navy-900 text-gold-50 py-12">
+  <section id="midpage-cta" class="bg-navy-900 text-gold-50 py-12">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex flex-col items-center text-center gap-6">
         <h2 class="text-3xl md:text-4xl font-serif font-bold text-gold-50">
@@ -273,7 +274,7 @@ import { BRAND } from '../consts';
   </section>
 
   <!-- Process Teaser -->
-  <section class="py-15 bg-white">
+  <section id="how-it-works" class="py-15 bg-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
         <div>
@@ -363,7 +364,7 @@ import { BRAND } from '../consts';
   </section>
 
   <!-- CTA Section -->
-  <section class="py-15" style="background-color: #fdf8ee;">
+  <section id="closing-cta" class="py-15" style="background-color: #fdf8ee;">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
       <h2 class="text-3xl md:text-4xl font-serif font-bold text-navy-900 mb-4">
         Ready to understand your coverage?

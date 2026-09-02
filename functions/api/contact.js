@@ -42,6 +42,41 @@ const esc = (v) =>
     .replace(/</g, '&lt;')
     .replace(/>/g, '&gt;');
 
+const GA_MEASUREMENT_ID = 'G-F1H924T1E7';
+
+/**
+ * GA4 lead event, emitted into the page markup.
+ *
+ * These responses are hand-built HTML, not Astro pages, so they do not inherit
+ * the site's gtag snippet from BaseLayout — the tag has to be bootstrapped here
+ * or the call has nothing to call. `send_page_view: false` keeps /api/contact
+ * out of the page_view report; the only hit this page makes is the lead itself.
+ *
+ * This block is emitted ONLY when page() is handed a `lead`, and only the
+ * genuine-success branch hands it one. The honeypot reply and the "call us"
+ * page pass nothing, so they carry no snippet and cannot fire the event —
+ * including now that the failure page answers 200 rather than 502. That
+ * is also why this is not a real Astro route: a route would be a public GET URL
+ * that fires generate_lead for anyone who loads it.
+ */
+function leadTag(lead) {
+  if (!lead) return '';
+  // Values are server-chosen from closed sets, but they still land inside a
+  // <script>, so close the tag-break and line-separator holes anyway.
+  const params = JSON.stringify(lead)
+    .replace(/</g, '\\u003c')
+    .replace(/\u2028/g, '\\u2028')
+    .replace(/\u2029/g, '\\u2029');
+  return `<script async src="https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', '${GA_MEASUREMENT_ID}', { send_page_view: false });
+if (typeof gtag === 'function') gtag('event', 'generate_lead', ${params});
+</script>`;
+}
+
 /**
  * Delivery-failure responses answer 200, not 502.
  *
@@ -66,11 +101,12 @@ const esc = (v) =>
  */
 const DELIVERY_FAILED = { status: 200, failed: true };
 
-function page({ status, heading, body, backHref = '/', failed = false }) {
+function page({ status, heading, body, backHref = '/', lead = null, failed = false }) {
   const html = `<!doctype html><html lang="en"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex">
 <title>${esc(heading)} — Hearthside Insurance</title>
+${leadTag(lead)}
 <style>
 :root{color-scheme:light}
 body{margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center;
@@ -97,6 +133,28 @@ a{color:#0f1e3d}
   return new Response(html, { status, headers });
 }
 
+/**
+ * GA4 `generate_lead` parameters, derived from the submission.
+ *
+ * Both values come from closed sets rather than being passed through: `_source`
+ * and `urgency` are hidden fields, so a bot can put anything in them. Mapping
+ * them here keeps the GA4 dimensions to values the reports can actually group
+ * by, and keeps arbitrary strings out of the event.
+ */
+const FORM_LOCATION = {
+  'contact page': 'contact',
+  'ask a question': 'ask',
+};
+
+const URGENCY = new Set(['urgent', 'review']);
+
+function leadParams(form, source) {
+  const params = { form_location: FORM_LOCATION[String(source)] || 'other' };
+  const urgency = String(form.get('urgency') || '');
+  if (URGENCY.has(urgency)) params.urgency = urgency;
+  return params;
+}
+
 export async function onRequestPost({ request, env }) {
   let form;
   try {
@@ -111,6 +169,9 @@ export async function onRequestPost({ request, env }) {
 
   // Honeypot — bots fill hidden fields; humans don't.
   if (form.get('company_website')) {
+    // Bots get the same reassurance a human gets, but deliberately no `lead` —
+    // a honeypot hit is not a lead, and counting one would be the exact
+    // inflation this event exists to avoid.
     return page({ status: 200, heading: 'Thanks — we got it', body: '<p>We&rsquo;ll be in touch.</p>' });
   }
 
@@ -191,9 +252,13 @@ export async function onRequestPost({ request, env }) {
     });
   }
 
+  // The only branch that fires generate_lead: FormSubmit accepted the send and
+  // the submission cleared the honeypot. A failed relay returns above, from the
+  // 502 branch, which passes no `lead` and so carries no tag at all.
   return page({
     status: 200,
     heading: 'Thanks — we got it',
+    lead: leadParams(form, source),
     body: `<p>Your message is in. We respond within one business day.</p><p>If it's urgent, call <a href="tel:+16153269899">(615) 326-9899</a>.</p>`,
   });
 }

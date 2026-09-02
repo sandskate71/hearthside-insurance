@@ -76,3 +76,8 @@ Learn more about our [Life Insurance](/services/life-insurance) services.
 ---
 
 *Hearthside Insurance is an independent insurance advisory practice serving Nashville metro families and small businesses. Hearthside Insurance works by appointment only — no storefront, no quotas, no captive carrier.*
+
+## Related reading
+
+- [Is Employer Life Insurance Enough for a Young Family?](/blog/is-employer-life-insurance-enough-for-a-young-family)
+- [How Much Life Insurance Do You Actually Need?](/blog/how-much-life-insurance-do-i-actually-need)

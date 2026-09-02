@@ -57,3 +57,9 @@ The right time to make this decision is around 60, not 62. By 62 you're already 
 This is a one-time decision that follows you for the rest of your life. It's worth treating it like one.
 
 If you're approaching this decision and want to walk through the math for your situation, schedule a [Coverage Check](/contact). We'll model your specific numbers — your earnings record, your spouse's earnings record if applicable, your other income sources — and figure out what makes sense based on what you're actually trying to accomplish.
+
+## Related reading
+
+- [How Much Monthly Income Will You Actually Need in Retirement?](/blog/how-much-monthly-income-retirement-nashville)
+- [Guaranteed Income vs. Market Returns](/blog/guaranteed-income-vs-market-returns-retirement)
+- [Retirement Income Planning](/services/retirement-income) — how we review this line of coverage.

@@ -7,9 +7,15 @@ interface Props {
   description: string;
   intro: string;
   gaps: [string, string, string];
+  /** Set on the eight consolidated city pages: keeps them out of the index
+      while internal links still pass. Brentwood and Franklin leave it unset. */
+  noindexFollow?: boolean;
+  /** Contextual body links (site audit, Priority 3). Populated on the two
+      indexed city pages; the noindexed eight inherit the empty default. */
+  relatedReading?: { href: string; anchor: string; note: string }[];
 }
 
-const { neighborhood, description, intro, gaps } = Astro.props;
+const { neighborhood, description, intro, gaps, noindexFollow = false, relatedReading = [] } = Astro.props;
 
 const title = `Insurance Advisor in ${neighborhood} TN | ${BRAND.name}`;
 
@@ -63,6 +69,7 @@ const services = [
   title={title}
   description={description}
   breadcrumbTitle={neighborhood}
+  noindexFollow={noindexFollow}
 >
 
   <script slot="head" type="application/ld+json" set:html={JSON.stringify(schema)} />
@@ -143,12 +150,31 @@ const services = [
         <p class="text-gold-600 text-xs font-semibold uppercase tracking-widest mb-2">Our Process</p>
         <h2 class="text-2xl font-serif font-bold text-navy-900 mb-5">How the Coverage Roadmap Works</h2>
         <div class="space-y-4 text-gray-700 text-base leading-relaxed">
-          <p>{BRAND.name} doesn't start with a quote. We start with questions — about your home, your family, your business, your assets, and your plans. That conversation is called the Coverage Check, and it's free, no pressure, and no sales pitch.</p>
-          <p>From there, we do a Coverage Roadmap Review where we review your current coverage, identify gaps, overlaps, and anything that hasn't kept up with your life. Implementation happens at your pace — not ours. The goal is to make sure you actually understand your coverage picture before anything changes.</p>
+          <p>{BRAND.name} doesn't start with a quote. We start with questions — about your home, your family, your business, your assets, and your plans. That conversation is the <strong class="font-semibold text-navy-900">Coverage Check</strong>, and it's free, about fifteen minutes, no pressure and no sales pitch.</p>
+          <p>Next is <strong class="font-semibold text-navy-900">Quote &amp; Bind</strong>. We shop your situation across our carriers, walk you through what came back, and place the coverage you choose — so you're protected before we go any further.</p>
+          <p>Thirty to forty-five days later comes the <strong class="font-semibold text-navy-900">Coverage Roadmap Review</strong>, a 60-to-90-minute session covering your whole picture: gaps, overlaps, and anything that hasn't kept up with your life.</p>
+          <p>After that, the <strong class="font-semibold text-navy-900">Annual Life Review</strong> comes around once a year, on the anniversary of the month you first came on board — not a courtesy call, and not everyone crammed into the same season. Same advisor, every time. <a href="/process" class="text-gold-700 font-medium underline underline-offset-2 hover:text-gold-800">See the full four-stage process</a>.</p>
         </div>
       </div>
     </div>
   </section>
+
+  <!-- Contextual links (site audit, Priority 3). -->
+  {relatedReading.length > 0 && (
+    <section class="py-16 bg-gray-50">
+      <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-2xl font-serif font-bold text-navy-900 mb-4">Useful Reading for {neighborhood} Homeowners</h2>
+        <ul class="space-y-3 text-base leading-relaxed text-gray-700">
+          {relatedReading.map((link) => (
+            <li>
+              <a href={link.href} class="font-medium text-gold-700 underline underline-offset-2 hover:text-gold-800">{link.anchor}</a>
+              <span> — {link.note}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </section>
+  )}
 
   <!-- CTA -->
   <section class="py-20 bg-navy-900 text-white text-center">

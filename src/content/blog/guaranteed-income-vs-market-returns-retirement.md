@@ -56,3 +56,9 @@ For some families, the answer is zero — they have enough other guaranteed inco
 We don't sell products off a shelf. We build retirement income plans, and sometimes guaranteed income is part of the plan and sometimes it isn't. The honest version of this conversation looks at what you have, what you'll need, and what's at stake if the markets are unkind in the wrong years.
 
 If you'd like to walk through your specific picture, schedule a [Coverage Check](/contact). We'll build the plan first. The products, if any, come after.
+
+## Related reading
+
+- [How Much Monthly Income Will You Actually Need in Retirement?](/blog/how-much-monthly-income-retirement-nashville)
+- [Why Social Security Timing Matters More Than Most People Think](/blog/social-security-timing-retirement-nashville)
+- [Retirement Income Planning](/services/retirement-income) — how we review this line of coverage.

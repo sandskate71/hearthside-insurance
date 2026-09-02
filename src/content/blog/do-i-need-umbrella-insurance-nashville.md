@@ -61,3 +61,8 @@ If you have a pool, a trampoline, teenagers on your auto policy, or a home where
 Learn more about our [Home & Auto Insurance](/services/home-auto) services.
 
 [Book a Coverage Check](/contact/) — we'll walk through what your exposure actually looks like.
+
+## Related reading
+
+- [Does My Homeowners Policy Cover My Airbnb in Nashville?](/blog/does-my-homeowners-policy-cover-my-airbnb-nashville)
+- [How Much Home Insurance Do You Actually Need in Nashville?](/blog/how-much-home-insurance-do-you-need-nashville)

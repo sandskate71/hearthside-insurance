@@ -7,6 +7,9 @@ interface Props {
   canonical?: string;
   ogImage?: string;
   noindex?: boolean;
+  /** Emits `noindex,follow` — keeps the page out of the index while internal
+      links still pass. Reversible: drop the prop and the page indexes again. */
+  noindexFollow?: boolean;
   breadcrumbTitle?: string;
 }
 
@@ -16,6 +19,7 @@ const {
   canonical,
   ogImage = '/og-default.png',
   noindex = false,
+  noindexFollow = false,
   breadcrumbTitle,
 } = Astro.props;
 
@@ -115,6 +119,7 @@ const breadcrumbSchema = {
 <meta name="description" content={description} />
 <link rel="canonical" href={canonicalUrl} />
 {noindex && <meta name="robots" content="noindex, nofollow" />}
+{!noindex && noindexFollow && <meta name="robots" content="noindex,follow" />}
 
 <!-- Open Graph -->
 <meta property="og:type" content="website" />

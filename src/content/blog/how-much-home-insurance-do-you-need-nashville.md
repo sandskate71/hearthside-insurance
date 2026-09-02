@@ -83,3 +83,8 @@ Learn more about our [Home & Auto Insurance](/services/home-auto) services.
 ---
 
 *Hearthside Insurance is an independent insurance advisory practice serving Nashville metro families and small businesses. Hearthside Insurance works by appointment only — no storefront, no quotas, no captive carrier.*
+
+## Related reading
+
+- [Replacement Cost vs. Actual Cash Value: What Nashville Homeowners Get Wrong](/blog/replacement-cost-vs-actual-cash-value-nashville)
+- [What Rising Home Values Mean for Your Insurance Coverage in Nashville](/blog/what-rising-home-values-mean-for-your-insurance-coverage-in-nashville)
