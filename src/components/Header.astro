@@ -27,31 +27,33 @@ const currentPath = Astro.url.pathname;
 
 <header class="bg-navy-900 text-white sticky top-0 z-50 shadow-lg">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="flex items-center justify-between gap-4 lg:gap-8 h-16 md:h-20">
+    <div class="flex items-center justify-between gap-3 lg:gap-5 h-16 md:h-20">
 
       <!-- Logo / Brand -->
-      <a href="/" class="flex shrink-0 items-center gap-3" aria-label="Hearthside Insurance, home">
-        <!-- Shield mark is decorative (alt=""): the name is real text beside it,
-             so screen readers must not hear it twice. The white plate is
-             load-bearing — the mark is navy artwork on a near-transparent
-             ground, so on bg-navy-900 the tree vanishes and the PNG's residual
-             alpha shows as a grey haze box. Drop the plate only when a reversed
-             lockup exists; swap the src when the SVG lands. -->
-        <span class="inline-flex shrink-0 items-center justify-center rounded-lg bg-white p-1">
+      <a href="/" class="flex shrink-0 items-center gap-2.5" aria-label="Hearthside Insurance, home">
+        <!-- Shield is decorative: the name sits beside it as real text, so a
+             screen reader must not hear it twice.
+             The plate is load-bearing, not styling. The artwork is navy on a
+             ground that is only 0.8% fully transparent — 53% of its pixels sit
+             at alpha 6-59 — so on bg-navy-900 the tree and shield outline
+             vanish and the residual alpha reads as a haze rectangle. Verified
+             by compositing the PNG over #002443. It is cream rather than white
+             so it reads as part of the brand rather than a sticker; drop it
+             only when a reversed (light-on-dark) mark exists. -->
+        <span class="inline-flex shrink-0 items-center justify-center rounded-xl bg-green-50 p-1">
           <img
             src="/hearthside_mark_transparent.png"
             alt=""
-            width="731"
-            height="833"
-            class="h-10 md:h-11 w-auto"
+            width="225"
+            height="256"
+            class="h-9 md:h-10 w-auto"
             loading="eager"
             decoding="async"
           />
         </span>
-        <!-- Mark-only below md (the always-visible phone button leaves no room
-             for it at sm), and again at lg/xl where the full nav needs the
-             width — Cinzel is a wide face. Returns at 2xl. -->
-        <span class="hidden md:inline xl:hidden font-display font-semibold text-white text-lg md:text-xl tracking-tight whitespace-nowrap">
+        <!-- Cinzel is a wide face; kept modest so the nav has room. Drops below
+             sm, where the mark alone carries the brand. -->
+        <span class="hidden sm:inline font-display font-semibold text-white text-base tracking-tight whitespace-nowrap">
           Hearthside Insurance
         </span>
       </a>
@@ -62,7 +64,7 @@ const currentPath = Astro.url.pathname;
           link.children ? (
             <div class="relative group">
               <button
-                class="flex items-center gap-1 px-3 py-2 text-sm font-medium whitespace-nowrap text-navy-100 hover:text-white hover:bg-navy-800 rounded transition-colors"
+                class="flex items-center gap-1 px-2 py-2 text-sm font-medium whitespace-nowrap text-navy-100 hover:text-white hover:bg-navy-800 rounded transition-colors"
                 aria-expanded="false"
                 aria-haspopup="true"
               >
@@ -85,7 +87,7 @@ const currentPath = Astro.url.pathname;
           ) : (
             <a
               href={link.href}
-              class={`px-3 py-2 text-sm font-medium whitespace-nowrap rounded transition-colors ${
+              class={`px-2 py-2 text-sm font-medium whitespace-nowrap rounded transition-colors ${
                 currentPath === link.href
                   ? 'text-green-400 bg-navy-800'
                   : 'text-navy-100 hover:text-white hover:bg-navy-800'
