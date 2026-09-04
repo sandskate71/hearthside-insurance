@@ -1,5 +1,11 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import CallCta from '../components/CallCta.astro';
+
+// The question form is dormant while form delivery is down. To bring it back
+// when EZLynx intake is live (~2026-09-15): uncomment the import below and
+// swap <CallCta ... /> for <AskForm /> in the markup. One line each way.
+// import AskForm from '../components/AskForm.astro';
 import { BRAND } from '../consts';
 
 const sections = [
@@ -278,72 +284,12 @@ const faqSchema = {
   <!-- Question Submission Form -->
   <section class="bg-green-50 py-14 border-b border-green-200">
     <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="rounded-2xl border-2 border-green-400 bg-white px-8 py-10 shadow-sm">
-        <div class="mb-7">
-          <p class="text-green-600 text-xs font-semibold uppercase tracking-widest mb-2">Submit a Question</p>
-          <h2 class="text-2xl md:text-3xl font-display font-bold text-navy-900 mb-3">Have a Question? Ask the Advisors.</h2>
-          <p class="text-gray-600 text-sm leading-relaxed">
-            Submit your question below. We'll answer it in plain English — by video, in writing, or both. No sales pitch. Just a straight answer.
-          </p>
-        </div>
-
-        <form action="/api/contact" method="POST" class="space-y-5">
-          <input type="hidden" name="_source" value="ask a question" />
-          <p class="hidden" aria-hidden="true">
-            <label>Company website<input type="text" name="company_website" tabindex="-1" autocomplete="off" /></label>
-          </p>
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
-            <div>
-              <label for="first-name" class="block text-sm font-medium text-navy-800 mb-1.5">First Name <span class="text-green-600">*</span></label>
-              <input
-                type="text"
-                id="first-name"
-                name="first_name"
-                required
-                autocomplete="given-name"
-                class="w-full rounded-lg border border-gray-300 bg-white px-4 py-3 text-sm text-navy-900 placeholder-gray-400 focus:border-green-400 focus:outline-none focus:ring-2 focus:ring-green-400/20 transition"
-                placeholder="Your first name"
-              />
-            </div>
-            <div>
-              <label for="email" class="block text-sm font-medium text-navy-800 mb-1.5">Email Address <span class="text-green-600">*</span></label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                required
-                autocomplete="email"
-                class="w-full rounded-lg border border-gray-300 bg-white px-4 py-3 text-sm text-navy-900 placeholder-gray-400 focus:border-green-400 focus:outline-none focus:ring-2 focus:ring-green-400/20 transition"
-                placeholder="you@example.com"
-              />
-            </div>
-          </div>
-
-          <div>
-            <label for="question" class="block text-sm font-medium text-navy-800 mb-1.5">Your Question <span class="text-green-600">*</span></label>
-            <textarea
-              id="question"
-              name="question"
-              required
-              rows="4"
-              class="w-full rounded-lg border border-gray-300 bg-white px-4 py-3 text-sm text-navy-900 placeholder-gray-400 focus:border-green-400 focus:outline-none focus:ring-2 focus:ring-green-400/20 transition resize-none"
-              placeholder="What do you want to know about insurance?"
-            ></textarea>
-          </div>
-
-          <div class="flex flex-col gap-3">
-            <button
-              type="submit"
-              class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-3.5 bg-navy-900 hover:bg-navy-800 text-white font-semibold text-sm rounded-lg transition-colors"
-            >
-              Submit Your Question
-            </button>
-            <p class="text-xs text-gray-400 leading-relaxed">
-              We typically respond within 2 business days. Your question may be featured on this page — we'll always ask first.
-            </p>
-          </div>
-        </form>
-      </div>
+      <CallCta
+        id="ask-call-cta"
+        eyebrow="Ask the advisors"
+        heading="Ask us directly"
+        body="Got a question about your coverage? Call and ask — we'll answer in plain English, no sales pitch. If we can't get to it right away we'll call you back."
+      />
     </div>
   </section>
 
