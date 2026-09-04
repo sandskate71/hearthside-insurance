@@ -88,11 +88,11 @@ const { title, description, canonical, ogImage, noindex, noindexFollow, breadcru
     </main>
     <Footer />
 
-    <!-- GA4 phone_click. One delegated listener for the whole site: the number
-         sits in the header, the footer, the contact page and the urgent CTA,
-         and delegation means a tel: link added anywhere later is covered for
-         free. Never preventDefault and never await the beacon — a dropped hit
-         is acceptable, a delayed dial is not. -->
+    <!-- GA4 phone_click / text_click. One delegated listener for the whole
+         site: the number sits in the header, the footer, the contact page and
+         the urgent CTA, and delegation means a tel: or sms: link added anywhere
+         later is covered for free. Never preventDefault and never await the
+         beacon — a dropped hit is acceptable, a delayed dial is not. -->
     <script is:inline>
       document.addEventListener('click', (e) => {
         // e.target is not always an Element (text nodes, the document itself),
@@ -100,8 +100,13 @@ const { title, description, canonical, ogImage, noindex, noindexFollow, breadcru
         const target = e.target;
         if (!target || typeof target.closest !== 'function') return;
 
-        const link = target.closest('a[href^="tel:"]');
+        const link = target.closest('a[href^="tel:"], a[href^="sms:"]');
         if (!link) return;
+
+        // Read the scheme off the resolved href rather than re-testing the
+        // attribute, so a link is never counted as both.
+        const href = link.getAttribute('href') || '';
+        const event = href.startsWith('sms:') ? 'text_click' : 'phone_click';
 
         // Landmarks first: most taps are header or footer, and neither carries
         // a section id, so nearest-id alone would report almost everything as
@@ -114,7 +119,7 @@ const { title, description, canonical, ogImage, noindex, noindexFollow, breadcru
           if (section && section.id) location = section.id;
         }
 
-        if (typeof gtag === 'function') gtag('event', 'phone_click', { link_location: location });
+        if (typeof gtag === 'function') gtag('event', event, { link_location: location });
       });
     </script>
   </body>
