@@ -266,9 +266,9 @@ const faqSchema = {
       <nav class="flex items-center gap-2 text-sm text-navy-300 mb-6" aria-label="Breadcrumb">
         <a href="/" class="hover:text-white transition-colors">Home</a>
         <span>/</span>
-        <span class="text-gold-400">Ask the Advisors</span>
+        <span class="text-green-400">Ask the Advisors</span>
       </nav>
-      <h1 class="text-4xl md:text-5xl font-serif font-bold mb-4">Ask the Advisors</h1>
+      <h1 class="text-4xl md:text-5xl font-display font-bold mb-4">Ask the Advisors</h1>
       <p class="text-navy-200 text-lg max-w-2xl">
         Real questions. Plain answers. No jargon, no sales pitch — just straight information from an independent advisory team that works for you.
       </p>
@@ -276,12 +276,12 @@ const faqSchema = {
   </section>
 
   <!-- Question Submission Form -->
-  <section class="bg-gold-50 py-14 border-b border-gold-200">
+  <section class="bg-green-50 py-14 border-b border-green-200">
     <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="rounded-2xl border-2 border-gold-400 bg-white px-8 py-10 shadow-sm">
+      <div class="rounded-2xl border-2 border-green-400 bg-white px-8 py-10 shadow-sm">
         <div class="mb-7">
-          <p class="text-gold-600 text-xs font-semibold uppercase tracking-widest mb-2">Submit a Question</p>
-          <h2 class="text-2xl md:text-3xl font-serif font-bold text-navy-900 mb-3">Have a Question? Ask the Advisors.</h2>
+          <p class="text-green-600 text-xs font-semibold uppercase tracking-widest mb-2">Submit a Question</p>
+          <h2 class="text-2xl md:text-3xl font-display font-bold text-navy-900 mb-3">Have a Question? Ask the Advisors.</h2>
           <p class="text-gray-600 text-sm leading-relaxed">
             Submit your question below. We'll answer it in plain English — by video, in writing, or both. No sales pitch. Just a straight answer.
           </p>
@@ -294,39 +294,39 @@ const faqSchema = {
           </p>
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
             <div>
-              <label for="first-name" class="block text-sm font-medium text-navy-800 mb-1.5">First Name <span class="text-gold-600">*</span></label>
+              <label for="first-name" class="block text-sm font-medium text-navy-800 mb-1.5">First Name <span class="text-green-600">*</span></label>
               <input
                 type="text"
                 id="first-name"
                 name="first_name"
                 required
                 autocomplete="given-name"
-                class="w-full rounded-lg border border-gray-300 bg-white px-4 py-3 text-sm text-navy-900 placeholder-gray-400 focus:border-gold-400 focus:outline-none focus:ring-2 focus:ring-gold-400/20 transition"
+                class="w-full rounded-lg border border-gray-300 bg-white px-4 py-3 text-sm text-navy-900 placeholder-gray-400 focus:border-green-400 focus:outline-none focus:ring-2 focus:ring-green-400/20 transition"
                 placeholder="Your first name"
               />
             </div>
             <div>
-              <label for="email" class="block text-sm font-medium text-navy-800 mb-1.5">Email Address <span class="text-gold-600">*</span></label>
+              <label for="email" class="block text-sm font-medium text-navy-800 mb-1.5">Email Address <span class="text-green-600">*</span></label>
               <input
                 type="email"
                 id="email"
                 name="email"
                 required
                 autocomplete="email"
-                class="w-full rounded-lg border border-gray-300 bg-white px-4 py-3 text-sm text-navy-900 placeholder-gray-400 focus:border-gold-400 focus:outline-none focus:ring-2 focus:ring-gold-400/20 transition"
+                class="w-full rounded-lg border border-gray-300 bg-white px-4 py-3 text-sm text-navy-900 placeholder-gray-400 focus:border-green-400 focus:outline-none focus:ring-2 focus:ring-green-400/20 transition"
                 placeholder="you@example.com"
               />
             </div>
           </div>
 
           <div>
-            <label for="question" class="block text-sm font-medium text-navy-800 mb-1.5">Your Question <span class="text-gold-600">*</span></label>
+            <label for="question" class="block text-sm font-medium text-navy-800 mb-1.5">Your Question <span class="text-green-600">*</span></label>
             <textarea
               id="question"
               name="question"
               required
               rows="4"
-              class="w-full rounded-lg border border-gray-300 bg-white px-4 py-3 text-sm text-navy-900 placeholder-gray-400 focus:border-gold-400 focus:outline-none focus:ring-2 focus:ring-gold-400/20 transition resize-none"
+              class="w-full rounded-lg border border-gray-300 bg-white px-4 py-3 text-sm text-navy-900 placeholder-gray-400 focus:border-green-400 focus:outline-none focus:ring-2 focus:ring-green-400/20 transition resize-none"
               placeholder="What do you want to know about insurance?"
             ></textarea>
           </div>
@@ -334,7 +334,7 @@ const faqSchema = {
           <div class="flex flex-col gap-3">
             <button
               type="submit"
-              class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-3.5 bg-gold-500 hover:bg-gold-600 text-navy-900 font-semibold text-sm rounded-lg transition-colors"
+              class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-3.5 bg-navy-900 hover:bg-navy-800 text-white font-semibold text-sm rounded-lg transition-colors"
             >
               Submit Your Question
             </button>
@@ -356,7 +356,7 @@ const faqSchema = {
         {sections.map((section) => (
           <a
             href={`#${section.id}`}
-            class="px-4 py-2 rounded-full border border-navy-200 text-sm font-medium text-navy-700 hover:border-gold-400 hover:text-navy-900 transition-colors"
+            class="px-4 py-2 rounded-full border border-navy-200 text-sm font-medium text-navy-700 hover:border-green-400 hover:text-navy-900 transition-colors"
           >
             {section.label}
           </a>
@@ -367,16 +367,16 @@ const faqSchema = {
         {sections.map((section) => (
           <div id={section.id}>
             <div class="mb-8">
-              <p class="text-gold-600 text-xs font-semibold uppercase tracking-widest mb-2">
+              <p class="text-green-600 text-xs font-semibold uppercase tracking-widest mb-2">
                 {section.label}
               </p>
-              <h2 class="text-2xl font-serif font-bold text-navy-900">
+              <h2 class="text-2xl font-display font-bold text-navy-900">
                 {section.label} Questions
               </h2>
               {section.service && (
                 <p class="text-gray-600 text-sm mt-3">
                   More detail on how we handle this:
-                  <a href={section.service.href} class="font-medium text-gold-700 underline underline-offset-2 hover:text-gold-800" set:html={section.service.label} />
+                  <a href={section.service.href} class="font-medium text-green-700 underline underline-offset-2 hover:text-green-800" set:html={section.service.label} />
                 </p>
               )}
             </div>
@@ -412,13 +412,13 @@ const faqSchema = {
   <!-- CTA -->
   <section class="py-20 bg-navy-900 text-white text-center">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h2 class="text-3xl md:text-4xl font-serif font-bold mb-4">Still have a question?</h2>
+      <h2 class="text-3xl md:text-4xl font-display font-bold mb-4">Still have a question?</h2>
       <p class="text-navy-200 text-lg mb-8 max-w-xl mx-auto">
         The best way to get a straight answer is a real conversation with an advisor who works for you, not a carrier.
       </p>
       <a
         href="/contact"
-        class="inline-flex items-center justify-center px-8 py-4 bg-gold-500 hover:bg-gold-600 text-navy-900 font-semibold text-lg rounded-lg transition-colors"
+        class="inline-flex items-center justify-center px-8 py-4 bg-green-50 hover:bg-white text-navy-900 font-semibold text-lg rounded-lg transition-colors"
       >
         Book a Coverage Check
       </a>

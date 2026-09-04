@@ -18,9 +18,9 @@ const stories = (await getCollection('businessStories', ({ id }) => id !== 'plac
       <nav class="flex items-center gap-2 text-sm text-navy-300 mb-6" aria-label="Breadcrumb">
         <a href="/" class="hover:text-white transition-colors">Home</a>
         <span>/</span>
-        <span class="text-gold-400">Nashville Business Stories</span>
+        <span class="text-green-400">Nashville Business Stories</span>
       </nav>
-      <h1 class="text-4xl md:text-5xl font-serif font-bold mb-5 max-w-3xl">Nashville Business Stories</h1>
+      <h1 class="text-4xl md:text-5xl font-display font-bold mb-5 max-w-3xl">Nashville Business Stories</h1>
       <p class="text-navy-200 text-lg md:text-xl max-w-2xl leading-relaxed">
         We sit down with the people building Nashville — their origin stories, what drives them, and what makes their business worth knowing.
       </p>
@@ -32,8 +32,8 @@ const stories = (await getCollection('businessStories', ({ id }) => id !== 'plac
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       {stories.length === 0 ? (
         <div class="max-w-lg mx-auto text-center py-20">
-          <div class="w-14 h-14 rounded-full bg-gold-100 flex items-center justify-center mx-auto mb-6">
-            <svg class="w-7 h-7 text-gold-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <div class="w-14 h-14 rounded-full bg-green-100 flex items-center justify-center mx-auto mb-6">
+            <svg class="w-7 h-7 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 10l4.553-2.069A1 1 0 0121 8.82v6.36a1 1 0 01-1.447.894L15 14M3 8a2 2 0 012-2h8a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2V8z" />
             </svg>
           </div>
@@ -45,7 +45,7 @@ const stories = (await getCollection('businessStories', ({ id }) => id !== 'plac
           {stories.map((story) => (
             <a
               href={`/nashville-business-stories/${story.id}`}
-              class="group rounded-2xl border border-gray-100 hover:border-gold-300 hover:shadow-lg transition-all overflow-hidden bg-white"
+              class="group rounded-2xl border border-gray-100 hover:border-green-300 hover:shadow-lg transition-all overflow-hidden bg-white"
             >
               <div class="aspect-video bg-navy-900 flex items-center justify-center relative overflow-hidden">
                 <img
@@ -62,10 +62,10 @@ const stories = (await getCollection('businessStories', ({ id }) => id !== 'plac
                 </div>
               </div>
               <div class="p-6">
-                <h2 class="text-lg font-serif font-bold text-navy-900 mb-1 group-hover:text-gold-700 transition-colors">
+                <h2 class="text-lg font-display font-bold text-navy-900 mb-1 group-hover:text-green-700 transition-colors">
                   {story.data.businessName}
                 </h2>
-                <p class="text-sm text-gold-600 font-medium mb-3">{story.data.tagline}</p>
+                <p class="text-sm text-green-600 font-medium mb-3">{story.data.tagline}</p>
                 <p class="text-sm text-gray-600 leading-relaxed line-clamp-3">{story.data.description}</p>
               </div>
             </a>

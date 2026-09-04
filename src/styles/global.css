@@ -1,32 +1,38 @@
 @import "tailwindcss";
 
 @theme {
-  --color-navy-50: #e8edf5;
-  --color-navy-100: #c5d0e6;
-  --color-navy-200: #9fb0d4;
-  --color-navy-300: #7a90c2;
-  --color-navy-400: #5f79b5;
-  --color-navy-500: #4562a8;
-  --color-navy-600: #3d579d;
-  --color-navy-700: #334991;
-  --color-navy-800: #293b83;
-  --color-navy-900: #0f2044;
-  --color-navy-950: #091430;
+  /* Hearthside brand palette — two colors.
+     Navy #002443 (primary) = navy-900; Deep Green #5D772F (secondary) = green-600.
+     All other steps are tints/shades of those two anchors. */
+  --color-navy-50: #f0f2f4;
+  --color-navy-100: #dbe0e5;
+  --color-navy-200: #b8c2ca;
+  --color-navy-300: #94a3b0;
+  --color-navy-400: #708496;
+  --color-navy-500: #526a7f;
+  --color-navy-600: #38546c;
+  --color-navy-700: #24435d;
+  --color-navy-800: #123350;
+  --color-navy-900: #002443;
+  --color-navy-950: #00182d;
 
-  --color-gold-50: #fdf8ee;
-  --color-gold-100: #f9edd4;
-  --color-gold-200: #f3dba9;
-  --color-gold-300: #ecc274;
-  --color-gold-400: #e5a848;
-  --color-gold-500: #c9a84c;
-  --color-gold-600: #b8881a;
-  --color-gold-700: #9a6d17;
-  --color-gold-800: #7d571a;
-  --color-gold-900: #674819;
-  --color-gold-950: #3a270b;
+  --color-green-50: #f4f5f0;
+  --color-green-100: #e7ebe0;
+  --color-green-200: #ced6c1;
+  --color-green-300: #b1be9b;
+  --color-green-400: #94a576;
+  --color-green-500: #778d50;
+  --color-green-600: #5d772f;
+  --color-green-700: #4c6226;
+  --color-green-800: #3d501e;
+  --color-green-900: #304017;
+  --color-green-950: #212f10;
 
   --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
   --font-serif: 'Lora', ui-serif, Georgia, serif;
+  /* Cinzel is the Hearthside display face: headings, pull-quotes, wordmark.
+     Loaded at 400/600 only — it has no true italic, so avoid `italic` with it. */
+  --font-display: 'Cinzel', ui-serif, Georgia, serif;
 }
 
 @layer base {
@@ -40,7 +46,7 @@
   }
 
   h1, h2, h3, h4 {
-    font-family: var(--font-serif);
+    font-family: var(--font-display);
   }
 
   a {

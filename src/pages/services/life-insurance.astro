@@ -16,9 +16,9 @@ import { BRAND } from '../../consts';
         <span>/</span>
         <a href="/services" class="hover:text-white transition-colors">Services</a>
         <span>/</span>
-        <span class="text-gold-400">Life Insurance</span>
+        <span class="text-green-400">Life Insurance</span>
       </nav>
-      <h1 class="text-4xl md:text-5xl font-serif font-bold mb-4">Life Insurance</h1>
+      <h1 class="text-4xl md:text-5xl font-display font-bold mb-4">Life Insurance</h1>
       <p class="text-navy-200 text-lg max-w-2xl">
         Life insurance isn't about you — it's about who you'd leave behind. We help you figure out how much, what kind, and whether what you have still fits the life you're living now.
       </p>
@@ -32,7 +32,7 @@ import { BRAND } from '../../consts';
 
         <!-- Primary Content -->
         <div class="lg:col-span-2">
-          <h2 class="text-2xl md:text-3xl font-serif font-bold text-navy-900 mb-6">
+          <h2 class="text-2xl md:text-3xl font-display font-bold text-navy-900 mb-6">
             Life Insurance Review for Nashville Families
           </h2>
           <div class="space-y-5 text-gray-600 leading-relaxed">
@@ -42,7 +42,7 @@ import { BRAND } from '../../consts';
 
           <!-- Coverage Types -->
           <div class="mt-12">
-            <h3 class="text-xl font-serif font-bold text-navy-900 mb-6">Life Insurance Policies We Review &amp; Place</h3>
+            <h3 class="text-xl font-display font-bold text-navy-900 mb-6">Life Insurance Policies We Review &amp; Place</h3>
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
               {[
                 { name: 'Term Life Insurance', desc: 'Pure income replacement for a defined period. Simple, affordable, and the right starting point for most families with dependents and a mortgage.' },
@@ -51,7 +51,7 @@ import { BRAND } from '../../consts';
                 { name: 'Survivorship Life', desc: 'Joint coverage on two lives that pays at the second death. Most commonly used for estate planning and wealth transfer strategies.' },
               ].map((product) => (
                 <div class="p-5 rounded-xl border border-gray-200 bg-gray-50">
-                  <h4 class="font-serif font-semibold text-navy-900 mb-1">{product.name}</h4>
+                  <h4 class="font-display font-semibold text-navy-900 mb-1">{product.name}</h4>
                   <p class="text-sm text-gray-600">{product.desc}</p>
                 </div>
               ))}
@@ -60,18 +60,18 @@ import { BRAND } from '../../consts';
 
           <!-- Contextual links into the supporting blog cluster (site audit, Priority 3). -->
           <div class="mt-12 pt-8 border-t border-gray-200">
-            <h2 class="text-xl font-serif font-bold text-navy-900 mb-4">Keep Reading on Life Insurance</h2>
+            <h2 class="text-xl font-display font-bold text-navy-900 mb-4">Keep Reading on Life Insurance</h2>
             <ul class="space-y-3 text-base leading-relaxed">
               <li>
-                <a href="/blog/how-much-life-insurance-do-i-actually-need" class="font-medium text-gold-700 underline underline-offset-2 hover:text-gold-800">How much life insurance you actually need</a>
+                <a href="/blog/how-much-life-insurance-do-i-actually-need" class="font-medium text-green-700 underline underline-offset-2 hover:text-green-800">How much life insurance you actually need</a>
                 <span class="text-gray-600"> — sizing coverage to real obligations rather than a rule of thumb.</span>
               </li>
               <li>
-                <a href="/blog/is-employer-life-insurance-enough-for-a-young-family" class="font-medium text-gold-700 underline underline-offset-2 hover:text-gold-800">Is employer life insurance enough for a young family?</a>
+                <a href="/blog/is-employer-life-insurance-enough-for-a-young-family" class="font-medium text-green-700 underline underline-offset-2 hover:text-green-800">Is employer life insurance enough for a young family?</a>
                 <span class="text-gray-600"> — where group coverage runs out.</span>
               </li>
               <li>
-                <a href="/blog/what-happens-to-life-insurance-when-you-leave-your-job" class="font-medium text-gold-700 underline underline-offset-2 hover:text-gold-800">What happens to your life insurance when you leave your job</a>
+                <a href="/blog/what-happens-to-life-insurance-when-you-leave-your-job" class="font-medium text-green-700 underline underline-offset-2 hover:text-green-800">What happens to your life insurance when you leave your job</a>
                 <span class="text-gray-600"> — the portability gap nobody explains at the exit interview.</span>
               </li>
             </ul>
@@ -83,13 +83,13 @@ import { BRAND } from '../../consts';
         <div class="lg:col-span-1">
           <div class="sticky top-24 space-y-6">
             <div class="p-6 rounded-2xl bg-navy-900 text-white">
-              <h3 class="font-serif font-semibold text-lg mb-3">Review Your Life Coverage</h3>
+              <h3 class="font-display font-semibold text-lg mb-3">Review Your Life Coverage</h3>
               <p class="text-navy-200 text-sm mb-5">
                 Is your current life insurance still the right fit? Let's find out together.
               </p>
               <a
                 href="/contact"
-                class="block w-full text-center px-4 py-3 bg-gold-500 hover:bg-gold-600 text-navy-900 font-semibold rounded-lg transition-colors text-sm"
+                class="block w-full text-center px-4 py-3 bg-green-50 hover:bg-white text-navy-900 font-semibold rounded-lg transition-colors text-sm"
               >
                 Book a Coverage Check
               </a>
@@ -102,11 +102,11 @@ import { BRAND } from '../../consts';
             </div>
 
             <div class="p-6 rounded-xl border border-gray-200 bg-gray-50">
-              <h4 class="font-serif font-semibold text-navy-900 mb-3">Related Services</h4>
+              <h4 class="font-display font-semibold text-navy-900 mb-3">Related Services</h4>
               <ul class="space-y-2">
-                <li><a href="/services/retirement-income" class="text-sm text-gold-600 hover:text-gold-700 transition-colors">Retirement Income Planning →</a></li>
-                <li><a href="/services/long-term-care" class="text-sm text-gold-600 hover:text-gold-700 transition-colors">Long-Term Care →</a></li>
-                <li><a href="/services/medicare" class="text-sm text-gold-600 hover:text-gold-700 transition-colors">Medicare Planning →</a></li>
+                <li><a href="/services/retirement-income" class="text-sm text-green-600 hover:text-green-700 transition-colors">Retirement Income Planning →</a></li>
+                <li><a href="/services/long-term-care" class="text-sm text-green-600 hover:text-green-700 transition-colors">Long-Term Care →</a></li>
+                <li><a href="/services/medicare" class="text-sm text-green-600 hover:text-green-700 transition-colors">Medicare Planning →</a></li>
               </ul>
             </div>
           </div>

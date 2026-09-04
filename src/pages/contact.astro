@@ -14,9 +14,9 @@ import { BRAND } from '../consts';
       <nav class="flex items-center gap-2 text-sm text-navy-300 mb-6" aria-label="Breadcrumb">
         <a href="/" class="hover:text-white transition-colors">Home</a>
         <span>/</span>
-        <span class="text-gold-400">Contact</span>
+        <span class="text-green-400">Contact</span>
       </nav>
-      <h1 class="text-4xl md:text-5xl font-serif font-bold mb-4">Schedule Your Coverage Review</h1>
+      <h1 class="text-4xl md:text-5xl font-display font-bold mb-4">Schedule Your Coverage Review</h1>
       <p class="text-navy-200 text-lg max-w-2xl">
         By appointment only — serving the Nashville metro area. No walk-ins, no call center. Just a real conversation with your advisor.
       </p>
@@ -30,7 +30,7 @@ import { BRAND } from '../consts';
 
         <!-- Contact Info -->
         <div>
-          <h2 class="text-2xl font-serif font-bold text-navy-900 mb-8">Get in Touch</h2>
+          <h2 class="text-2xl font-display font-bold text-navy-900 mb-8">Get in Touch</h2>
 
           <div class="space-y-6 mb-10">
             <div class="flex items-start gap-4">
@@ -41,7 +41,7 @@ import { BRAND } from '../consts';
               </div>
               <div>
                 <p class="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-1">Phone</p>
-                <a href={`tel:${BRAND.phoneE164}`} class="text-lg font-medium text-navy-900 hover:text-gold-600 transition-colors">
+                <a href={`tel:${BRAND.phoneE164}`} class="text-lg font-medium text-navy-900 hover:text-green-600 transition-colors">
                   {BRAND.phone}
                 </a>
               </div>
@@ -55,7 +55,7 @@ import { BRAND } from '../consts';
               </div>
               <div>
                 <p class="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-1">Email</p>
-                <a href={`mailto:${BRAND.email}`} class="text-lg font-medium text-navy-900 hover:text-gold-600 transition-colors">
+                <a href={`mailto:${BRAND.email}`} class="text-lg font-medium text-navy-900 hover:text-green-600 transition-colors">
                   {BRAND.email}
                 </a>
               </div>
@@ -78,18 +78,18 @@ import { BRAND } from '../consts';
 
           <!-- What to Expect -->
           <div class="p-6 rounded-xl border border-gray-200 bg-gray-50">
-            <h3 class="font-serif font-semibold text-navy-900 mb-4">What to expect from your first call</h3>
+            <h3 class="font-display font-semibold text-navy-900 mb-4">What to expect from your first call</h3>
             <ul class="space-y-2 text-sm text-gray-600">
               <li class="flex items-start gap-2">
-                <span class="text-gold-500 mt-0.5">◆</span>
+                <span class="text-green-500 mt-0.5">◆</span>
                 A genuine conversation — not a sales pitch. We'll ask about your situation and you can ask us anything.
               </li>
               <li class="flex items-start gap-2">
-                <span class="text-gold-500 mt-0.5">◆</span>
+                <span class="text-green-500 mt-0.5">◆</span>
                 No pressure to buy anything. The first call is about figuring out if we're a good fit for each other.
               </li>
               <li class="flex items-start gap-2">
-                <span class="text-gold-500 mt-0.5">◆</span>
+                <span class="text-green-500 mt-0.5">◆</span>
                 A clear next step. You'll leave knowing exactly what the Coverage Roadmap process looks like and what comes next.
               </li>
             </ul>
@@ -99,7 +99,7 @@ import { BRAND } from '../consts';
         <!-- Contact Form / Scheduler -->
         <div>
           <div class="p-8 rounded-2xl border border-gray-200 bg-white shadow-sm">
-            <h2 id="form-heading" class="text-2xl font-serif font-bold text-navy-900 mb-2">Send a Message</h2>
+            <h2 id="form-heading" class="text-2xl font-display font-bold text-navy-900 mb-2">Send a Message</h2>
             <p class="text-gray-500 text-sm mb-8">
               Have a question or ready to get started? Fill out the form below and we'll get back to you within one business day. No spam, no pressure — just a real response from a real advisor.
             </p>
@@ -123,7 +123,7 @@ import { BRAND } from '../consts';
                     type="button"
                     data-urgency="urgent"
                     aria-pressed="false"
-                    class="urgency-option px-5 py-4 rounded-lg border border-gray-300 bg-white text-left text-sm font-medium text-navy-900 hover:border-gold-400 transition-colors focus:outline-none focus:ring-2 focus:ring-navy-500 aria-pressed:border-gold-500 aria-pressed:bg-gold-50 aria-pressed:ring-2 aria-pressed:ring-gold-400"
+                    class="urgency-option px-5 py-4 rounded-lg border border-gray-300 bg-white text-left text-sm font-medium text-navy-900 hover:border-green-400 transition-colors focus:outline-none focus:ring-2 focus:ring-navy-500 aria-pressed:border-green-500 aria-pressed:bg-green-50 aria-pressed:ring-2 aria-pressed:ring-green-400"
                   >
                     I need coverage soon
                   </button>
@@ -131,7 +131,7 @@ import { BRAND } from '../consts';
                     type="button"
                     data-urgency="review"
                     aria-pressed="false"
-                    class="urgency-option px-5 py-4 rounded-lg border border-gray-300 bg-white text-left text-sm font-medium text-navy-900 hover:border-gold-400 transition-colors focus:outline-none focus:ring-2 focus:ring-navy-500 aria-pressed:border-gold-500 aria-pressed:bg-gold-50 aria-pressed:ring-2 aria-pressed:ring-gold-400"
+                    class="urgency-option px-5 py-4 rounded-lg border border-gray-300 bg-white text-left text-sm font-medium text-navy-900 hover:border-green-400 transition-colors focus:outline-none focus:ring-2 focus:ring-navy-500 aria-pressed:border-green-500 aria-pressed:bg-green-50 aria-pressed:ring-2 aria-pressed:ring-green-400"
                   >
                     I want a full review
                   </button>
@@ -232,10 +232,10 @@ import { BRAND } from '../consts';
           </div>
 
           <!-- Scheduling -->
-          <div class="mt-6 p-6 rounded-xl border border-gold-200 bg-gold-50" style="background-color: #fdf8ee; border-color: #e5a848;">
+          <div class="mt-6 p-6 rounded-xl border border-green-200 bg-green-50">
             <p class="text-sm font-semibold text-navy-900 mb-1">Prefer to book directly?</p>
             <p class="text-sm text-gray-600">
-              Call us at <a href={`tel:${BRAND.phoneE164}`} class="font-medium text-navy-900 hover:text-gold-600 transition-colors">{BRAND.phone}</a> or email <a href={`mailto:${BRAND.email}`} class="font-medium text-navy-900 hover:text-gold-600 transition-colors">{BRAND.email}</a> — we'll find a time that works.
+              Call us at <a href={`tel:${BRAND.phoneE164}`} class="font-medium text-navy-900 hover:text-green-600 transition-colors">{BRAND.phone}</a> or email <a href={`mailto:${BRAND.email}`} class="font-medium text-navy-900 hover:text-green-600 transition-colors">{BRAND.email}</a> — we'll find a time that works.
             </p>
           </div>
         </div>

@@ -82,9 +82,9 @@ const services = [
         <span>/</span>
         <a href="/neighborhoods/" class="hover:text-white transition-colors">Areas We Serve</a>
         <span>/</span>
-        <span class="text-gold-400">{neighborhood}</span>
+        <span class="text-green-400">{neighborhood}</span>
       </nav>
-      <h1 class="text-4xl md:text-5xl font-serif font-bold mb-5">
+      <h1 class="text-4xl md:text-5xl font-display font-bold mb-5">
         Independent Insurance Advisor Serving {neighborhood}, Tennessee
       </h1>
       <p class="text-navy-200 text-lg max-w-2xl leading-relaxed">{intro}</p>
@@ -95,19 +95,19 @@ const services = [
   <section class="py-20 bg-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="mb-10">
-        <p class="text-gold-600 text-xs font-semibold uppercase tracking-widest mb-2">Coverage Areas</p>
-        <h2 class="text-3xl font-serif font-bold text-navy-900">
+        <p class="text-green-600 text-xs font-semibold uppercase tracking-widest mb-2">Coverage Areas</p>
+        <h2 class="text-3xl font-display font-bold text-navy-900">
           Coverage We Review for {neighborhood} Families and Businesses
         </h2>
       </div>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
         {services.map((service) => (
-          <div class="flex gap-4 p-6 rounded-xl border border-gray-200 bg-white hover:border-gold-400 transition-colors group">
-            <div class="w-1 flex-shrink-0 rounded-full bg-gold-400 self-stretch"></div>
+          <div class="flex gap-4 p-6 rounded-xl border border-gray-200 bg-white hover:border-green-400 transition-colors group">
+            <div class="w-1 flex-shrink-0 rounded-full bg-green-400 self-stretch"></div>
             <div>
               <a
                 href={service.href}
-                class="font-serif font-semibold text-navy-900 text-base group-hover:text-gold-700 transition-colors"
+                class="font-serif font-semibold text-navy-900 text-base group-hover:text-green-700 transition-colors"
               >
                 {service.name}
               </a>
@@ -120,17 +120,17 @@ const services = [
   </section>
 
   <!-- Coverage Gaps -->
-  <section class="py-16 bg-gold-50">
+  <section class="py-16 bg-green-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="max-w-3xl">
-        <p class="text-gold-600 text-xs font-semibold uppercase tracking-widest mb-2">What We Commonly Find</p>
-        <h2 class="text-3xl font-serif font-bold text-navy-900 mb-8">
+        <p class="text-green-600 text-xs font-semibold uppercase tracking-widest mb-2">What We Commonly Find</p>
+        <h2 class="text-3xl font-display font-bold text-navy-900 mb-8">
           Common Coverage Gaps We Find in {neighborhood}
         </h2>
         <ul class="space-y-5">
           {gaps.map((gap) => (
             <li class="flex gap-4">
-              <span class="flex-shrink-0 mt-1 w-5 h-5 rounded-full bg-gold-400 flex items-center justify-center">
+              <span class="flex-shrink-0 mt-1 w-5 h-5 rounded-full bg-green-400 flex items-center justify-center">
                 <svg class="w-3 h-3 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
                 </svg>
@@ -147,13 +147,13 @@ const services = [
   <section class="py-16 bg-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="max-w-3xl rounded-2xl border border-navy-200 bg-navy-50/30 px-8 py-10">
-        <p class="text-gold-600 text-xs font-semibold uppercase tracking-widest mb-2">Our Process</p>
-        <h2 class="text-2xl font-serif font-bold text-navy-900 mb-5">How the Coverage Roadmap Works</h2>
+        <p class="text-green-600 text-xs font-semibold uppercase tracking-widest mb-2">Our Process</p>
+        <h2 class="text-2xl font-display font-bold text-navy-900 mb-5">How the Coverage Roadmap Works</h2>
         <div class="space-y-4 text-gray-700 text-base leading-relaxed">
           <p>{BRAND.name} doesn't start with a quote. We start with questions — about your home, your family, your business, your assets, and your plans. That conversation is the <strong class="font-semibold text-navy-900">Coverage Check</strong>, and it's free, about fifteen minutes, no pressure and no sales pitch.</p>
           <p>Next is <strong class="font-semibold text-navy-900">Quote &amp; Bind</strong>. We shop your situation across our carriers, walk you through what came back, and place the coverage you choose — so you're protected before we go any further.</p>
           <p>Thirty to forty-five days later comes the <strong class="font-semibold text-navy-900">Coverage Roadmap Review</strong>, a 60-to-90-minute session covering your whole picture: gaps, overlaps, and anything that hasn't kept up with your life.</p>
-          <p>After that, the <strong class="font-semibold text-navy-900">Annual Life Review</strong> comes around once a year, on the anniversary of the month you first came on board — not a courtesy call, and not everyone crammed into the same season. Same advisor, every time. <a href="/process" class="text-gold-700 font-medium underline underline-offset-2 hover:text-gold-800">See the full four-stage process</a>.</p>
+          <p>After that, the <strong class="font-semibold text-navy-900">Annual Life Review</strong> comes around once a year, on the anniversary of the month you first came on board — not a courtesy call, and not everyone crammed into the same season. Same advisor, every time. <a href="/process" class="text-green-700 font-medium underline underline-offset-2 hover:text-green-800">See the full four-stage process</a>.</p>
         </div>
       </div>
     </div>
@@ -163,11 +163,11 @@ const services = [
   {relatedReading.length > 0 && (
     <section class="py-16 bg-gray-50">
       <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 class="text-2xl font-serif font-bold text-navy-900 mb-4">Useful Reading for {neighborhood} Homeowners</h2>
+        <h2 class="text-2xl font-display font-bold text-navy-900 mb-4">Useful Reading for {neighborhood} Homeowners</h2>
         <ul class="space-y-3 text-base leading-relaxed text-gray-700">
           {relatedReading.map((link) => (
             <li>
-              <a href={link.href} class="font-medium text-gold-700 underline underline-offset-2 hover:text-gold-800">{link.anchor}</a>
+              <a href={link.href} class="font-medium text-green-700 underline underline-offset-2 hover:text-green-800">{link.anchor}</a>
               <span> — {link.note}</span>
             </li>
           ))}
@@ -179,13 +179,13 @@ const services = [
   <!-- CTA -->
   <section class="py-20 bg-navy-900 text-white text-center">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h2 class="text-3xl md:text-4xl font-serif font-bold mb-4">Ready to review your coverage?</h2>
+      <h2 class="text-3xl md:text-4xl font-display font-bold mb-4">Ready to review your coverage?</h2>
       <p class="text-navy-200 text-lg mb-8 max-w-xl mx-auto">
         The best way to get a straight answer is a real conversation with an advisor who works for you, not a carrier.
       </p>
       <a
         href="/contact"
-        class="inline-flex items-center justify-center px-8 py-4 bg-gold-500 hover:bg-gold-600 text-navy-900 font-semibold text-lg rounded-lg transition-colors"
+        class="inline-flex items-center justify-center px-8 py-4 bg-green-50 hover:bg-white text-navy-900 font-semibold text-lg rounded-lg transition-colors"
       >
         Book a Coverage Check
       </a>

@@ -92,9 +92,9 @@ const faqs = [
       <nav class="flex items-center gap-2 text-sm text-navy-300 mb-6" aria-label="Breadcrumb">
         <a href="/" class="hover:text-white transition-colors">Home</a>
         <span>/</span>
-        <span class="text-gold-400">Our Process</span>
+        <span class="text-green-400">Our Process</span>
       </nav>
-      <h1 class="text-4xl md:text-5xl font-serif font-bold mb-4">The Coverage Roadmap</h1>
+      <h1 class="text-4xl md:text-5xl font-display font-bold mb-4">The Coverage Roadmap</h1>
       <p class="text-navy-200 text-lg max-w-2xl">
         Get covered when you need it. Then get the whole picture. Four stages, two ways in — both end in the same place.
       </p>
@@ -104,7 +104,7 @@ const faqs = [
   <!-- Process Intro -->
   <section class="py-16 bg-white">
     <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-      <h2 class="text-2xl md:text-3xl font-serif font-bold text-navy-900 mb-5">
+      <h2 class="text-2xl md:text-3xl font-display font-bold text-navy-900 mb-5">
         Why We Do It This Way
       </h2>
       <p class="text-gray-600 text-lg leading-relaxed">
@@ -114,7 +114,7 @@ const faqs = [
   </section>
 
   <!-- Stages -->
-  <section class="py-16 pb-24" style="background-color: #f0f4fa;">
+  <section class="py-16 pb-24 bg-navy-50">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="space-y-8">
         {stages.map((stage, i) => (
@@ -130,7 +130,7 @@ const faqs = [
 
             <div class="flex-1 pb-2">
               <div class="bg-white rounded-2xl p-8 border border-gray-100 shadow-sm">
-                <h3 class="text-xl md:text-2xl font-serif font-bold text-navy-900 mb-3">{stage.title}</h3>
+                <h3 class="text-xl md:text-2xl font-display font-bold text-navy-900 mb-3">{stage.title}</h3>
                 <p class="text-gray-700 font-medium mb-4">{stage.description}</p>
                 <p class="text-gray-500 text-sm leading-relaxed">{stage.detail}</p>
               </div>
@@ -145,7 +145,7 @@ const faqs = [
   <section class="py-20 bg-white">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="max-w-2xl mx-auto text-center mb-12">
-        <h2 class="text-3xl font-serif font-bold text-navy-900 mb-4">Two Ways In, Same Destination</h2>
+        <h2 class="text-3xl font-display font-bold text-navy-900 mb-4">Two Ways In, Same Destination</h2>
         <p class="text-gray-600 leading-relaxed">
           Where you start depends on whether the clock is running. Everyone ends up in the same place.
         </p>
@@ -153,9 +153,9 @@ const faqs = [
 
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
         {entryPoints.map((entry) => (
-          <div class="p-8 rounded-2xl border border-gray-100 shadow-sm" style="background-color: #f0f4fa;">
-            <span class="inline-block text-xs font-semibold uppercase tracking-wide text-gold-700 mb-3">{entry.tag}</span>
-            <h3 class="text-xl font-serif font-bold text-navy-900 mb-3">{entry.label}</h3>
+          <div class="p-8 rounded-2xl border border-gray-100 shadow-sm bg-navy-50">
+            <span class="inline-block text-xs font-semibold uppercase tracking-wide text-green-700 mb-3">{entry.tag}</span>
+            <h3 class="text-xl font-display font-bold text-navy-900 mb-3">{entry.label}</h3>
             <p class="text-gray-600 text-sm leading-relaxed">{entry.desc}</p>
           </div>
         ))}
@@ -164,21 +164,21 @@ const faqs = [
   </section>
 
   <!-- What You Leave With -->
-  <section class="py-20" style="background-color: #f0f4fa;">
+  <section class="py-20 bg-navy-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="max-w-2xl mx-auto text-center mb-12">
-        <h2 class="text-3xl font-serif font-bold text-navy-900 mb-4">What You Leave With</h2>
+        <h2 class="text-3xl font-display font-bold text-navy-900 mb-4">What You Leave With</h2>
       </div>
 
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         {outcomes.map((outcome) => (
           <div class="p-6 rounded-xl bg-navy-900 text-white text-center">
-            <div class="w-10 h-10 rounded-full bg-gold-500 flex items-center justify-center mx-auto mb-4">
+            <div class="w-10 h-10 rounded-full bg-green-500 flex items-center justify-center mx-auto mb-4">
               <svg class="w-5 h-5 text-navy-900" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7" />
               </svg>
             </div>
-            <h4 class="font-serif font-semibold mb-2">{outcome.title}</h4>
+            <h4 class="font-display font-semibold mb-2">{outcome.title}</h4>
             <p class="text-navy-300 text-sm">{outcome.desc}</p>
           </div>
         ))}
@@ -189,11 +189,11 @@ const faqs = [
   <!-- FAQ -->
   <section class="py-20 bg-white">
     <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h2 class="text-3xl font-serif font-bold text-navy-900 mb-10 text-center">Common Questions</h2>
+      <h2 class="text-3xl font-display font-bold text-navy-900 mb-10 text-center">Common Questions</h2>
       <div class="space-y-4">
         {faqs.map((faq) => (
           <div class="bg-gray-50 rounded-xl p-6 border border-gray-100">
-            <h3 class="font-serif font-semibold text-navy-900 mb-2">{faq.q}</h3>
+            <h3 class="font-display font-semibold text-navy-900 mb-2">{faq.q}</h3>
             <p class="text-gray-600 text-sm leading-relaxed">{faq.a}</p>
           </div>
         ))}
@@ -204,18 +204,18 @@ const faqs = [
   <!-- Contextual links into the review cluster (site audit, Priority 3). -->
   <section class="py-16 bg-white">
     <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h2 class="text-2xl font-serif font-bold text-navy-900 mb-4">More on How We Work</h2>
+      <h2 class="text-2xl font-display font-bold text-navy-900 mb-4">More on How We Work</h2>
       <ul class="space-y-3 text-base leading-relaxed text-gray-700">
         <li>
-          <a href="/blog/what-a-comprehensive-insurance-review-actually-looks-like" class="font-medium text-gold-700 underline underline-offset-2 hover:text-gold-800">What a comprehensive insurance review actually looks like</a>
+          <a href="/blog/what-a-comprehensive-insurance-review-actually-looks-like" class="font-medium text-green-700 underline underline-offset-2 hover:text-green-800">What a comprehensive insurance review actually looks like</a>
           <span> — the Coverage Roadmap Review, walked through end to end.</span>
         </li>
         <li>
-          <a href="/blog/coverage-roadmap-why-we-do-it-differently" class="font-medium text-gold-700 underline underline-offset-2 hover:text-gold-800">Why we built the Coverage Roadmap</a>
+          <a href="/blog/coverage-roadmap-why-we-do-it-differently" class="font-medium text-green-700 underline underline-offset-2 hover:text-green-800">Why we built the Coverage Roadmap</a>
           <span> — the reasoning behind a four-stage process instead of a quote.</span>
         </li>
         <li>
-          <a href="/ask" class="font-medium text-gold-700 underline underline-offset-2 hover:text-gold-800">Ask the Advisors</a>
+          <a href="/ask" class="font-medium text-green-700 underline underline-offset-2 hover:text-green-800">Ask the Advisors</a>
           <span> — straight answers to the questions that come up most in the Coverage Check.</span>
         </li>
       </ul>
@@ -225,13 +225,13 @@ const faqs = [
   <!-- CTA -->
   <section class="py-20 bg-navy-900 text-white text-center">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h2 class="text-3xl font-serif font-bold mb-4">Ready to get started?</h2>
+      <h2 class="text-3xl font-display font-bold mb-4">Ready to get started?</h2>
       <p class="text-navy-200 text-lg mb-8 max-w-xl mx-auto">
         Schedule a time that works for you. By appointment only in the Nashville metro area.
       </p>
       <a
         href="/contact"
-        class="inline-flex items-center justify-center px-8 py-4 bg-gold-500 hover:bg-gold-600 text-navy-900 font-semibold text-lg rounded-lg transition-colors"
+        class="inline-flex items-center justify-center px-8 py-4 bg-green-50 hover:bg-white text-navy-900 font-semibold text-lg rounded-lg transition-colors"
       >
         Schedule Your Coverage Check
       </a>
