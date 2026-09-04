@@ -2,3 +2,15 @@
 /faq                                        /ask                                        301
 /services/life-annuities                    /services/life-insurance                    301
 /blog/coverage-blueprint-why-we-do-it-differently  /blog/coverage-roadmap-why-we-do-it-differently  301
+
+# Consolidated city pages -> the hub. These eight were noindexed in 9cd8599;
+# the 301s finish the consolidation so link equity lands on the hub instead
+# of eight thin pages. Brentwood and Franklin stay live and indexable.
+/neighborhoods/bellevue              /neighborhoods/                             301
+/neighborhoods/green-hills           /neighborhoods/                             301
+/neighborhoods/hendersonville        /neighborhoods/                             301
+/neighborhoods/hermitage             /neighborhoods/                             301
+/neighborhoods/mount-juliet          /neighborhoods/                             301
+/neighborhoods/murfreesboro          /neighborhoods/                             301
+/neighborhoods/nolensville           /neighborhoods/                             301
+/neighborhoods/spring-hill           /neighborhoods/                             301

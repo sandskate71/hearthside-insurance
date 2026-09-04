@@ -2,6 +2,9 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { BRAND } from '../../consts';
 
+// Brentwood and Franklin only. The other eight city pages were consolidated
+// into this hub and now 301 here from public/_redirects, so linking them
+// would point at a redirect.
 const neighborhoods = [
   {
     name: 'Brentwood',
@@ -14,54 +17,6 @@ const neighborhoods = [
     href: '/neighborhoods/franklin',
     description: "Historic charm and $1M+ home values — plus thousands of relocating families who need a fresh look at their coverage for Tennessee's risk profile.",
     tags: ['Relocation Coverage', 'Small Business', 'Long-Term Care'],
-  },
-  {
-    name: 'Nolensville',
-    href: '/neighborhoods/nolensville',
-    description: "One of the fastest-growing suburbs in the state, with new construction homes and young families building equity — many with coverage priced for the lender, not the homeowner.",
-    tags: ['New Construction', 'Young Families', 'Life Insurance'],
-  },
-  {
-    name: 'Hendersonville',
-    href: '/neighborhoods/hendersonville',
-    description: "Old Hickory Lake living adds watercraft, dock liability, and flood exposure that standard home policies simply don't cover.",
-    tags: ['Watercraft', 'Flood Coverage', 'Medicare'],
-  },
-  {
-    name: 'Green Hills',
-    href: '/neighborhoods/green-hills',
-    description: "Nashville's most established in-city neighborhood — professionals and executives with complex coverage needs and elevated urban liability exposure.",
-    tags: ['Umbrella Coverage', 'Business Owners', 'Retirement Planning'],
-  },
-  {
-    name: 'Bellevue',
-    href: '/neighborhoods/bellevue',
-    description: "West Nashville's established community, where rising values and proximity to the Harpeth River create quiet coverage gaps many homeowners don't know they have.",
-    tags: ['Flood Exposure', 'Dwelling Limits', 'Life Insurance'],
-  },
-  {
-    name: 'Mount Juliet',
-    href: '/neighborhoods/mount-juliet',
-    description: "Wilson County's fastest-growing community, drawing families with new construction priced at builder minimums and a growing small business corridor.",
-    tags: ['New Construction', 'Young Families', 'Small Business'],
-  },
-  {
-    name: 'Spring Hill',
-    href: '/neighborhoods/spring-hill',
-    description: "Straddling Williamson and Maury County, Spring Hill draws families from across the country — many with out-of-state policies that need updating for Tennessee.",
-    tags: ['Out-of-State Policies', 'Small Business', 'Tornado Exposure'],
-  },
-  {
-    name: 'Murfreesboro',
-    href: '/neighborhoods/murfreesboro',
-    description: "One of America's fastest-growing cities, with rising home values and a large, fast-growing 65-plus population navigating Medicare enrollment.",
-    tags: ['Rising Values', 'Medicare Planning', 'Small Business'],
-  },
-  {
-    name: 'Hermitage',
-    href: '/neighborhoods/hermitage',
-    description: "Affordable east Nashville — first-time buyers and young families who bought at lower prices and haven't revisited their coverage as values have climbed.",
-    tags: ['First-Time Buyers', 'Dwelling Limits', 'Life Insurance'],
   },
 ];
 ---
