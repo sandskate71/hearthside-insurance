@@ -23,6 +23,13 @@ const navLinks = [
 ];
 
 const currentPath = Astro.url.pathname;
+
+// The homepage hero already forks into "I Need Coverage Now" and "I Want a
+// Full Review", so the header's "Book a Coverage Check" is a third competing
+// button that duplicates the second. Interior pages have no hero fork, so it
+// carries the primary action there and stays. The phone number is unaffected
+// and shows everywhere.
+const isHome = currentPath === '/' || currentPath === '' || currentPath === '/index.html';
 ---
 
 <header class="bg-navy-900 text-white sticky top-0 z-50 shadow-lg">
@@ -112,12 +119,14 @@ const currentPath = Astro.url.pathname;
           </svg>
           {BRAND.phone}
         </a>
-        <a
-          href="/contact"
-          class="hidden sm:inline-flex items-center px-4 py-2 bg-green-50 hover:bg-white text-navy-900 text-sm font-semibold rounded-lg transition-colors"
-        >
-          Book a Coverage Check
-        </a>
+        {!isHome && (
+          <a
+            href="/contact"
+            class="hidden sm:inline-flex items-center px-4 py-2 bg-green-50 hover:bg-white text-navy-900 text-sm font-semibold rounded-lg transition-colors"
+          >
+            Book a Coverage Check
+          </a>
+        )}
 
         <!-- Mobile menu button -->
         <button
@@ -167,14 +176,16 @@ const currentPath = Astro.url.pathname;
           </a>
         )
       ))}
-      <div class="pt-3 pb-1 border-t border-navy-800">
-        <a
-          href="/contact"
-          class="block w-full text-center px-4 py-3 bg-green-50 hover:bg-white text-navy-900 text-sm font-semibold rounded-lg transition-colors"
-        >
-          Book a Coverage Check
-        </a>
-      </div>
+      {!isHome && (
+        <div class="pt-3 pb-1 border-t border-navy-800">
+          <a
+            href="/contact"
+            class="block w-full text-center px-4 py-3 bg-green-50 hover:bg-white text-navy-900 text-sm font-semibold rounded-lg transition-colors"
+          >
+            Book a Coverage Check
+          </a>
+        </div>
+      )}
     </div>
   </div>
 </header>
