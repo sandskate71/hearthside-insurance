@@ -64,9 +64,9 @@ const services = [
       <nav class="flex items-center gap-2 text-sm text-navy-300 mb-6" aria-label="Breadcrumb">
         <a href="/" class="hover:text-white transition-colors">Home</a>
         <span>/</span>
-        <span class="text-gold-400">Services</span>
+        <span class="text-green-400">Services</span>
       </nav>
-      <h1 class="text-4xl md:text-5xl font-serif font-bold mb-4">Coverage We Review</h1>
+      <h1 class="text-4xl md:text-5xl font-display font-bold mb-4">Coverage We Review</h1>
       <p class="text-navy-200 text-lg max-w-2xl">
         Every client gets the same deliberate process — a comprehensive review across every line of coverage, in plain English, with no pressure to change anything.
       </p>
@@ -80,17 +80,17 @@ const services = [
         {services.map((service) => (
           <a
             href={`/services/${service.slug}`}
-            class="group p-8 rounded-2xl border border-gray-100 hover:border-gold-300 hover:shadow-lg transition-all duration-200 bg-white"
+            class="group p-8 rounded-2xl border border-gray-100 hover:border-green-300 hover:shadow-lg transition-all duration-200 bg-white"
           >
             <div class="flex items-start gap-5">
               <span class="text-4xl flex-shrink-0">{service.icon}</span>
               <div class="flex-1">
-                <p class="text-gold-600 text-xs font-semibold uppercase tracking-wider mb-1">{service.tagline}</p>
-                <h2 class="text-xl font-serif font-bold text-navy-900 mb-3 group-hover:text-gold-700 transition-colors">
+                <p class="text-green-600 text-xs font-semibold uppercase tracking-wider mb-1">{service.tagline}</p>
+                <h2 class="text-xl font-display font-bold text-navy-900 mb-3 group-hover:text-green-700 transition-colors">
                   {service.title}
                 </h2>
                 <p class="text-gray-600 text-sm leading-relaxed mb-4">{service.description}</p>
-                <span class="text-gold-600 text-sm font-semibold inline-flex items-center gap-1">
+                <span class="text-green-600 text-sm font-semibold inline-flex items-center gap-1">
                   Learn more
                   <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
@@ -107,13 +107,13 @@ const services = [
   <!-- Bottom CTA -->
   <section class="py-20 bg-navy-900 text-white text-center">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h2 class="text-3xl font-serif font-bold mb-4">Not sure where to start?</h2>
+      <h2 class="text-3xl font-display font-bold mb-4">Not sure where to start?</h2>
       <p class="text-navy-200 text-lg mb-8 max-w-xl mx-auto">
         A comprehensive coverage review looks at everything together — not just one line at a time.
       </p>
       <a
         href="/contact"
-        class="inline-flex items-center justify-center px-8 py-4 bg-gold-500 hover:bg-gold-600 text-navy-900 font-semibold text-lg rounded-lg transition-colors"
+        class="inline-flex items-center justify-center px-8 py-4 bg-green-50 hover:bg-white text-navy-900 font-semibold text-lg rounded-lg transition-colors"
       >
         Book a Coverage Check
       </a>

@@ -29,10 +29,10 @@ const { businessName, tagline, description, funFacts, websiteUrl, youtubeVideoId
         <span>/</span>
         <a href="/nashville-business-stories" class="hover:text-white transition-colors">Nashville Business Stories</a>
         <span>/</span>
-        <span class="text-gold-400">{businessName}</span>
+        <span class="text-green-400">{businessName}</span>
       </nav>
-      <h1 class="text-4xl md:text-5xl font-serif font-bold mb-3">{businessName}</h1>
-      <p class="text-gold-400 text-lg font-medium">{tagline}</p>
+      <h1 class="text-4xl md:text-5xl font-display font-bold mb-3">{businessName}</h1>
+      <p class="text-green-400 text-lg font-medium">{tagline}</p>
     </div>
   </section>
 
@@ -58,20 +58,20 @@ const { businessName, tagline, description, funFacts, websiteUrl, youtubeVideoId
 
       <!-- Prose story -->
       <div class="prose prose-lg prose-navy max-w-none mb-12
-        prose-headings:font-serif prose-headings:text-navy-900
+        prose-headings:font-display prose-headings:text-navy-900
         prose-p:text-gray-700 prose-p:leading-relaxed
-        prose-a:text-gold-600 prose-a:no-underline hover:prose-a:underline">
+        prose-a:text-green-600 prose-a:no-underline hover:prose-a:underline">
         <Content />
       </div>
 
       <!-- Fun Facts -->
       {funFacts.length > 0 && (
         <div class="rounded-2xl bg-navy-50 border border-navy-100 p-8 mb-12">
-          <h2 class="text-xl font-serif font-bold text-navy-900 mb-5">Quick Facts</h2>
+          <h2 class="text-xl font-display font-bold text-navy-900 mb-5">Quick Facts</h2>
           <ul class="space-y-3">
             {funFacts.map((fact) => (
               <li class="flex items-start gap-3">
-                <span class="mt-1 flex-shrink-0 w-5 h-5 rounded-full bg-gold-400 flex items-center justify-center">
+                <span class="mt-1 flex-shrink-0 w-5 h-5 rounded-full bg-green-400 flex items-center justify-center">
                   <svg class="w-3 h-3 text-navy-900" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" />
                   </svg>
@@ -91,7 +91,7 @@ const { businessName, tagline, description, funFacts, websiteUrl, youtubeVideoId
             href={websiteUrl}
             target="_blank"
             rel="noopener noreferrer"
-            class="inline-flex items-center gap-2 text-gold-600 font-semibold hover:text-gold-700 transition-colors"
+            class="inline-flex items-center gap-2 text-green-600 font-semibold hover:text-green-700 transition-colors"
           >
             Visit their website
             <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -110,7 +110,7 @@ const { businessName, tagline, description, funFacts, websiteUrl, youtubeVideoId
   <div class="bg-navy-900 py-8 text-center">
     <p class="text-sm text-navy-300 max-w-xl mx-auto">
       Nashville Business Stories is brought to you by{' '}
-      <a href="/" class="text-gold-400 hover:text-gold-300 transition-colors font-medium">{BRAND.name}</a>
+      <a href="/" class="text-green-400 hover:text-green-300 transition-colors font-medium">{BRAND.name}</a>
       {' '}— independent insurance advisors serving Middle Tennessee.
     </p>
   </div>

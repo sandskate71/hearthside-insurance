@@ -43,7 +43,9 @@ const localBusinessSchema = {
     jobTitle: 'Independent Insurance Advisor',
   },
   image: `${siteUrl}/og-default.png`,
-  logo: `${siteUrl}/logos/logo-mark.svg`,
+  // Hearthside shield mark, raster PNG (731x833). Google requires >=112x112
+  // for the Organization logo. Swap this for an SVG once the vector exists.
+  logo: `${siteUrl}/hearthside_mark_transparent.png`,
   priceRange: '$$',
   areaServed: [
     { '@type': 'City', name: 'Nashville', containedInPlace: { '@type': 'State', name: 'Tennessee' } },

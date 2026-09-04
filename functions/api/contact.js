@@ -252,9 +252,9 @@ export async function onRequestPost({ request, env }) {
     });
   }
 
-  // The only branch that fires generate_lead: FormSubmit accepted the send and
-  // the submission cleared the honeypot. A failed relay returns above, from the
-  // 502 branch, which passes no `lead` and so carries no tag at all.
+  // The only branch that fires generate_lead: Resend accepted the send and the
+  // submission cleared the honeypot. Every delivery failure returns above via
+  // DELIVERY_FAILED, which passes no `lead` and so carries no tag at all.
   return page({
     status: 200,
     heading: 'Thanks — we got it',

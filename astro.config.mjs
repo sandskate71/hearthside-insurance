@@ -6,18 +6,16 @@ import sitemap from '@astrojs/sitemap';
 
 import { BRAND } from './src/consts.ts';
 
-// Thin near-duplicate city pages, noindexed pending a rewrite to the
-// Brentwood standard. Source and URLs stay live — this is reversible.
-const CONSOLIDATED_CITY_PAGES = [
-  'bellevue',
-  'green-hills',
-  'hendersonville',
-  'hermitage',
-  'mount-juliet',
-  'murfreesboro',
-  'nolensville',
-  'spring-hill',
-];
+// Eight thin near-duplicate city pages were consolidated into
+// /neighborhoods/. They now 301 there from public/_redirects and no longer
+// build: their sources sit in src/pages/neighborhoods/_archive/, where the
+// leading underscore keeps Astro from generating routes. Source is retained
+// for a future rebuild to the Brentwood standard — move a file back out of
+// _archive/ and drop its _redirects line to restore it.
+//
+// They previously carried `noindex,follow` and were filtered out of the
+// sitemap here. Both are now dead: a page that does not build cannot be
+// indexed or listed, and the 301 is the consolidation signal.
 
 // https://astro.build/config
 export default defineConfig({
@@ -40,11 +38,7 @@ export default defineConfig({
         !page.includes('/blog/medicare-open-enrollment-annual-review-nashville') &&
         // Placeholder hub: out of the sitemap and unlinked from the footer
         // until the first story ships. The URL stays live.
-        !/\/nashville-business-stories\/?$/.test(page) &&
-        // The eight thin city pages carry `noindex,follow` (see
-        // NeighborhoodPage.astro). Brentwood and Franklin stay indexed.
-        // Reversible: delete this line and drop `noindexFollow` from the pages.
-        !CONSOLIDATED_CITY_PAGES.some((city) => page.includes(`/neighborhoods/${city}`)),
+        !/\/nashville-business-stories\/?$/.test(page),
       serialize(item) {
         item.lastmod = new Date().toISOString();
         return item;

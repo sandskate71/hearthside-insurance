@@ -27,24 +27,44 @@ const currentPath = Astro.url.pathname;
 
 <header class="bg-navy-900 text-white sticky top-0 z-50 shadow-lg">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="flex items-center justify-between h-16 md:h-20">
+    <div class="flex items-center justify-between gap-3 lg:gap-5 h-16 md:h-20">
 
       <!-- Logo / Brand -->
-      <a href="/" class="flex items-center" aria-label={`${BRAND.name} — Home`}>
-        <!-- PLACEHOLDER typographic wordmark. Swap for the Hearthside lockup
-             once the logo is designed. The previous vector lockup is retired. -->
-        <span class="font-serif font-semibold text-white text-xl md:text-2xl tracking-tight">
-          {BRAND.name}
+      <a href="/" class="flex shrink-0 items-center gap-2.5" aria-label="Hearthside Insurance, home">
+        <!-- Shield is decorative: the name sits beside it as real text, so a
+             screen reader must not hear it twice.
+             The plate is load-bearing, not styling. The artwork is navy on a
+             ground that is only 0.8% fully transparent — 53% of its pixels sit
+             at alpha 6-59 — so on bg-navy-900 the tree and shield outline
+             vanish and the residual alpha reads as a haze rectangle. Verified
+             by compositing the PNG over #002443. It is cream rather than white
+             so it reads as part of the brand rather than a sticker; drop it
+             only when a reversed (light-on-dark) mark exists. -->
+        <span class="inline-flex shrink-0 items-center justify-center rounded-xl bg-green-50 p-1">
+          <img
+            src="/hearthside_mark_transparent.png"
+            alt=""
+            width="225"
+            height="256"
+            class="h-9 md:h-10 w-auto"
+            loading="eager"
+            decoding="async"
+          />
+        </span>
+        <!-- Cinzel is a wide face; kept modest so the nav has room. Drops below
+             sm, where the mark alone carries the brand. -->
+        <span class="hidden sm:inline font-display font-semibold text-white text-base tracking-tight whitespace-nowrap">
+          Hearthside Insurance
         </span>
       </a>
 
       <!-- Desktop Nav -->
-      <nav class="hidden lg:flex items-center gap-1" aria-label="Main navigation">
+      <nav class="hidden xl:flex min-w-0 items-center gap-1" aria-label="Main navigation">
         {navLinks.map((link) => (
           link.children ? (
             <div class="relative group">
               <button
-                class="flex items-center gap-1 px-3 py-2 text-sm font-medium text-navy-100 hover:text-white hover:bg-navy-800 rounded transition-colors"
+                class="flex items-center gap-1 px-2 py-2 text-sm font-medium whitespace-nowrap text-navy-100 hover:text-white hover:bg-navy-800 rounded transition-colors"
                 aria-expanded="false"
                 aria-haspopup="true"
               >
@@ -67,9 +87,9 @@ const currentPath = Astro.url.pathname;
           ) : (
             <a
               href={link.href}
-              class={`px-3 py-2 text-sm font-medium rounded transition-colors ${
+              class={`px-2 py-2 text-sm font-medium whitespace-nowrap rounded transition-colors ${
                 currentPath === link.href
-                  ? 'text-gold-400 bg-navy-800'
+                  ? 'text-green-400 bg-navy-800'
                   : 'text-navy-100 hover:text-white hover:bg-navy-800'
               }`}
             >
@@ -80,11 +100,11 @@ const currentPath = Astro.url.pathname;
       </nav>
 
       <!-- Tap-to-call + CTA + Mobile Toggle -->
-      <div class="flex items-center gap-3">
+      <div class="flex shrink-0 items-center gap-3">
         <!-- Always visible, including mobile — never collapses into the hamburger -->
         <a
           href={`tel:${BRAND.phoneE164}`}
-          class="inline-flex items-center gap-2 px-3 py-2 border border-gold-500 text-gold-400 hover:bg-gold-500 hover:text-navy-900 text-sm font-semibold rounded-lg transition-colors whitespace-nowrap"
+          class="inline-flex items-center gap-2 px-3 py-2 border border-green-500 text-green-400 hover:bg-green-50 hover:text-navy-900 text-sm font-semibold rounded-lg transition-colors whitespace-nowrap"
           aria-label={`Call ${BRAND.name} at ${BRAND.phone}`}
         >
           <svg class="w-4 h-4 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
@@ -94,7 +114,7 @@ const currentPath = Astro.url.pathname;
         </a>
         <a
           href="/contact"
-          class="hidden sm:inline-flex items-center px-4 py-2 bg-gold-500 hover:bg-gold-600 text-navy-900 text-sm font-semibold rounded-lg transition-colors"
+          class="hidden sm:inline-flex items-center px-4 py-2 bg-green-50 hover:bg-white text-navy-900 text-sm font-semibold rounded-lg transition-colors"
         >
           Book a Coverage Check
         </a>
@@ -102,7 +122,7 @@ const currentPath = Astro.url.pathname;
         <!-- Mobile menu button -->
         <button
           id="mobile-menu-toggle"
-          class="lg:hidden p-2 text-navy-100 hover:text-white rounded"
+          class="xl:hidden p-2 text-navy-100 hover:text-white rounded"
           aria-label="Toggle navigation menu"
           aria-expanded="false"
           aria-controls="mobile-menu"
@@ -119,12 +139,12 @@ const currentPath = Astro.url.pathname;
   </div>
 
   <!-- Mobile Menu -->
-  <div id="mobile-menu" class="lg:hidden hidden border-t border-navy-800">
+  <div id="mobile-menu" class="xl:hidden hidden border-t border-navy-800">
     <div class="max-w-7xl mx-auto px-4 py-3 space-y-1">
       {navLinks.map((link) => (
         link.children ? (
           <div>
-            <div class="px-3 py-2 text-xs font-semibold text-gold-400 uppercase tracking-wider">{link.label}</div>
+            <div class="px-3 py-2 text-xs font-semibold text-green-400 uppercase tracking-wider">{link.label}</div>
             {link.children.map((child) => (
               <a
                 href={child.href}
@@ -139,7 +159,7 @@ const currentPath = Astro.url.pathname;
             href={link.href}
             class={`block px-3 py-2 text-sm font-medium rounded transition-colors ${
               currentPath === link.href
-                ? 'text-gold-400 bg-navy-800'
+                ? 'text-green-400 bg-navy-800'
                 : 'text-navy-100 hover:text-white hover:bg-navy-800'
             }`}
           >
@@ -150,7 +170,7 @@ const currentPath = Astro.url.pathname;
       <div class="pt-3 pb-1 border-t border-navy-800">
         <a
           href="/contact"
-          class="block w-full text-center px-4 py-3 bg-gold-500 hover:bg-gold-600 text-navy-900 text-sm font-semibold rounded-lg transition-colors"
+          class="block w-full text-center px-4 py-3 bg-green-50 hover:bg-white text-navy-900 text-sm font-semibold rounded-lg transition-colors"
         >
           Book a Coverage Check
         </a>

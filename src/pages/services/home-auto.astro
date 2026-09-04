@@ -16,9 +16,9 @@ import { BRAND } from '../../consts';
         <span>/</span>
         <a href="/services" class="hover:text-white transition-colors">Services</a>
         <span>/</span>
-        <span class="text-gold-400">Home & Auto</span>
+        <span class="text-green-400">Home & Auto</span>
       </nav>
-      <h1 class="text-4xl md:text-5xl font-serif font-bold mb-4">Home &amp; Auto Insurance</h1>
+      <h1 class="text-4xl md:text-5xl font-display font-bold mb-4">Home &amp; Auto Insurance</h1>
       <p class="text-navy-200 text-lg max-w-2xl">
         Most Nashville homeowners have gaps in their coverage they don't know about. We find them before a claim does.
       </p>
@@ -32,7 +32,7 @@ import { BRAND } from '../../consts';
 
         <!-- Primary Content -->
         <div class="lg:col-span-2">
-          <h2 class="text-2xl md:text-3xl font-serif font-bold text-navy-900 mb-6">
+          <h2 class="text-2xl md:text-3xl font-display font-bold text-navy-900 mb-6">
             What We Review in Your Home &amp; Auto Coverage
           </h2>
           <div class="space-y-5 text-gray-600 leading-relaxed">
@@ -43,7 +43,7 @@ import { BRAND } from '../../consts';
 
           <!-- Coverage Areas -->
           <div class="mt-12">
-            <h3 class="text-xl font-serif font-bold text-navy-900 mb-6">Coverage Areas We Review</h3>
+            <h3 class="text-xl font-display font-bold text-navy-900 mb-6">Coverage Areas We Review</h3>
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {[
                 'Homeowners / Dwelling',
@@ -54,7 +54,7 @@ import { BRAND } from '../../consts';
                 'Flood & Earthquake',
               ].map((item) => (
                 <div class="flex items-center gap-3 p-4 rounded-lg border border-gray-100 bg-gray-50">
-                  <svg class="w-5 h-5 text-gold-500 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <svg class="w-5 h-5 text-green-500 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7" />
                   </svg>
                   <span class="text-sm font-medium text-navy-900">{item}</span>
@@ -66,38 +66,38 @@ import { BRAND } from '../../consts';
 
           <!-- Contextual links into the supporting blog cluster (site audit, Priority 3). -->
           <div class="mt-12 pt-8 border-t border-gray-200">
-            <h2 class="text-xl font-serif font-bold text-navy-900 mb-4">Keep Reading on Home &amp; Auto</h2>
+            <h2 class="text-xl font-display font-bold text-navy-900 mb-4">Keep Reading on Home &amp; Auto</h2>
             <ul class="space-y-3 text-base leading-relaxed">
               <li>
-                <a href="/blog/how-much-home-insurance-do-you-need-nashville" class="font-medium text-gold-700 underline underline-offset-2 hover:text-gold-800">How much home insurance you actually need in Nashville</a>
+                <a href="/blog/how-much-home-insurance-do-you-need-nashville" class="font-medium text-green-700 underline underline-offset-2 hover:text-green-800">How much home insurance you actually need in Nashville</a>
                 <span class="text-gray-600"> — the sizing question, worked through with real numbers.</span>
               </li>
               <li>
-                <a href="/blog/replacement-cost-vs-actual-cash-value-nashville" class="font-medium text-gold-700 underline underline-offset-2 hover:text-gold-800">Replacement cost vs. actual cash value</a>
+                <a href="/blog/replacement-cost-vs-actual-cash-value-nashville" class="font-medium text-green-700 underline underline-offset-2 hover:text-green-800">Replacement cost vs. actual cash value</a>
                 <span class="text-gray-600"> — the single most misunderstood line on a homeowners policy.</span>
               </li>
               <li>
-                <a href="/blog/what-rising-home-values-mean-for-your-insurance-coverage-in-nashville" class="font-medium text-gold-700 underline underline-offset-2 hover:text-gold-800">What rising home values mean for your coverage</a>
+                <a href="/blog/what-rising-home-values-mean-for-your-insurance-coverage-in-nashville" class="font-medium text-green-700 underline underline-offset-2 hover:text-green-800">What rising home values mean for your coverage</a>
                 <span class="text-gray-600"> — why a policy written five years ago is probably short today.</span>
               </li>
               <li>
-                <a href="/blog/need-home-insurance-fast-nashville-closing" class="font-medium text-gold-700 underline underline-offset-2 hover:text-gold-800">Need coverage in two weeks?</a>
+                <a href="/blog/need-home-insurance-fast-nashville-closing" class="font-medium text-green-700 underline underline-offset-2 hover:text-green-800">Need coverage in two weeks?</a>
                 <span class="text-gray-600"> — how a closing-deadline bind actually works.</span>
               </li>
               <li>
-                <a href="/blog/does-my-homeowners-policy-cover-my-airbnb-nashville" class="font-medium text-gold-700 underline underline-offset-2 hover:text-gold-800">Does your homeowners policy cover your Airbnb?</a>
+                <a href="/blog/does-my-homeowners-policy-cover-my-airbnb-nashville" class="font-medium text-green-700 underline underline-offset-2 hover:text-green-800">Does your homeowners policy cover your Airbnb?</a>
                 <span class="text-gray-600"> — short-term rental exposure most Nashville hosts miss.</span>
               </li>
               <li>
-                <a href="/blog/do-i-need-umbrella-insurance-nashville" class="font-medium text-gold-700 underline underline-offset-2 hover:text-gold-800">Do you need umbrella insurance in Nashville?</a>
+                <a href="/blog/do-i-need-umbrella-insurance-nashville" class="font-medium text-green-700 underline underline-offset-2 hover:text-green-800">Do you need umbrella insurance in Nashville?</a>
                 <span class="text-gray-600"> — when the liability limits underneath stop being enough.</span>
               </li>
             </ul>
             <p class="mt-6 text-base leading-relaxed text-gray-700">
               We review home and auto coverage across the Nashville metro, with dedicated pages for
-              <a href="/neighborhoods/brentwood" class="font-medium text-gold-700 underline underline-offset-2 hover:text-gold-800">Brentwood</a> and
-              <a href="/neighborhoods/franklin" class="font-medium text-gold-700 underline underline-offset-2 hover:text-gold-800">Franklin</a>.
-              See the <a href="/neighborhoods/" class="font-medium text-gold-700 underline underline-offset-2 hover:text-gold-800">full list of areas we serve</a>.
+              <a href="/neighborhoods/brentwood" class="font-medium text-green-700 underline underline-offset-2 hover:text-green-800">Brentwood</a> and
+              <a href="/neighborhoods/franklin" class="font-medium text-green-700 underline underline-offset-2 hover:text-green-800">Franklin</a>.
+              See the <a href="/neighborhoods/" class="font-medium text-green-700 underline underline-offset-2 hover:text-green-800">full list of areas we serve</a>.
             </p>
           </div>
 
@@ -107,13 +107,13 @@ import { BRAND } from '../../consts';
         <div class="lg:col-span-1">
           <div class="sticky top-24 space-y-6">
             <div class="p-6 rounded-2xl bg-navy-900 text-white">
-              <h3 class="font-serif font-semibold text-lg mb-3">Schedule a Review</h3>
+              <h3 class="font-display font-semibold text-lg mb-3">Schedule a Review</h3>
               <p class="text-navy-200 text-sm mb-5">
                 We'll review your current home and auto policies, identify gaps, and explain your options clearly.
               </p>
               <a
                 href="/contact"
-                class="block w-full text-center px-4 py-3 bg-gold-500 hover:bg-gold-600 text-navy-900 font-semibold rounded-lg transition-colors text-sm"
+                class="block w-full text-center px-4 py-3 bg-green-50 hover:bg-white text-navy-900 font-semibold rounded-lg transition-colors text-sm"
               >
                 Book a Coverage Check
               </a>
@@ -126,12 +126,12 @@ import { BRAND } from '../../consts';
             </div>
 
             <div class="p-6 rounded-xl border border-gray-200 bg-gray-50">
-              <h4 class="font-serif font-semibold text-navy-900 mb-3">Related Services</h4>
+              <h4 class="font-display font-semibold text-navy-900 mb-3">Related Services</h4>
               <ul class="space-y-2">
-                <li><a href="/services/small-business" class="text-sm text-gold-600 hover:text-gold-700 transition-colors">Small Business Insurance →</a></li>
-                <li><a href="/services/life-insurance" class="text-sm text-gold-600 hover:text-gold-700 transition-colors">Life Insurance →</a></li>
-                <li><a href="/services/retirement-income" class="text-sm text-gold-600 hover:text-gold-700 transition-colors">Retirement Income Planning →</a></li>
-                <li><a href="/services/long-term-care" class="text-sm text-gold-600 hover:text-gold-700 transition-colors">Long-Term Care →</a></li>
+                <li><a href="/services/small-business" class="text-sm text-green-600 hover:text-green-700 transition-colors">Small Business Insurance →</a></li>
+                <li><a href="/services/life-insurance" class="text-sm text-green-600 hover:text-green-700 transition-colors">Life Insurance →</a></li>
+                <li><a href="/services/retirement-income" class="text-sm text-green-600 hover:text-green-700 transition-colors">Retirement Income Planning →</a></li>
+                <li><a href="/services/long-term-care" class="text-sm text-green-600 hover:text-green-700 transition-colors">Long-Term Care →</a></li>
               </ul>
             </div>
           </div>
