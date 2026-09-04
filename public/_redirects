@@ -6,11 +6,24 @@
 # Consolidated city pages -> the hub. These eight were noindexed in 9cd8599;
 # the 301s finish the consolidation so link equity lands on the hub instead
 # of eight thin pages. Brentwood and Franklin stay live and indexable.
+#
+# BOTH forms are listed on purpose. Astro built these as directories, so the
+# canonical and sitemap URL was the trailing-slash form — that is what is
+# indexed. A rule for /neighborhoods/<city> does not match
+# /neighborhoods/<city>/, which 404s without its own rule.
 /neighborhoods/bellevue              /neighborhoods/                             301
+/neighborhoods/bellevue/             /neighborhoods/                             301
 /neighborhoods/green-hills           /neighborhoods/                             301
+/neighborhoods/green-hills/          /neighborhoods/                             301
 /neighborhoods/hendersonville        /neighborhoods/                             301
+/neighborhoods/hendersonville/       /neighborhoods/                             301
 /neighborhoods/hermitage             /neighborhoods/                             301
+/neighborhoods/hermitage/            /neighborhoods/                             301
 /neighborhoods/mount-juliet          /neighborhoods/                             301
+/neighborhoods/mount-juliet/         /neighborhoods/                             301
 /neighborhoods/murfreesboro          /neighborhoods/                             301
+/neighborhoods/murfreesboro/         /neighborhoods/                             301
 /neighborhoods/nolensville           /neighborhoods/                             301
+/neighborhoods/nolensville/          /neighborhoods/                             301
 /neighborhoods/spring-hill           /neighborhoods/                             301
+/neighborhoods/spring-hill/          /neighborhoods/                             301
